@@ -1,0 +1,4123 @@
+{
+    "variables": [],
+    "info": {
+        "name": "Laravel API",
+        "_postman_id": "8cd03d37-499f-4a72-a9f1-d11f39c55dea",
+        "description": "",
+        "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.0.0\/collection.json"
+    },
+    "item": [
+        {
+            "name": "Gestion Barreras deportivas",
+            "description": "clase  con los servicios listar, crear, editar, eliminar y ver el detalle  para las barreras deportivas tanto para las ambientales como fisicas",
+            "item": [
+                {
+                    "name": "Funcion para traer el listado de barreras devuelve un json con la informacion de las barreras",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/barreras",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para traer el listado de barreras devuelve un json con la informacion de las barreras",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportebarrera",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion que sirve para crear una barrera deportiva",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportebarrera\/crear",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para editar una barrera deportiva",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportebarrera\/:id\/editar",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "nobis",
+                                    "description": "este parametro recibe el identificador de la barrera que se va editar"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para eliminar una barrera deportiva",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportebarrera\/:id\/eliminar",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "voluptatem",
+                                    "description": "este parametro recibe el identificador de la barrera que se va a eliminar"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para retornar la informacion de una barrera en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportebarrera\/:id\/detalle",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "omnis",
+                                    "description": "este parametro recibe el identificador de la barrera que se va retornar"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion Categorias para iniciativas",
+            "description": " clase  con los servicios listar, crear, editar, eliminar y ver el detalle  para las categorias de las diferentes iniciativas de sportodos",
+            "item": [
+                {
+                    "name": "funcion para traer el listado de las categorias de iniciativas  retorna un json con la informaci\u00f3n",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/iniciativas\/tipos",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que sirve para crear una categoria de iniciativa",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/categoriasiniciativas\/create",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para actualizar una categoria de iniciativa",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/categoriasiniciativas\/:id\/edit",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para eliminar una categoria",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/categoriasiniciativas\/:id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para retornar la informacion de una categoria especifica",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/categoriasiniciativas\/detalle\/:id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para traer el listado de las categorias de iniciativas  retorna un json con la informaci\u00f3n",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/iniciativas\/poblaciones",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Categorias de negocio",
+            "description": "clase que permite ver las diferentes categorias en la que se encuentran los negocios del sistema",
+            "item": [
+                {
+                    "name": "listado de categorias a las cuales pueden pertenecer los negocios",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/negocios\/categorias\/all",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Comentarios",
+            "description": "clase que permite la creacion de los comentarios que se ingresan a los diferentes elementos dentro del sistema",
+            "item": [
+                {
+                    "name": "funcion que retorna el listado de comentarios en el sistema para un elemento especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/posts\/:id\/comments",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para crear un comentario",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/posts\/:id\/comment\/create",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Deportes",
+            "description": "clase que permite listar crear editar y eliminar un deporte",
+            "item": [
+                {
+                    "name": "listado dedeportes que estan cargados en el sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que permite crear un deporte",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/crear",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que permite editar el deporte",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/:id\/editar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para eliminar un deporte en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/:id\/eliminar",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que retorna el detalle de un deporte",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/:id\/detalle",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Equipos",
+            "description": "clase  con los servicios listado de equipos, creacion de equipos, edicion de equipos,  agregar miembros de equipo , aceptar y rechazar miembros de equipo.",
+            "item": [
+                {
+                    "name": "funcion que retorna el  listado de equipos a los que pertenece un usuario en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/equiposu",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que retorna el  listado de equipos a los que pertenece un usuario en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/equipos",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que sirve para crear un equipo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/equipos\/agregar",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que retorna el  listado de equipos creados",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/equipos\/buscar",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que sirve para editar un equipo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/equipos\/:team_id\/actualizar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para agregar un participante al equipo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/equipos\/:team_id\/participantes\/agregar",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que actauliza las imagenes ya sea del escudo del equipo o de la imagen de portada",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/equipos\/:team_id\/actualizar\/:imagen",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para retornar las estadisticas que tiene el equipo con un formato especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/equipos\/:team_id\/stats",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Aceptar Participante",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/equipos\/:team_id\/participantes\/actualizar\/:teamMemberId",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para eliminar un participante",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/equipos\/:team_id\/participantes\/eliminar",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Espacios deportivos",
+            "description": "clase  con los servicios listar, crear, editar, eliminar y ver el detalle y busqueda  para los espacios deportivos",
+            "item": [
+                {
+                    "name": "Funcion para retornar un listado de espacios deportivos con unos filtros en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/espacios",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para listar los espacios deportivos",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/espacios\/all",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para crear un espacio deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/espacios\/crear",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para actualizar informacion de un espacio deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/espacios\/:id\/editar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para eliminar un espacio deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/espacios\/:id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "retorna el detalle de un espacio deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/espacios\/:id\/detalle",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Iniciativas",
+            "description": "clase que permite la creacion, edicion, listado y eliminacion de iniciativas",
+            "item": [
+                {
+                    "name": "funcion para listar las iniciativas",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/iniciativas",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para crear las iniciativas",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/iniciativas\/create",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para editar una iniciativa",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/iniciativas\/:id\/edit",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para eliminar una iniciativa",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/iniciativas\/:id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "retorna el detalle de una iniciativa en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/iniciativas\/detalle\/:id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Likes",
+            "description": "clase para controlar los likes de los diferentes elmentos dentro de la pagina",
+            "item": [
+                {
+                    "name": "funcion para retornar el listado de likes de un elemnto en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/post\/:id\/likes",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion pra crear un like",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/post\/:id\/likes\/create",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Lugares Sportodos",
+            "description": "clase que se encarga de devolver la informacion de ciudades con covertura de sportodos, y zonas de cada ciudad",
+            "item": [
+                {
+                    "name": "listado de ciudades en la que sportodos tiene covertura en un pais en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/lugares\/paises\/:pais\/ciudades",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para listar las zonas que se asignan a un espacio deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/lugares\/ciudades\/:ciudad\/zonas",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "ciudad",
+                                    "key": "ciudad",
+                                    "value": "6881",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Niveles Deportivos",
+            "description": "Clase que retorna la informacion delos diferentes niveles deportivos en los que se puede encontrar un jugador, ademas permite su creacion, edicion y eliminacion",
+            "item": [
+                {
+                    "name": "retorna el listado de niveles deportivos",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/niveles",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para crear un nivel deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/niveles",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para editar un nivel deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/niveles\/:id\/editar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para eliminar un nivel deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/niveles\/:id\/borrar",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "autem",
+                                    "description": "identificador de un nivel deportivo a eliminar"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Notificaciones",
+            "description": "clase  con los servicios listar, editar, eliminar las notificaciones",
+            "item": [
+                {
+                    "name": "Funcion para listar las notificaciones del usuario que esta autenticado",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/notificaciones\/usuario\/:user_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para cambiar el estado de  una notificacion",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/notificaciones\/:id\/update",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "maiores",
+                                    "description": "identificador de la notificacion a editar"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para eliminar una notificacion",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/notificaciones\/:id\/delete",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "fugiat",
+                                    "description": "identificador de la notificacion a eliminar"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Pocisiones Deportivas",
+            "description": "clase  con los servicios listar, crear, editar, eliminar y ver el detalle de las diferentes pocisiones de cada uno de los deportes de sportodos",
+            "item": [
+                {
+                    "name": "funcion para traer el listado de las posiciones deportivas  retorna un json con la informaci\u00f3n",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/:id\/posiciones",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para traer el listado de las posiciones deportivas  retorna un json con la informaci\u00f3n",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deportes\/posiciones\/all",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para traer el listado de las posiciones deportivas  retorna un json con la informaci\u00f3n",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deporteposicion\/deporte\/:id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para traer el listado de las posiciones deportivas  retorna un json con la informaci\u00f3n",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deporteposicion",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que sirve para crear una posicion",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deporteposicion\/crear",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para actualizar una posicion",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deporteposicion\/:id\/editar",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "quo",
+                                    "description": "identificador de la posicion que se va a editar"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para eliminar una posicion",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deporteposicion\/:id\/eliminar",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "necessitatibus",
+                                    "description": "identificador de la posicion que se va a eliminar"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para retornar la informacion de una posicion deportiva",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/deporteposicion\/:id\/detalle",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "adipisci",
+                                    "description": "identificador de la posicion que se va a ver el detalle"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Posts",
+            "description": "clase para listar, crear ,editar  y eliminar un post",
+            "item": [
+                {
+                    "name": "Funcion para listar los post cargados dentro del sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/posts\/all",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para listar los post cargados dentro del sistema para una red oscial en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/posts\/red\/:red\/all",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "red",
+                                    "key": "red",
+                                    "value": "minima",
+                                    "description": "identificador de la red social a mostrar"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para ver un post en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/posts\/:id",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "sit",
+                                    "description": "identificador del post que se decea ver"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para crear un post",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/post\/create",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion de prueba para carga de imagenes",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "formimagen",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion de prueba paraguardar una imagen",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "cargarimagen",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Puntos de encuentro",
+            "description": "",
+            "item": [
+                {
+                    "name": "funcion que permite listar los diferentes puntos deportivos",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/puntos\/all",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para traer los puntos de una ciudad",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/puntos\/ciudades\/:ciudad_id\/zonas",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para traer lospuntos deportivos de una ciudad y una zona en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/puntos\/ciudades\/:ciudad_id\/zonas\/:zona_id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para crear un punto deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/puntos\/crear",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para retornar el detalle de un punto en espesifico con sus diferentes espacios, servicios y deportes",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/puntos\/:id\/detalle",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que permite editar un punto deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/puntos\/:id\/editar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Retos Deportivos",
+            "description": "clase que permite retornar el listado de retos, crear, editar y eliminar un reto, y gestionar los jugadores y equipos del mismo.",
+            "item": [
+                {
+                    "name": "funcion que retorna el listado de retos  deacuerdo a los diferentes filtros enviados",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion  que permite crear un reto",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos\/crear",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion  que permite editar un reto un reto",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos\/:id\/editar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para eliminar un reto",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos\/:id\/eliminar",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que permite ver el detalle de un reto",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos\/:id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion dise\u00f1ada para devoler las estadisticas del reto se encuentra en construccion",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos\/estadisticas\/:id",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que retorna el listado de jugadores de un reto en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos\/:id\/jugadores",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que permite agregar los participantes de un reto",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos\/:id\/jugadores",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para eliminar un jugador de un reto en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/retos\/:id\/jugadores\/:idjugador",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Servicios",
+            "description": "clase con la cual se van a poder crear editar eliminar y listar los diferentes servicios que ofrecen cada uno de los puntos de encuentro y espacios deportivos",
+            "item": [
+                {
+                    "name": "listado de servicios que se encuentran en el sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/servicios",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "listado de servicios que se encuentran en el sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/servicios\/listado",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para crear un servicio en el sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/servicios\/crear",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para deitar un servicio en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/servicios\/:id\/editar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que permite eliminar un servicio en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/servicios\/:id\/eliminar",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que retorna el detalle de un servicio en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/servicios\/:id\/detalle",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de Usuarios",
+            "description": "clase que permite gestionar los diferentes usuarios que tiene acceso al sistema",
+            "item": [
+                {
+                    "name": "Inicio de sesi\u00f3n multifuncional. Primero verificamos si esta solicitud de inicio de sesi\u00f3n proviene de Firebase, si es as\u00ed, validamos el token y\ncomprobar si el usuario ya existe en db. Si no se encuentra el token, intentamos continuar con el flujo de inicio de sesi\u00f3n normal.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/login",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para hacer registro y autenticacion de un usuario de forma externa con firebase",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/signup",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion que  desloguea al usuario dentro del sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/logout",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para refrescar el toquen de login",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/refresh",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion prar retornar el detalle de un usuario en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/:id\/detail",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "cupiditate",
+                                    "description": "identificador del usuario a retornar"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion que trae el listado de usarios cargados en el sistema con unos filtros en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/all",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion que trae el listado de usarios cargados en el sistema con unos filtros en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/listado2",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para actualizar la imagen de perfil del usuario",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/:user_id\/avatar",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "et",
+                                    "description": "id del usuario a modificar"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para actualizar la imagen de portada del usuario",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/:user_id\/background",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "delectus",
+                                    "description": "id del usuario a modificar"
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "retorna las credenciales de autenticacion del usuario logueado",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/me",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para actualizar la contrase\u00f1a de un usuario",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/:user_id\/password",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "user_id",
+                                    "key": "user_id",
+                                    "value": "animi",
+                                    "description": "identificador del usuario a cambiar la contrase\u00f1a"
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para editar la informacion de un usuario dentro del sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/usuarios\/:user_id\/editar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para agregar otro usuario como amigo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/amigos\/agregar",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para aceptar la invitacion de un amigo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/amigos\/actualizar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion para eliminar un amigo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/amigos\/remover\/:id_amigo",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id_amigo",
+                                    "key": "id_amigo",
+                                    "value": "fugiat",
+                                    "description": "identificador del amigo a eliminar"
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion del Perfil deportivo de un usuario",
+            "description": "clase para retornar editar y crear informacion de un perfil deportivo dentro del sistema",
+            "item": [
+                {
+                    "name": "Retorna todo los datos de un perfil deportivo incluyendo agregados",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/perfildeportivo",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para actualizar la informacion a un perfil deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/perfildeportivo\/editar",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para crear un perfil deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/perfildeportivo\/crear",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "cunacion para ver los amigos que tiene un usuario",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/amigos",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "busqueda de usuarios con un perfil deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/busqueda",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para a\u00f1adir deportes a un perfil deportivo",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/perfildeportivo\/agregarDeporte",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion para a\u00f1adir una barrera deportiva a un perfil",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/sportodos\/usuarios\/:user_id\/perfildeportivo\/agregarBarrera",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gestion de negocios",
+            "description": "",
+            "item": [
+                {
+                    "name": "Funcion que permite listar los negocios creados actualmente en el sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/negocios\/all",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Funcion que lista un negocio en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/negocios\/:id\/detail",
+                            "query": [],
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "exercitationem",
+                                    "description": "identificador del negocio que se va a mostrar"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Listado de lugares",
+            "description": "\nclase que retorna la informacion de los paises y ciudades cargados en el sistema",
+            "item": [
+                {
+                    "name": "funcion que retorna el listado de paises cargados en el sistema",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/lugares\/paises",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "funcion que retorna el listado de ciudades de un pais en especifico",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "api\/lugares\/paises\/:pais\/ciudades",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        },
+        {
+            "name": "general",
+            "description": "",
+            "item": [
+                {
+                    "name": "Authorize a client to access the user's account.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/authorize",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Approve the authorization request.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/authorize",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Deny the authorization request.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/authorize",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Authorize a client to access the user's account.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/token",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get all of the authorized tokens for the authenticated user.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/tokens",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Delete the given token.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/tokens\/:token_id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get a fresh transient token cookie for the authenticated user.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/token\/refresh",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get all of the clients for the authenticated user.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/clients",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Store a new client.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/clients",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Update the given client.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/clients\/:client_id",
+                            "query": []
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Delete the given client.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/clients\/:client_id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get all of the available scopes for the application.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/scopes",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Get all of the personal access tokens for the authenticated user.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/personal-access-tokens",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Create a new personal access token for the user.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/personal-access-tokens",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Delete the given token.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "oauth\/personal-access-tokens\/:token_id",
+                            "query": []
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Show the application's login form.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "login",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Handle a login request to the application.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "login",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Log the user out of the application.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "logout",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Show the application registration form.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "register",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Handle a registration request for the application.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "register",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Display the form to request a password reset link.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "password\/reset",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Send a reset link to the given user.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "password\/email",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Display the password reset view for the given token.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "password\/reset\/:token",
+                            "query": []
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "If no token is present, display the link request form.",
+                        "response": []
+                    }
+                },
+                {
+                    "name": "Reset the given user's password.",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "host": "api.togroow.local",
+                            "path": "password\/reset",
+                            "query": []
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "[]"
+                        },
+                        "description": "",
+                        "response": []
+                    }
+                }
+            ]
+        }
+    ]
+}

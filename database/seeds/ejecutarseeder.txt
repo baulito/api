@@ -1,0 +1,18 @@
+php artisan db:seed --class=DeportesSeeder
+php artisan db:seed --class=SpserviciosSeeder
+php artisan db:seed --class=Spbarreras
+php artisan db:seed --class=Spdeporteposicion
+php artisan db:seed --class=Spciudad
+php artisan db:seed --class=Spzona
+php artisan db:seed --class=Spniveldeportivo
+php artisan db:seed --class=Sppuntos
+php artisan db:seed --class=Spdeportepuntos
+php artisan db:seed --class=Spserviciospuntos
+php artisan db:seed --class=Spespacios
+php artisan db:seed --class=Spdeporteespacios
+php artisan db:seed --class=Spimagenespuntos
+php artisan db:seed --class=Spimagenesespacios
+php artisan db:seed --class=Spusuario
+php artisan db:seed --class=Spdeportesusuario
+
+php artisan passport:install
