@@ -21,7 +21,6 @@ class EnvioController extends Controller
     public function ciudades(){
         $aciudades = Mipaqueteciudades::orderBy("ciudad")->get();
         if(count($aciudades) == 0){
-            $this->cargarciudades();
             $aciudades = Mipaqueteciudades::orderBy("ciudad")->get();
         }
         $ciudades = [];
