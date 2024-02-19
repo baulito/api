@@ -14,7 +14,7 @@ class Images{
         $height = 1200;
         $quality = 70; // Valor de calidad para la compresión de la imagen (0 a 100)
         try {
-            if(is_uploaded_file ( $uploadedFile) ){
+            if(!is_array($uploadedFile) && is_uploaded_file($uploadedFile) ){
                 //echo "entro file";
                 $name = pathinfo($uploadedFile->getClientOriginalName(), PATHINFO_FILENAME);
                 $extension =  $uploadedFile->getClientOriginalExtension();
