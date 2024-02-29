@@ -25,7 +25,7 @@ class ProductosController extends Controller
                 $productos = Productos::search($busqueda);
             }
             if(isset($data['category'])){
-                echo "busco"
+                echo "busco";
                 $productos->where("category",$data['category']);
             }
             $productos = $productos->paginate(20);
