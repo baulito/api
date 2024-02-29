@@ -25,6 +25,9 @@ class ProductosController extends Controller
                 $busqueda='';
             }
             $productos = Productos::search($busqueda);
+            if(isset($data['category'])){
+                $productos->where("category",$data['category']);
+            }
             $productos = $productos->paginate(20);
             foreach ($productos as $key => $producto) {
                 $producto = $this->getProducto($producto);
