@@ -21,6 +21,9 @@ class ProductController extends Controller
         } else {
             $contents = Product::orderBy("created_at","DESC");
         }
+        if(isset($data['category'])){
+            $contents->where("category",$data['category']);
+        }
         $contents = $contents->get();
         foreach ($contents as $key => $content) {
             $content->thumbnail =  url('/')."".Images::ImageResize($content->image_1,200);
