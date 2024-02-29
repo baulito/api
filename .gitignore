@@ -1,5 +1,6 @@
 /node_modules
 /public/hot
+/public/images
 /public/storage
 /storage/
 /storage/*
@@ -17,3 +18,4 @@ yarn-error.log
 /.vscode
 /composer.lock
 storage/*
+
