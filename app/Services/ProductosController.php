@@ -20,11 +20,11 @@ class ProductosController extends Controller
             ini_set('memory_limit', '-1');
             $data = $request->all();
             if(isset($data['busqueda'])){
-                $busqueda = $data['busqueda'];
+                $productos = Productos::orderBy('id','DESC');
             } else{
-                $busqueda='';
+                $productos = Productos::search($busqueda);
             }
-            $productos = Productos::search($busqueda);
+           
             if(isset($data['category'])){
                 $productos->where("category",$data['category']);
             }
