@@ -20,14 +20,18 @@ class ProductosController extends Controller
             ini_set('memory_limit', '-1');
             $data = $request->all();
             if(isset($data['busqueda'])){
-                $productos = Productos::orderBy('id','DESC');
+                $productos = Productos::search($data['busqueda']);
             } else{
-                $productos = Productos::search($busqueda);
+                $productos = Productos::orderBy('id','DESC');
             }
             if(isset($data['category'])){
                 $productos->where("category",$data['category']);
             }
-            $productos = $productos->paginate(20);
+            $paginate = 40;
+            if(isset($data['paginate'])){
+                $paginate = $data['paginate'];
+            }
+            $productos = $productos->paginate($paginate);
             foreach ($productos as $key => $producto) {
                 $producto = $this->getProducto($producto);
             }
@@ -129,7 +133,6 @@ class ProductosController extends Controller
             }
             
         }
-
         return $categorias;
     }
 
@@ -155,8 +158,8 @@ class ProductosController extends Controller
                             $query3->whereExists(function ($query4) {
                                 $fecha = date("Y-m-d");
                                 $query4->select("*")
-                                      ->from('negocio_mercadopago')
-                                      ->whereColumn('registro_id','negocio_mercadopago_negocio');
+                                    ->from('negocio_mercadopago')
+                                    ->whereColumn('registro_id','negocio_mercadopago_negocio');
                                 //$query4->where('negocio_mercadopago_fecharenovacion','>','"'.$fecha.'"');
                             });
                     });

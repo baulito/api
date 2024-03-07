@@ -24,9 +24,15 @@ class ProductController extends Controller
         if(isset($data['category'])){
             $contents->where("category",$data['category']);
         }
-        $contents = $contents->get();
+        $paginate = 40;
+        if(isset($data['paginate'])){
+            $paginate = $data['paginate'];
+        }
+        $contents = $contents->paginate($paginate);
         foreach ($contents as $key => $content) {
-            $content->thumbnail =  url('/')."".Images::ImageResize($content->image_1,200);
+            if(isset($content->image_1) && file_exists(public_path("/images/".$content->image_1))){
+                $content->thumbnail =  url('/')."".Images::ImageResize($content->image_1,200);
+            }
         }
         return response()->json($contents);
     }
