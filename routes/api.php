@@ -76,6 +76,7 @@ Route::group(['middleware' => 'cors'], function () {
     Route::get('/product', 'Main\ProductController@list')->name('list_product');
     Route::get('/product/detail/{id}', 'Main\ProductController@detail')->name('detail_product');
     Route::get('/product/carga', 'Main\ProductController@cargaMasiva')->name('carga_product');
+    Route::post('/product/setfield', 'Main\ProductController@setField')->name('setfield_product');
 });
 
 Route::group(['middleware' => 'cors', 'middleware' => 'auth:api'], function () {

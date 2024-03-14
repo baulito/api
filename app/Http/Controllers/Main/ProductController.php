@@ -6,6 +6,8 @@ use App\Models\Product;
 use Illuminate\Support\Facades\Storage;
 use App\Services\Images\Images;
 use League\Csv\Reader;
+use PhpParser\Node\Stmt\Return_;
+
 /**
  * @group  Categoria de productos
  */
@@ -101,6 +103,7 @@ class ProductController extends Controller
     }
 
     public function cargaMasiva(){
+        set_time_limit(10000);
         $filePath = public_path('productos.csv'); 
         /*if (!Storage::exists($filePath)) {
             return response()->json(['error' => 'El archivo no existe'], 404);
@@ -115,13 +118,17 @@ class ProductController extends Controller
             if($key > 0){
                 // $record es un array que contiene los valores de cada fila del CSV
                 // Haz lo que necesites con los valores
-                echo "<pre>";
+                /*echo "<pre>";
                 print_r($record);
                 echo "</pre>";
-                echo "<br>";
-                if(isset($record)){
+                echo "<br>";*/
+                if(isset($record) && isset($record[2]) && $record[2] !='NULL' && $record[2] !=''){
                     $data = [];
-                    $data['state'] = $record['21'] ;
+                    if(isset($record['21']) && $record['21']>= 0){
+                        $data['state'] = $record['21'] ;
+                    } else {
+                        $data['state'] = 0;
+                    }
                     $data['sku'] = $record[22] ;
                     $data['name'] = $record[1];
                     $data['description'] = $record[12];
@@ -143,15 +150,15 @@ class ProductController extends Controller
                     $data['campus'] = 1;
                     $data['amount'] = $record[15];
                     $data['value'] = $record[13];
-                    $this->guardarimageurl("https://togroow.com/images/".$record[2]);
-                    $this->guardarimageurl("https://togroow.com/images/".$record[3]);
-                    $this->guardarimageurl("https://togroow.com/images/".$record[4]);
-                    $this->guardarimageurl("https://togroow.com/images/".$record[5]);
-                    $this->guardarimageurl("https://togroow.com/images/".$record[6]);
-                    $this->guardarimageurl("https://togroow.com/images/".$record[7]);
-                    $this->guardarimageurl("https://togroow.com/images/".$record[8]);
-                    $this->guardarimageurl("https://togroow.com/images/".$record[9]);
-                    $this->guardarimageurl("https://togroow.com/images/".$record[10]);
+                    $data['category'] = $this->getcategoriasunion($record[19]);
+                    for ($i=2; $i < 11; $i++) { 
+                        if( $record[$i] != ''){
+                            $this->guardarimageurl("https://togroow.com/images/".$record[$i]);
+                        }
+                    }
+                    /*cho "<pre>";
+                    print_r($data);
+                    echo "</pre>";*/
                     Product::create($data);
                 }
             }
@@ -165,5 +172,32 @@ class ProductController extends Controller
         // Guardar la imagen en el sistema de archivos de Laravel
         $filename = basename($imageUrl);
         Storage::disk('public')->put('images/' . $filename, $imageData);
+    }
+
+    public function getcategoriasunion($categoria){
+        $categorias = [];
+        $categorias[2970] = 2;
+        $categorias[2975] = 1;
+        $categorias[2977] = 3;
+        $categorias[2973] = 4;
+        $categorias[2985] = 5;
+        $categorias[2972] = 6;
+        $categorias[2978] = 7;
+        $categorias[4573] = 8;
+        if(isset($categorias[$categoria])){
+            return $categorias[$categoria];
+        } else {
+            return 1;
+        } 
+    }
+
+    public function setField(Request $request){
+        $data = $request->all();
+        $field = $data['field'];
+        $value = $data['value'];
+        $id = $data['product'];
+        $product = Product::find($id);
+        $product->$field = $value;
+        $product->save();
     }
 }
