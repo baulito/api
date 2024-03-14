@@ -19,8 +19,9 @@ use App\Models\Servicios\Togroow\Usuarios;
 use App\Models\Servicios\Togroow\Notificaciones;
 use App\Traits\UploadTrait;
 use App\Models\Servicios\Togroow\Useraddress;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\Restorepassword;
+use League\Csv\Reader;
 /**
  * @group Gestion de Usuarios
  * clase que permite gestionar los diferentes usuarios que tiene acceso al sistema
@@ -130,7 +131,7 @@ class UserController extends Controller
                         return response()->json(['message' => 'no envio ningun archivo de imagen'], 422);   
                     }
                 } else {       
-                   return response()->json(['error' => 'usuario no encontrado'], 500);
+                    return response()->json(['error' => 'usuario no encontrado'], 500);
                 }
             }
         } catch (ModelNotFoundException $ex) { // User not found
@@ -175,7 +176,7 @@ class UserController extends Controller
                         return response()->json(['message' => 'no envio ningun archivo de imagen'], 422);   
                     }
                 } else {       
-                   return response()->json(['error' => 'usuario no encontrado'], 500);
+                    return response()->json(['error' => 'usuario no encontrado'], 500);
                 }
             }
         } catch (ModelNotFoundException $ex) { // User not found
@@ -823,6 +824,107 @@ class UserController extends Controller
         return $random_string;
     }
 
+    public function cargaMasiva(){
+        set_time_limit(10000);
+        $envios = $this->getEnviocsv();
+        $usuarios = $this->getUsuarioscsv();
+        foreach ($usuarios as $key => $usuario) {
+            $idold = $usuario['idold'];
+            unset($usuario['idold']);
+            $newuser = User::insertGetId($usuario);
+            if(isset($envios[$idold])){
+                foreach ($envios[$idold] as $key => $envio) {
+                    $envio['user_id'] = $newuser;
+                    Useraddress::insert($envio);
+                }
+            }
+        }
+        return response()->json($usuarios);
+    }
 
+
+    public function getUsuarioscsv()  {
+        $filePath = public_path('usuarios.csv'); 
+        $csv = Reader::createFromPath($filePath, 'r');
+        $csv->setDelimiter(';');
+        // Lee los registros del archivo CSV
+        $records = $csv->getRecords();
+        // Procesa los registros como desees
+        $usuarios = [];
+
+        foreach ($records as $key => $record) {
+            /*echo "<pre>";
+            print_r($record);
+            echo "</pre>";*/
+            if($key > 0){
+                $usuario = [];
+                $usuario['idold'] = $record[0];
+                $usuario['user_names'] = $record[1];
+                $usuario['user_lastnames'] = $record[2];
+                $usuario['user_email'] = $record[3];
+                if($record[5]!= 'NULL'){
+                    $usuario['user_typeid'] = $record[5];
+                }
+                if($record[6]!= 'NULL'){
+                    $usuario['user_idnumber'] = $record[6];
+                }
+                $usuario['user_city'] = $record[7];
+                $usuario['user_phone'] = $record[9];
+                $usuario['user_address'] = $record[10];
+                $usuario['user_level'] = $record[11];
+                $usuario['user_state'] = $record[12];
+                if($record[13]!= 'NULL'){
+                    $usuario['user_user'] = $record[13];
+                } else {
+                    $usuario['user_user'] = $record[3];
+                }
+                $usuario['user_password'] = $record[14];
+                if($record[15]!= 'NULL'){
+                    $usuario['user_delete'] = $record[15];
+                }
+                if($record[17]!= 'NULL'){
+                    $usuario['user_code'] = $record[17];
+                }
+                if($record[18]!= 'NULL'){
+                    $usuario['user_informacion'] = $record[18];
+                }
+                array_push($usuarios,$usuario);
+            }
+        }
+        return $usuarios;
+    }
+
+    public function getEnviocsv()  {
+        $filePath = public_path('direcciones.csv'); 
+        $csv = Reader::createFromPath($filePath, 'r');
+        $csv->setDelimiter(';');
+        // Lee los registros del archivo CSV
+        $records = $csv->getRecords();
+        // Procesa los registros como desees
+        $envio = [];
+        foreach ($records as $key => $record) {
+            /*echo "<pre>";
+            print_r($record);
+            echo "</pre>";*/
+            if($key > 0){
+                if(!isset($envio[$record[1]])){
+                    $envio[$record[1]] = [];
+                }
+                $direccion = [];
+                $direccion['nombre'] = $record[2];
+                $direccion['documento'] = $record[3];
+                $direccion['telefono'] = $record[4];
+                $direccion['pais'] = $record[5];
+                $direccion['ciudad'] = $record[6];
+                $direccion['ciudadnombre'] = $record[7];
+                $direccion['barrio'] = $record[8];
+                $direccion['direccion'] = $record[9];
+                $direccion['adicional'] = $record[10];
+                $direccion['principal'] = $record[11];
+                array_push($envio[$record[1]],$direccion);
+            }
+        }
+        return $envio;
+    }
     
 }

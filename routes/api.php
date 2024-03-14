@@ -76,7 +76,8 @@ Route::group(['middleware' => 'cors'], function () {
     Route::get('/product', 'Main\ProductController@list')->name('list_product');
     Route::get('/product/detail/{id}', 'Main\ProductController@detail')->name('detail_product');
     Route::get('/product/carga', 'Main\ProductController@cargaMasiva')->name('carga_product');
-    Route::post('/product/setfield', 'Main\ProductController@setField')->name('setfield_product');
+    Route::get('/user/carga', 'UserController@cargaMasiva')->name('carga_user');
+   
 });
 
 Route::group(['middleware' => 'cors', 'middleware' => 'auth:api'], function () {
@@ -146,6 +147,15 @@ Route::group(['middleware' => 'cors', 'middleware' => 'auth:api'], function () {
     Route::post('/product/create', 'Main\ProductController@create')->name('create_product');
     Route::put('/product/update/{id}', 'Main\ProductController@update')->name('update_product');
     Route::delete('/product/delete/{id}', 'Main\ProductController@delete')->name('delete_product');
+    Route::post('/product/setfield', 'Main\ProductController@setField')->name('setfield_product');
+
+
+    Route::get('/user', 'Main\UserController@list')->name('list_user');
+    Route::get('/user/detail/{id}', 'Main\UserController@detail')->name('detail_user');
+    Route::post('/user/create', 'Main\UserController@create')->name('create_User');
+    Route::put('/user/update/{id}', 'Main\UserController@update')->name('update_User');
+    Route::delete('/user/delete/{id}', 'Main\UserController@delete')->name('delete_User');
+
      
      
 });

@@ -1,0 +1,936 @@
+id;usuario;nombre;documento;telefono;pais;ciudad;ciudadnombre;barrio;direccion;adicional;principal
+1;2;"Carlos Alberto Rodriguez";NULL;3183767475;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Chuniza;"Carrera 5 b No 88 - 50 sur";"2 piso";1
+5;2468;"Antonio Mar&iacute;a D&iacute;az";NULL;3138322413;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Recodo del Country";"Calle 127 C No 11 B 85";"Torre B 304";0
+6;138;"CARLOS ALBERTO RODRIGUEZ";NULL;3183767475;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";CHUNIZA;"CRA 5B NO 88 50 SUR";"SEGUNDO PISO";1
+7;2901;"CARLOS ALBERTO RODRIGUEZ";NULL;3183767475;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";CHUNIZA;"CRA 5 B NO 88 50 SUR";"SEGUNDO PISO";1
+8;2902;"CARLOS ALBERTO RODRIGUEZ";NULL;3183767475;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";CHUNIZA;"CRA 5 B NO 88 50 SUR";"piso 2";1
+9;780;"Rafael Ernesto Pino";NULL;3002150908;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Suba;"Transversal 80 #213-20  Casa 47";"Moraverde 1";1
+10;2859;"Juan Felipe Rojas Neme";NULL;3014584323;CO;76001000;"CALI, VALLE DEL CAUCA";Pampalinda;"Calle 5 # 62-00";"Universidad Santiago de Cali Blq 4 oficina 4303";1
+11;2909;"ANTONIO J RIVERA G";NULL;3138830723;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";CHICO;"calle 96 # 21-33";901;1
+12;2913;"ANGELICA BEATRIZ ROMERO ANGULO";NULL;3186940634;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"La granja";"Carrera 83#77-33";Casa;1
+13;2919;"CARLOS PEREZ";NULL;3251134789;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";USAQUEN;"CALLE 25 No 11 23 piso 2";"PISO 2";1
+14;2920;"CARLOS PEREZ";NULL;3251134789;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";USAQUEN;"CALLE 25 No 11 23 piso 2";"PISO 2";1
+15;2921;"CARLOS PEREZ";NULL;3251134789;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";USAQUEN;"CALLE 25 No 11 23 piso 2";"Torre 2";1
+16;2922;"CARLOS PEREZ";NULL;3251134789;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";USAQUEN;"CALLE 25 No 11 23 piso 2";"torre 1";1
+17;2925;Jose;NULL;"+57	6502530000";CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";;"Carrera 11A #94-45";;1
+18;2941;"Dora Uribe";NULL;3166206561;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Nicol&aacute;s de Federman";"Calle 58A#30-13";"Apartamento 201";1
+19;2943;"Catherine G&oacute;mez L&oacute;pez";NULL;3108453227;CO;05001000;"MEDELLÍN, ANTIOQUIA";"La Pradera";"Calle 48D # 93-36";"Callej&oacute;n primera puerta a la izquierda";1
+20;2948;"Nancy jauregui camacho";NULL;3108645316;CO;25269000;"FACATATIVÁ, CUNDINAMARCA";Chapinero;"Calle 5 602";Casa;1
+21;2972;"Carlos Alberto Ortiz Echeverri";NULL;3006080266;CO;05001000;"MEDELLÍN, ANTIOQUIA";"Robledo el Diamante";"Calle 78B #85A33";"Apartamento 301";1
+22;2973;"ANDRY YULIETH MACHADO";NULL;3117199945;CO;05001000;"MEDELLÍN, ANTIOQUIA";Aranjuez;"Carrera 54 # 92A-32";Casa;1
+23;2975;"JOSE RICARDO BETANCOURT VALENCIA";NULL;3154463857;CO;47001000;"SANTA MARTA, MAGDALENA";"CONJUNTO MIRACAMPESTRE 2 ABIERTO";"Calle 37    37-16  (Manzana C casa 8)";CASA;0
+24;2975;"JOSE RICARDO BETANCOURT VALENCIA";NULL;3154463857;CO;47001000;"SANTA MARTA, MAGDALENA";"CONJUNTO MIRACAMPESTRE 2 ABIERTO";"Calle 37  -  37-16  (Manzana C casa 8)";CASA;1
+25;2991;Jenifer;NULL;3158086432;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Suba villa maria";"Calle 128a #121d-21";;1
+26;2991;Daniel;NULL;3158086432;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Chapinero;"Cr 1c #44-44";;0
+27;2993;"camila alarcon";NULL;3103106998;CO;50001000;"VILLAVICENCIO, META";"modelo norte";"carrera 37l #19-18";;1
+28;2994;"Julian Rodriguez";NULL;3164308915;CO;76001000;"CALI, VALLE DEL CAUCA";"Valle del Lili";"Cra 102 # 45-45 Apto 402D";"apto 402D";1
+29;2947;"Ivyth Qui&ntilde;ones";NULL;3145484017;CO;76520000;"PALMIRA, VALLE DEL CAUCA";Samanes;"Carrera 30A # 47-32";"piso 2";1
+30;3003;"Maria Rebeca Garcia Monroy";NULL;3165440911;CO;08001000;"BARRANQUILLA, ATLÁNTICO";"La campi&ntilde;a";"Cra 46 #85-43 Edf Do&ntilde;a Elsa Aptp 6B";"Apto 6B";1
+31;3004;"Olga Lucia";NULL;3123773203;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Mar&iacute;a Cristina";"Carrera 2 este #61-05";"Torre 2 apto 303";1
+32;2468;"Miller Perdomo";NULL;"315 765 8601";CO;76001000;"CALI, VALLE DEL CAUCA";"San Vicente";"Avenida 7N No. 24N-61";;1
+33;3012;"Juan Gonz&aacute;lez";NULL;3012198283;CO;05001000;"MEDELLÍN, ANTIOQUIA";Poblado;"Trasversal 6# 45-79";"Casa Galer&iacute;a Lulas Decoracion";1
+34;3017;"Ivan Felipe Izquierdo";NULL;3104245494;CO;76001000;"CALI, VALLE DEL CAUCA";"San Benito";"Calle 34 # 28J-16, San benito";"Primer piso";1
+35;3024;"Juan Carlos Arandia";NULL;3164650700;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Britalia norte";"Cra 55a # 163-35";"Int 3 apto 209";1
+36;3030;"Jos&eacute; Alonso Suesca";NULL;3102894333;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Ricaurte;"Carrera 27 # 8 - 18";"Apto 301";1
+37;3036;"Daniella Arciniegas";NULL;3016081894;CO;08001000;"BARRANQUILLA, ATLÁNTICO";Boston;"calle 64 #47-74";"casa 3";1
+38;3038;"clara hernandez";NULL;3174289272;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"san simon";"calle 241 # 52 - 51 El Mandarino";"casa 10";1
+39;3043;"Lorena Araya";NULL;3152303668;CO;05001000;"MEDELLÍN, ANTIOQUIA";"Los Balsos";"Carrera 16 calle 12 sur-65";"801 Edificio Bellagio";1
+40;3044;"Manuel Alejandro Gallego Yanza";NULL;3234715048;CO;19001000;"POPAYÁN, CAUCA";"Corregimiento la rejoya. Parcelaci&oacute;n la lomita casa 021";"Corregimiento la rejoya parcelaci&oacute;n la Lomita casa 021";"Corregimiento la rejoya parcelaci&oacute;n la Lomita casa 021";1
+41;3048;"Sebasti&aacute;n Rodr&iacute;guez";NULL;3112454073;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"San Vicente Ferrer";"Carrera 29 #55A - 30Sur";Casa;1
+42;3049;"Nicolas Avila";NULL;3157250472;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Santa paula";"carrera 13bis#110-22";Casa;1
+43;3053;"Laura Sierra segura";NULL;3112885288;CO;25290000;"FUSAGASUGÁ, CUNDINAMARCA";"El vergel";"Calle 26#5-63!";504;1
+44;3054;"DAVID OSORIO BERMEO";NULL;+573107749882;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Portales del Norte";"Carrera 73 A No. 167-29 Casa 21";"Portales del norte, Casa 21";1
+45;3060;"Jenny Johana Cardenas";NULL;3168685003;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Bella suiza";"Cra 2A # 127B-12";Casa;1
+46;3062;"Juan Fernando Cifuentes Restrepo";NULL;3185357270;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Bat&aacute;n";"Carrera 51 # 123 A - 13 Edificio Torres de Torcoroma Apartamento 201";"apartamento 201";1
+47;3073;"Cristian Sandoval";NULL;3144786111;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Puente Largo";"Calle 114 # 56-62";"Apto 602, Edificio Sierra Morena";1
+48;3079;"Maria Angelica Santiago Giraldo";NULL;3163997135;CO;54498000;"OCAÑA, NORTE DE SANTANDER";"Urbanizacion Alejandria";"mnz 3 lote 2 apto 1";"Segunda calle del conjunto";1
+49;3080;"Heidy Jim&eacute;nez";NULL;3005525799;CO;05001000;"MEDELLÍN, ANTIOQUIA";Laureles;"Cll 33A #70A-101";"Torreon de Bolivariana Apto 401";1
+50;3092;"Marjie Dahiana Cordoba";NULL;3145931702;CO;76520000;"PALMIRA, VALLE DEL CAUCA";Molinos;"Cll 59b #42a-122";;1
+51;3097;Valeria;NULL;3182227313;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Chico norte";"Transversal 17 #98-45";"Apart 304";1
+52;3102;Angel;NULL;Lizarazo;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"STA Helenita";"Carrera 82 # 70-51";;1
+53;3118;"Juliana Macea";NULL;3174080126;CO;68001000;"BUCARAMANGA, SANTANDER";"Los pinos";"Calle 14 #35-111";"Edificio quinta serrana apto 502";1
+54;3119;"neyi yarid dorado fernandez";NULL;3147289993;;;NULL;"los alamos";"calle 55 an # 2bn76";casa;1
+55;3122;"Camila Salazar Forero";NULL;3174234698;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Sotileza;"Cra 79c #129-20";"Conjunto Montereserva - torre 2, apartamento 601";1
+56;3132;"Daniel Rodriguez B";NULL;3503776128;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Santa Paula";"Calle 109 #11-55";"Apto 803";1
+57;3133;Ferney;NULL;+573132214997;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Venecia;"La capilla";;1
+58;3134;"Ricardo Stiven muralla S&aacute;nchez";NULL;"320 612 2581";CO;68001000;"BUCARAMANGA, SANTANDER";"La castellana piedecuesta";"Calle 1 a 8 a 42 apartamento 201 la castellana";Casa;1
+59;3135;"Yaneth Fern&aacute;ndez";NULL;3194715640;CO;05001000;"MEDELLÍN, ANTIOQUIA";"Buenos Aires";"Calle 46 # 30 - 23";Casa;1
+60;3137;"Liana Carina Garc&iacute;a galarza";NULL;3108472396;CO;76147000;"CARTAGO, VALLE DEL CAUCA";"Los alpes";"Diagonal 1c t1c 114";;1
+61;3141;"LILIANA CAROLINA ROJAS";NULL;3124540294;CO;05001000;"MEDELLÍN, ANTIOQUIA";"FLORIDA NUEVA";"Carrera 72 No. 44A-32 INTERIOR 102 Florida nueva";"Carrera 72 No. 44A-32 INTERIOR 102 Florida nueva";1
+62;3143;"Carlos vladimir Chamorro";NULL;3157110101;CO;52001000;"PASTO, NARIÑO";"Barrio granada cuarta etapa";"Manzana M casa 11 barrio Granada Cuarta Etapa";"Cerca al cai";1
+63;3169;"Jeannette Mercedes Torres Fl&oacute;rez";NULL;3003465846;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Victoria Norte";"Cra. 53 #149-36 Int. 1 apto 201";"Interior 1 apto 201";1
+64;3180;"Germ&aacute;n Saavedra";NULL;3103020078;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Palermo;"Cra 15A Bis #45-58";Casa;1
+65;3182;"Jenny Rocio Guarnizo Cruz";NULL;3178865062;CO;25126000;"CAJICÁ, CUNDINAMARCA";Cajica;"calle 25 # 8 este 161  -Condominio reserva del prado";"Casa 103";1
+66;3189;"Yolanda Pinedo";NULL;3118927237;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Quirigua sector f";"Cra87a # 91-55 interior 5";;1
+67;3195;"Sergio Garcia";NULL;3006772743;CO;05266000;"ENVIGADO, ANTIOQUIA";"San Lucas";"Calle 25 Sur # 20-110";"Casa 10 Urb. Burdeos";1
+68;3197;"Karen Quiroga";1053829112;3203326442;CO;66001000;"PEREIRA, RISARALDA";Kenedy;"Av. Santander # 11 E - 175";Cedi;1
+69;3200;"jose rojas";NULL;30277954511;CO;08001000;"BARRANQUILLA, ATLÁNTICO";"san jose";"callle 45 65 40";;1
+70;3076;"Antonio Diaz";79521642;3138322413;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Recodo del Country";"Calle 127 C No 11 B 85";"Torre B 304";1
+71;3227;Juan;478569871;6502530000;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";;"Carrera 11A #94-45";;1
+72;3247;"Agrodex International SAS";802015298;3206787758;CO;08296000;"GALAPA, ATLÁNTICO";"entrando via galapa";"Calle 115 2-399 logistico california bodega 12A y 12B Barranquilla";"bodega 12a 12b";1
+73;3253;"Juliana Villabona";1098748112;3167620939;CO;68001000;"BUCARAMANGA, SANTANDER";"San Francisco";"Carrera 23 # 20-57 apartamento 601";;1
+74;3261;"Jorge Mario Restrepo Cadavid";15530938;3207798831;CO;05360000;"ITAGUI, ANTIOQUIA";"La Esmeralda";"Calle 64 # 44-18";Casa;1
+75;3267;"Carolina martinez reyes";37547423;3152101505;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Cedritos;"Calle 146 No. 7B -70,  int 2 apto 104 edf isarco";"Apto 104 int2";1
+76;3270;"Hector F Rendon O";16553254;3114240478;CO;76622000;"ROLDANILLO, VALLE DEL CAUCA";Centro;"Crr 6 # 8 - 22";;1
+77;3289;"Mauricio Diaz Trujillo";1007903257;3195035672;CO;05579000;"PUERTO BERRÍO, ANTIOQUIA";"Urbanizacion los indios";"Carrera 11 #43-27";"Puerto Berrio, Antioquia";1
+78;3289;"Mauricio Diaz Trujillo";1007903257;3195035672;CO;05001000;"MEDELLÍN, ANTIOQUIA";"Belen Rodeo Alto";"Calle 9A Sur #82-30, Belen rodeo alto";"Urb.Arcoiris, apto 203";0
+79;3305;Maria;2435465;6502530000;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";bogota;"Carrera 11A #94-45";;1
+80;3306;"ruben f taborda g";15916987;3146047772;CO;17001000;"MANIZALES, CALDAS";villapilar;"calle 11 4c 33 c10 n1 barrio villapilar. frente al reloj de bata";"apto 101";1
+81;3311;"Yenny Johanna Fierro Ceballos";38142840;3165224956;CO;76364000;"JAMUNDÍ, VALLE DEL CAUCA";"Verde Alfaguara";"Avenida El lago No 28-106 Conjunto Casazul";"Casa 85";1
+82;3312;Sandra;1032406574;3108704687;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Buenavista;"Cra 6a 189 b 61";Casa;1
+83;3435;"Alexis Chourio";4985536;3158067780;CO;;NULL;Engativa;"Calle 70a bis #121a-30 conjunto residencial mirador de jaboque torre 1";"Apto 304";1
+84;3438;"Johana cadavid";32181880;3059044243;CO;05001000;"MEDELLÍN, ANTIOQUIA";Laureles;"Calle 35 # 80b 28 apto 302";"Don quijote";1
+85;3439;ramiro;1109385642;3102109248;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"santa sofia";"Carrera 29b#77-52 piso 201";"al lado del D1";1
+86;3442;"a aaaa a";1105055447;32045891235;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";a;1;c;1
+87;3449;"Carolina Torres";53054000;3143958480;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"La soledad Norte";"Calle 75 No. 82-53";"Apto 401";1
+88;3450;"juan camilo";1076666311;3112964991;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";chapinero;"calle 66 #11-37";"apartamento 305";1
+89;3451;"zelines rivera";26196808;3143054443;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";chapinero;"calle 66 #11-37";"apartamento 305";1
+93;3459;"Carlos Alberto Rodriguez Laiton";1022981989;3183767475;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Chuniza;"Carrera 5B no 88 50 sur";"Piso 2";1
+94;3460;"ANTONIO MARIA";79521642;3138322413;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Recodo del Country";"Calle 127 C No 11 B 85, Torre B 304";"Torre B 304";1
+96;3462;Paola;52761475;"(310) 309-2528";CO;11001000;NULL;Capellania;"Calle 22a bis 89a 04";;1
+97;460;"Catalina Osorio";52619385;3108138983;CO;11001000;NULL;Niza;"Cra 70g bis #120-21";;1
+99;2;"Juliana Rodriguez";10234568;3183767475;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"La cazona";"Transversal 68 G sur no 67 -10";"Apartamento 101";0
+100;3469;"Juan ortiz";1011086481;3208528264;CO;11001000;NULL;"Nari&ntilde;o sur";"Calle 8 a sur #8a-51";"Conjunto parque de la octava interior 2 apto 103";1
+101;3471;"Adriana Parga";1014195621;3504164646;CO;11001000;NULL;"SAN ANTONIO";"Cr 18a # 182 - 58 casa 61";"Casa 61";1
+102;3472;"Yaneth Arias";52994458;3112361844;CO;11001000;NULL;Estrellita;"Carrera 3 A# 188-16";Casa;1
+103;3474;"Manuel Enrique D&iacute;az Gonz&aacute;lez";92517371;3107094341;CO;70001000;NULL;"Camilo Torres";"Carrera 9 # 22 B- 04";Casa;1
+104;3476;"Jeison david lopez cobaleda";1106307805;3219861399;CO;NULL;NULL;Centro;"Cr 17 n 41 27";"Almacen electrico";1
+105;3480;"Kevin Gomez";1001280821;3232915752;CO;25175000;"CHÍA, CUNDINAMARCA";Galerías;"Carrera 16#51a02";Casa;0
+106;3480;"Kevin Gomez";1001280821;3232915752;CO;25175000;"CHÍA, CUNDINAMARCA";Galerías;"Carrera 16#51a02";Casa;1
+107;3484;"Carlos Julio Murillo Ramirez";1105671041;3138597799;CO;NULL;NULL;Hipotecho;"Calle 5c#71-59";"Torre IOMED clínica de occidente";1
+108;3485;"Juan Rodríguez";1001066751;3215069847;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Bosa el recreo";"Kr 99A#71-39 sur";"Casa 110";1
+109;3491;"Cristian Bustos";3087077;3115927624;CO;25875000;"VILLETA, CUNDINAMARCA";Centro;"Calle 5 # 6-17";"Local cosechas";0
+110;3491;"Cristian Bustos";3087077;3115927624;CO;25875000;"VILLETA, CUNDINAMARCA";Centro;"Calle 5 # 6-17";"Local cosechas";1
+111;3496;Aronmaterano;17737388;3223830614;CO;NULL;NULL;"El porvenir";"Carrera 2 4-04";Tienda;1
+112;3497;"Santiago lache";1007103904;3208283347;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Londres;"Av cll 153#114b58";"Conjunto apartamento";1
+113;3498;"Diego Andrés Becerra Sarmiento";1065570331;3016720204;CO;20001000;"VALLEDUPAR, CESAR";"Las palmas";"Diagonal 20i #4a13";Casa;1
+114;3501;"Camilo Ernesto Marmolejo";1113639055;3177922887;CO;76520026;"ROZO, VALLE DEL CAUCA";Rozo;"Calle 14 no. 10-379";"Corregimiento de rozo";1
+115;3513;"Edward torres";80726414;3166574186;CO;11001000;NULL;"Suba Lombard&iacute;a";"Carrera 109 a # 150b 79 imperial reservado 2";"Torre 2 apto 703";1
+116;3514;"Sarahi Graterol";4921575;3022454614;CO;05001000;NULL;"Poblado, Manila";"Carrera 43D #11A 10";"Manila Hotel Boutique Recepci&oacute;n";1
+117;3517;"Jorge Luis Madrid";71906633;3148935891;CO;5264000;NULL;"Calle principal";"Calle 10#12-49";NULL;1
+118;3519;"Divier Alzate";1020496569;3156226009;CO;5088000;NULL;Pachelly;"Calle 68 #59-76";201-301;1
+119;3521;"Sarahi Graterol";132591205;3022454614;CO;05001000;NULL;Manila;"Cra 43D #11a10";"Manila Hotel Boutique Recepci&oacute;n";1
+121;2;"Carlos alberto Rodriguez laiton";10229819890;31837674756;CO;25426000;"MACHETA, CUNDINAMARCA";"sociego 1";"carrera 1  natura";"torre 31 apto 501 mio";0
+122;3525;"Wilson Veloza";1000621029;3228197454;CO;NULL;NULL;Chapinero;"Calle 59 #8-25";Local;1
+123;3527;"Jonatan Jiménez";1007971760;3005488448;CO;8001000;NULL;"Ciudad modesto";"Calle 85A #14-60";Casa;0
+124;3527;"Jonatan Jiménez";1007971760;3005488448;CO;8001000;NULL;"Ciudad modesto";"Calle 85A #14-60";Casa;1
+125;3532;"Mateo Rivas";1137060393;3108955296;CO;66001000;"PEREIRA, RISARALDA";Cuba;"Hacienda cuba";"Manzana 5";1
+126;3533;"Ra&uacute;l Poo Andrade";1094252663;"311 601 15 23";CO;05051000;NULL;"El deportivo";"Carrera 30 #25 - 61";"Institucion educativa Miguel Vicente Garrido Ortiz";1
+127;3518;"Pablo Almanza";52127548;3206805538;CO;25320003;"PUERTO BOGOTA, CUNDINAMARCA";"Barrios Unidos";"Cll 75 c N 57b-2";NULL;1
+128;3537;"Juan Parra";1137975810;3014467208;CO;23001000;"MONTERÍA, CÓRDOBA";"Manuel Jiménez";"Mz H Lt 7";NULL;1
+129;3538;"Alexander Bernal";87102002;3216457645;CO;17001000;"MANIZALES, CALDAS";Malabar;"Cra 39 #67b57";NULL;1
+130;3539;"Juan gallego";1036673696;3117939625;CO;5360000;NULL;"La Hortensia";"Cll 81 # 54-44";"Unidad residencial la Hortensia 1 bloqué 2 apto 501";1
+131;3540;leonardo;6542733;76879833;CO;13001000;NULL;"cayuc 22";"calle 33 con 44";"apto 23";1
+132;3543;"David gustavo laos lugo";1144170130;3147576708;CO;76001000;NULL;"Lares de confenalco";"Calle 71 i2#3n 46";"Casa primer piso";1
+133;3545;"LEIDY Botina";1107055039;3104708624;CO;;NULL;Cali;"Calle 58 #14-32";"Casa piso 2";1
+134;3547;"Juan David rivero";1073672100;3156393757;CO;25754000;"SOACHA, CUNDINAMARCA";"Prado los rosales";"Diagonal 39 a 18 84";"Casa de un piso";1
+135;3548;"Juan forero";1024600990;3016913780;CO;25754000;"SOACHA, CUNDINAMARCA";"Tres reyes (Bogotá)";"Kr77D #60b 62";NULL;0
+136;3548;"Juan forero";1024600990;3016913780;CO;25754000;"SOACHA, CUNDINAMARCA";"Tres reyes (Bogotá)";"Kr77D #60b 62";NULL;1
+137;3549;"Juan Diego Pérez";1032416920;3503557624;CO;NULL;NULL;Miramar;"Cra 129 # 131a-09";Casa;1
+138;3554;"Carlos Rodriguez";1137189367;3165390655;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Entre Ríos";"Carrera 65 #81-67";"Fundación Hematológica Colombia, dep. sistemas ext.125";0
+139;3563;"felipe landinez";80060810;3125311785;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"villa del prado";"cra 48 # 174b 07";"Int 7 Apto 103";1
+140;3567;"Steven García";1033797917;3212535109;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"María Paz";"Transversal 81 D número 34 A 80 sur";Casa;1
+141;3568;"Alejandra espejo";103625408;3024656598;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Milenta;"Carrera 56 #16 50 sur Int 5 apart 112";"Apartamento 112";1
+142;3572;"Jorge luis angel diaz";1003510187;3132117169;CO;25269000;"FACATATIVÁ, CUNDINAMARCA";"Dos caminos";"Cra17 #5-22";"Casa 3 pisos roja";1
+143;3574;"Erick prieto";1032940854;3103791086;CO;5631000;NULL;"Unidad misoni apartasuites";"Carrera 43A#63 sur-120";1308;0
+144;3575;"Sebasti&aacute;n Dur&aacute;n";901287910;"314 4009074";CO;11001000;NULL;Chapinero;"Carrera 15 no. 76-85 local 208  Edificio Tecno 77";;1
+145;3576;"Nicolas rivas";1144204525;3182827015;CO;76001000;"CALI, VALLE DEL CAUCA";"Los andes";"Cra 59d # 2c-64";NULL;1
+146;3580;"Jorge Enrique Carrillo Castiblanco";1001219039;3202385288;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Chapinero Alto";"Carrera 7#68-20";"Studios 68";0
+147;3577;"Rosmery Hernández";4950582;3113182309;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"7 de agosto";"Carrera 24 63D 24";Apto;1
+148;3585;"Dixon Torrejano";1000005774;3194324127;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Tesorito;"Cll 81 sur #18 D 62";NULL;1
+150;3573;"Jose Alayon";174942614;3508270639;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Chapinero;"Calle 56 Bis #9-14";"Edificio Lugaro";1
+151;3598;"Marlon Franco";79908710;3192110569;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"San Cristobal";"Carrera 12 este 11-25 sur";"Torre 13 apartamento 201";0
+152;3599;"DANIEL JOSE RIVERA VIERA";16736556;3102777628;CO;76001000;NULL;"CIUDA DOS MIL";"CARRERA 67 46 54";CASA;1
+153;3607;"David Santiago Amado caballero";1004915031;3044834036;CO;68001000;"BUCARAMANGA, SANTANDER";"Divino niño";"Carrera 2 7n-35 divino niño";Casa;0
+154;3607;"David Santiago Amado caballero";1004915031;3044834036;CO;68001000;"BUCARAMANGA, SANTANDER";"Divino niño";"Carrera 2 7n-35 divino niño";Casa;1
+155;3605;"Richard lopez";1004360981;311348783;CO;47001000;"SANTA MARTA, MAGDALENA";"Luis r calvo";"Kra 46 cl 7c50 apto 201 Luis r calvo";NULL;1
+156;3613;"Fayber Rodríguez cubides";80173503;3045325655;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"El amparo kennedy";"Carrera 82a No. 41f-70";Casa;1
+157;3620;"José Miguel bermudez montoya";1130653434;3128234820;CO;76001000;"CALI, VALLE DEL CAUCA";"Remansos de comfandi";Calle121b#26i6-35;Casa;1
+158;3625;"Julian andres rueda";1003826076;3107696938;CO;25899000;"ZIPAQUIRÁ, CUNDINAMARCA";Esmeralda;"Crr 9 8 48";"Negocio cafeteria";1
+159;3629;"Jonh Jairo cortes Carvajal";93395132;3193379789;CO;73001000;"IBAGUÉ, TOLIMA";"Urbanización la esperanza";"Mz D casa 6";NULL;1
+160;3631;"Juan Felipe olaya zuñiga";1033710452;3024812757;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"La fraguita";"Carrera 26 #9- 28";Casa;0
+161;3636;"Kevin Medina";1019991835;3178715050;CO;25430000;"MADRID, CUNDINAMARCA";"La prosperidad";"Calle 6 sur #23-187";"Torre 5 apartamento 407";1
+162;3647;"Fabián Hernández";7187832;3202573508;CO;15001000;"TUNJA, BOYACÁ";"Antonia Santos";"CRA 8 1a 60 sur mza D torre 2 apto 403";Apto;1
+163;3648;"Diego Bautista";80791932;3154814603;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Kennedy socorro";"Calle 50 sur #77q-13";"Casa esquinera";0
+164;3651;"Andres sedas";1013103464;3224066060;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Parques de bogota bosa recreo";"Calle 85sur 92-85";"Torre 4 apto 501";1
+165;3624;"Sandra Noguera";1140831055;3104931057;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Santa Isabel";"Calle 5A#27B-36";Apartamento;1
+166;3669;"Oscar Marín";14637664;3174302792;CO;76001000;"CALI, VALLE DEL CAUCA";"Morichal de comfandi";"Carrera42c2 #56d-06";"Segundo piso";1
+167;3670;"LAURA CAMILA HUERTAS SUTA";1014251592;3118712118;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"CHAPINERO CENTRAL";"AV CARACAS #65A 66";"LOCAL 1 Y 2";1
+168;3671;"Ehsneider Javier quintero cuesta";1001274087;3134306956;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Minuto de María";"CR 18 b bis N 80.ª 80sur";Casa;1
+169;3698;"Milton fuentes";1131108523;30259435283;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Molinos;"Dg. 48m Sur #5x-50";"Apartamento 1";1
+170;3707;"Diego Ortegón";1069727147;3103225051;CO;25430000;"MADRID, CUNDINAMARCA";"La prosperidad";"Calle 6 sur 23 187 conjunto Fontana 1";"Torre 2 apartamento 201";0
+171;3707;"Diego Ortegón";1069727147;3103225051;CO;25430000;"MADRID, CUNDINAMARCA";"La prosperidad";"Calle 6 sur 23 187 conjunto Fontana 1";"Torre 2 apartamento 201";1
+172;3715;"Luis Ramos";1026261028;3242834829;CO;25899000;"ZIPAQUIRÁ, CUNDINAMARCA";"San Rafael";"Calle 30 No 17-140";"Conjunto Salinas 1 torre 3 apto 707";1
+173;3725;"Kevin vargas";1023955345;3143277111;CO;76001000;"CALI, VALLE DEL CAUCA";Calimio-decepaz;"Cra26p #122-31";"Casa 1";1
+174;3736;"Andrés Castro";1032797027;3011575258;CO;25754000;"SOACHA, CUNDINAMARCA";"La cañada";"Calle22a #9-70";Casa;1
+175;3739;Oscar;1012440648;3227527193;CO;25754000;"SOACHA, CUNDINAMARCA";Olivos;"Transversal 14 b #43-36";Casa;1
+176;3745;"Luis torres";79813383;3115736998;CO;25473000;"MOSQUERA, CUNDINAMARCA";"El poblado";"Calle 10 17a 21";Casa;0
+177;3756;"Alejandro Palacios tamayo";79878870;3192916233;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Andalucia;Cra81c#13f33;Casa;1
+178;3758;"William Vargas";7229816;3144256304;CO;25295000;"GACHANCIPÁ, CUNDINAMARCA";"Las Mercedes";"Calle 2 C # 217";Casa;1
+179;3763;"Ronaldo Villanueva";1045754047;3143546059;CO;91001000;"LETICIA, AMAZONAS";"Victoria regia";"Calle 11 no 14 - 74";"Edificio de la Armada apt 201";1
+180;3764;"Elver Andres Sánchez Beltrán";80165978;3145130595;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Kennedy;"Calle 47b 78m 15 sur";"4 piso";1
+181;3777;"Miguel Goyeneche";1000857832;3202728829;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Boyaca real";"Cll 71 # 72-27";Casa;1
+182;3788;"jose david correal rodriguez";1028865124;3218164231;CO;25754000;"SOACHA, CUNDINAMARCA";"san mateo";"calle 29c #6g 21E";"la casa tiene tejas azules y un porton blanco esta ubicada en armero comuna 5";1
+183;3776;"Omar Indaburo";1033748182;3004869373;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"SN Francisco";"Cra 20 c # 54 63 sur";Casa;1
+184;3791;"Elis carrero";88256849;3133849760;CO;54001000;"CÚCUTA, NORTE DE SANTANDER";"Rudesindo Soto";"Calle 19 # 30-40";NULL;1
+185;3802;"Hernan Alonso espitia Vélez";1016008079;3106737182;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"fontibon El carmen";"cra 103a Bis #16 h 33";casa;1
+186;3803;"Carlos Andrés gomez";1039681806;3228298075;CO;5147000;NULL;"Reserva las playas";"Calle 77 nro. 83-68";"Cas 17";1
+187;3806;"Wilson ramirez";1193046176;3022043176;CO;8001000;NULL;Centro;"Calle 37 #43-158";"Importadora el hueco";1
+189;3789;"German Acosta";3131602;3167895182;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Primavera, Patio Bonito";Calle2#89d37;"Manzana 12, Casa 183";0
+190;3813;"Adrian carmona";29752651;3166741697;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Los nagales";Cra132#132-45;"Casa segundo piso";0
+191;3817;"Meyer Acosta";80199067;3014191700;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Verbenal;"Cr15bis #188-87";Casa;1
+192;3830;"Andrés López";1026553707;3132487825;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"San Jorge central";"Carrera 30 # 30 45 sur";"Casa segundo piso";1
+193;3831;"Jordan Riaño";1000136303;3136282236;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Divino niño";"Carrera 87h # 69a-44sur";Casa;1
+194;3835;"Juan David mahecha vargas";1141320507;3052750188;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Santamaria de Kennedy";Cr82#53B21sur;"Casa de 3 pisos";1
+195;3836;"Alejandro Antonio cabás Méndez";8.795.325;3027308159;CO;13430000;"MAGANGUÉ, BOLÍVAR";"Miraflores, bajando por el tauro";"Cra 32 # 15-10 barrio miraflores, bajando por el tauro";Casa;1
+196;3842;"Daniel Gonzalez";1026569465;3176781406;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Kennedy Central";"Carrera 78 a #38c90sur";Casa;1
+197;3843;"Luis hernandez";11413880;3103058620;CO;25151000;"CAQUEZA, CUNDINAMARCA";"San fernando";"Calle 3#2-173sur";"Casa de barrio 2 piso";1
+198;3848;"Miguel Angel Morales Bernal";79906586;3133069261;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Bochica 4";"Cra 101 # 83-90 int 7 Ap 407";"int 7 Ap 407";1
+199;3826;Jeinerjulioluna;1101447825;3114898264;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Kennedy roma";"Calle 57 g sur #79 g 11";"2 piso piel morena";1
+200;3804;"Aidam Alejandro Sánchez Henao";1010962523;3123430144;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Santa lucia";Cr23#43-19;NULL;1
+201;3856;"Elmer Castaño";1087558905;3216541962;CO;66400000;"LA VIRGINIA, RISARALDA";Caimalito;"Caimalito azufral";"Casa # 60";1
+202;3870;"DUVAN PÉREZ";1013632288;3017740181;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"San Francisco";"TV 23 # 66 a 12 sur";NULL;1
+203;3889;"Rober alvarez";80795212;3167751913;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Santa catalina";Carrera81c#11d-15;Casa;1
+204;3895;"Arley González";1014862618;3208645186;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Rincón de boyaca";"Calle 126c #118a-07";"Casa 4 piso";1
+205;3901;"Cristian Alexander Rodríguez Domínguez";1116241593;3166721811;CO;76834000;"TULUÁ, VALLE DEL CAUCA";Principe;"Calle 41 # 22-37";Casa;1
+206;3905;"Wilson uriel arroyave villa";3473946;3013442098;CO;5001000;NULL;"Barrio las palmas";"Carrera 40#43-01";"Mascotienda chimuelos";0
+207;3902;"Camilo pineda";1049631358;3102292046;CO;15001000;"TUNJA, BOYACÁ";Popular;"Calle 21 # 15 - 42";.;1
+208;3909;"Juan Carlos Camargo";88179540;3212578095;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Bosque izquierdo";"Carrera 4A # 26A - 91";"Apto 903 edificio independencia";1
+209;3935;"Juan tamara";1024579868;3124411798;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Tunal;"Diagonal 62 sur #20b-30";"Casa verde 1";1
+210;3949;"Daniel Esteban Garces";1020738934;3043281404;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Buenavista;"Calle 189b # 5d - 15";Casa;0
+211;3949;"Daniel Esteban Garces";1020738934;3043281404;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Buenavista;"Calle 189b # 5d - 15";Casa;1
+212;3951;"Sebastian salcedo";1038139288;3015699146;CO;5001000;NULL;"Robledo miramar";"Cra 79b #92-127 3er piso";Casa;1
+213;3953;"Nicolás laiton";1034279196;3203525520;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Nueva deli";"Cl 63 sur #14-84 este";Apartamento;1
+214;3955;"Anthony Javier Restrepo Zamora";1111805229;3162113206;CO;25754000;"SOACHA, CUNDINAMARCA";"Ciudadela Sucre";"En el paradero";Casa;1
+215;3961;"Daniel Sebastián Penagos Yepes";1069256607;3133451521;CO;25295000;"GACHANCIPÁ, CUNDINAMARCA";NULL;"Vereda Roble Centro";NULL;1
+216;3964;"Daniel Hernandez";79648031;3124613000;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Suba;"Diagonal 146#136a-59";"Torre 11 apto 444";1
+217;3965;"JOSE RICARDO RAMOS GUATAQUIRA";1049797418;3118908901;CO;15322000;"GUATEQUE, BOYACÁ";"Santa Barbara";"CRA 7#13-29";"Tienda cafe";0
+218;3965;"JOSE RICARDO RAMOS GUATAQUIRA";1049797418;3118908901;CO;15322000;"GUATEQUE, BOYACÁ";"Santa Barbara";"CRA 7#13-29";"Tienda cafe";1
+219;3720;"Wilson Fernando Aguja Lopez";80745467;3158175653;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Potosi;"Calle 77 # 41- 11 sur";Casa;1
+220;3986;"Antonio Diaz";79521642;3138322413;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Recodo del country";"Calle 127 c No 11 b 85";304;1
+221;3990;"Michael osorio";1121891265;3212212104;CO;50001000;"VILLAVICENCIO, META";Nogal;"Calle 22 23 48";Casa;0
+222;3990;"Michael osorio";1121891265;3212212104;CO;50001000;"VILLAVICENCIO, META";Nogal;"Calle 22 23 48";Casa;1
+223;3995;"Jorge andres paez";80761899;3504185607;CO;25754000;"SOACHA, CUNDINAMARCA";"San mateo";"Carrera 4 este numero 30-100";"Interior 18 apartamento 202";1
+224;3989;"Eduardo arciniegas";91265549;3194237553;CO;68001000;"BUCARAMANGA, SANTANDER";Ricaute;"Carrera 17b1 # 57-23";"Trabajo oficina";1
+225;4007;"Alexander Buesaquillo Ayala";73006373;3043454349;CO;13001000;"CARTAGENA, BOLÍVAR";"La princesa";"Urbanización la princesa MANZANA 12 LOTE 21 piso 2";"PISO 2";1
+226;4012;"Giovanni Gamez";80166301;3238108266;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Ciudad jardin sur";"Carrera 12#17-81sur";Casa;1
+227;4014;Mauroandreslagunapedrozo;1002358248;3144726280;CO;5001000;NULL;"Santo domingo";Calle107D34-29;Casa;1
+228;4049;"Luis carlos alvarez avila";1022974853;3104940199;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Floralia;"Cra 68 n #31-41 sur";Bodega;0
+229;4049;"Luis carlos alvarez avila";1022974853;3104940199;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Floralia;"Cra 68 n #31-41 sur";Bodega;1
+230;4074;"Andres mauricio sanchez corredor";80031133;3105104518;CO;73001000;"IBAGUÉ, TOLIMA";"La arboleda";"Arboleda casas manzana 13 casa 33";"Manzana13 casa 33";0
+231;4074;"Andres mauricio sanchez corredor";80031133;3105104518;CO;73001000;"IBAGUÉ, TOLIMA";"La arboleda";"Arboleda casas manzana 13 casa 33";"Manzana13 casa 33";1
+232;4077;Harlon;Parra;3187991677;CO;95001000;"SAN JOSÉ DEL GUAVIARE, GUAVIARE";Modelo;"Calle 13 N:19-36";NULL;1
+233;4019;"Marvin Aramburo";1007838943;3204126221;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";primavera;"carrera 41 c # 5b-43";"apartamento 301";1
+234;4082;"Jeydic Bohorquez";52930179;3132839178;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Alquería la fragua";"Carrera 68 c bis a #38  c -41  sur";"Casa piso 3";1
+235;4087;"Breinder hernando mato pacheco";72294591;3183603930;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Ramajal;"Calle 30 a sur 9-11este";"Casa 2 piso";1
+236;4099;"Julio cesar luna gomez";80072051;3138863704;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"El carmen";"Calle 48B sur #27-87";Casa;1
+237;4102;Cristian;1121898313;3215677208;CO;15176000;"CHIQUINQUIRÁ, BOYACÁ";"Boyacá alto";Calle8#1205;Casa;1
+238;4100;"María Raquel Sandoval castillo";41225704;3207979876;CO;95001000;"SAN JOSÉ DEL GUAVIARE, GUAVIARE";"EL Dorado";"Calle 13 No 24 A 46";Casa;1
+239;4113;"Jeisson suarez";1012454824;3228577659;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Bosa la paz";"Calle 65 sur #82 i 07";"Casa esquinera";1
+240;3818;"Luis Guluma";80763481;3142983077;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Portales del norte";"Cll 168 #62 66 casa 13";"Cass 13";1
+241;4118;"Daniel Vega";1018434116;3125517532;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Los Alpes";"Calle 36 sur #9-21 este";NULL;1
+242;3915;"Renson arias";1082644984;3138605834;CO;54001000;"CÚCUTA, NORTE DE SANTANDER";Panamericano;"Av8 #11-23";Casa;0
+243;3915;"Renson arias";1082644984;3138605834;CO;54001000;"CÚCUTA, NORTE DE SANTANDER";Panamericano;"Av8 #11-23";Casa;1
+244;4124;"Pablo galvis Gutierrez";1001235920;3669941;CO;5376000;NULL;"El recreo";"Carrera 19 #27 29";"Edificio torre color, apartamento 304";1
+245;4126;"Norman Aguirre";98135906;3218354975;CO;76001000;"CALI, VALLE DEL CAUCA";Granada;"Avenida sexta Norte #17-73 hotel six avenue";Casa;1
+246;4133;"Omar Elias torres hernandez";16916539;3187382303;CO;76001000;"CALI, VALLE DEL CAUCA";Santodomingo;"Carrera 48 # 13-72 piso 2";"Casa piso 2";1
+247;4143;"Sebastian Martinez";1193561940;3006266292;CO;85410000;"TAURAMENA, CASANARE";Gaitan;"Calle 2b #5-61";"Casa con taller de frenos y papelería";1
+248;4149;"Juan Felipe Arias Espinosa";1075871472;3156117394;CO;25817000;"TOCANCIPÁ, CUNDINAMARCA";"Verga zo";"San Javier manzana A casa 42";"Rejas verdes";1
+249;4150;"gilberto taborda";1112758407;3203727883;CO;18753000;"SAN VICENTE DEL CAGUÁN, CAQUETÁ";"puerto redondo";"calle 3 #634";centro;1
+251;4157;"Erik Montero";1012338592;3145050660;CO;25754000;"SOACHA, CUNDINAMARCA";"San Mateo";"Calle 30 #6f-07este";"Apto 201";1
+252;4163;"Felipe Moreno";1018443778;3168200333;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Atabanza 4";"Carrera 51A # 127-52";"Interior 3 Apartamento 202";1
+253;4172;"Damian Barrera";1022941565;3217509460;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"El ensueño";"Calle 68f sur No 51-95";"Bloque 2, apto 205, conjunto robles II";0
+254;4176;"Santiago lopez";1120498001;3112351790;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Cedritos;"Carrera 9a 134b-71";"Casa 2 piso";1
+255;4182;"Rafael Rodríguez Fonseca";80897960;3153839137;CO;25754000;"SOACHA, CUNDINAMARCA";Lincoln;"Calle 18 # 8-67 torre 6 apto 101 conjunto torres del camino 3";"Torre 6 apto 101";1
+256;4183;"Johan Steven Prieto Rodriguez";1000033901;3223426642;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"La gloria";"Calle 43 a sur #10-42 este";Casa;1
+257;4194;"Julián David Herreño Escobar";1076240518;3026960558;CO;25899000;"ZIPAQUIRÁ, CUNDINAMARCA";Barandillas;"Calle 8#-39-129";"Riveras de susagua casa 61";1
+258;4201;"Ana maría molina andrade";1018499373;3027400638;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Perdomo alto";"Tv73D Bis #66-65 Sur";Casa;1
+259;4202;"Dillann Stiff Rojas Millán";1012440668;3229290784;CO;50606000;"RESTREPO, META";"BRISAS DEL LLANO";"Calle 9 1E 52 Mz O";"Casa #3";1
+260;4204;"Jonathan Lopez";1016097054;3146078424;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Marsella antigua";"Cra. 69f #8-80";Casa;1
+261;4207;"Dillann Stiff Rojas Millán";1012440668;3229290784;CO;50606000;"RESTREPO, META";"BRISAS DEL LLANO";"Calle 9 1E 52 Mz O";Casa#3;1
+262;4208;"Carlos puello";1005583226;3003317475;CO;70215000;"COROZAL, SUCRE";"Buenos Aires";C21g#40f;Casa;1
+263;4210;"Juan Sebastián Maldonado Solano";1193101044;3204892496;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Olaya;"Calle 28 a bis # 21-10 sur";"Casa segundo piso";1
+264;4218;Oscarbello;1075654298;3219618208;CO;25899000;"ZIPAQUIRÁ, CUNDINAMARCA";Barandillas;Calle2a#329;Casa;1
+265;4222;"Mateo Ozuna Montoya";1005087729;3052981287;CO;63130000;"CALARCÁ, QUINDÍO";Centro;"Cra 28a #39-42";"Casa #3";1
+266;4231;"Jorge Fuer";87712381;3187091030;CO;52678000;"SAMANIEGO, NARIÑO";"Nuevo Horizonte";"Carreta 6 # 4-06";"Ips Guadalupe";1
+267;4237;"Cristofer cruz";1000938406;3115882635;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Barrio la paz";NULL;Casa;1
+268;4241;"Alejandro Rojas";86088442;3117137442;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Cantón norte";"Carrera 11b #104-48";Icfe;1
+269;4243;"Michael guzman";1015421903;3028519487;CO;5088000;NULL;Avellaneda;"Carrera 63a # 77-20";"Apt 102 torre 1";1
+270;4244;"Ricardo correa";16836884;3186498462;CO;76364000;"JAMUNDÍ, VALLE DEL CAUCA";"Portal del jordan";Carrera5#1an04;Casa;1
+271;4246;"Esteban Ramírez";1014255715;3103108672;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Gaitán;"Diagonal 78 bis #52-36";"Local tapiespumas";1
+272;4252;"Tania Rojas";1019994904;3142332653;CO;25430000;"MADRID, CUNDINAMARCA";Echavarría;"Calle 11a #10-74";Casa;1
+273;4256;"Johan Hernández";1233501754;3197172371;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";Britalia;"Calle 46b #84-37 sur";Casa;1
+274;4267;"Juan Camilo Segura Rodríguez";1019067385;3227312721;CO;11001000;"BOGOTÁ D.C., BOGOTÁ D.C.";"Suba Bilbao";"Calle 143#151a12";Casa;1
+275;4280;"Sebastián Ramírez";1028782468;3138150057;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Olivares;"Cll75 c bis sur #2-39";Casa;1
+276;4283;"Sebastian Borges";24493866;3142561682;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Alcacerez;"Kr 27 - 70 - 55";"Apartamento, primer piso, la ventana da hacia la calle";1
+277;4284;"Finca la mojarra";79505508;3136263007;CO;25394000;"LA PALMA , CUNDINAMARCA";Batan;"Finca la mojarra";Finca;1
+278;4286;"Leandro Villamarín";1019764568;3124471608;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa recreo";"Kra 103 No 73-51 sur";"Casa 280";1
+279;4291;"Julián David Molina Hernández";1003908716;3045424011;CO;25817000;"TOCANCIPÁ , CUNDINAMARCA";"LA ARBOLEDA";"Transversal 7 #15-51 Manzana C interior 65";65;1
+280;4281;"Mylton forero";1019045685;3213157955;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Carlos de tibabuyes";"Calle142c # 139 - 09";"Segundo piso";1
+281;4324;"Camilo carrero";1193075259;3107614834;CO;25175000;"CHÍA , CUNDINAMARCA";Samaria;"Cra. 5 Este #11-83";"Torre 22 apartamento 201";1
+282;4336;"Camilo acosta";1013629403;3118246930;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Monte video";"Cra68 # 17 -65";"Estacion de gasolina terpel las palmas";1
+283;4337;"Brayan avilan";1032467024;3124455545;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Villanueva;"Calle 39 h sur #68 g 49";110810;1
+284;4341;"Calle 86a #14-48";1007020122;3043462009;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La cabrera";"Calle 86a #14-48";"Apto, por la 86a en la esquina antes de llegar a la15";1
+285;4355;"Carlos Estupiñan";1001060773;3192151889;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La paz";Cra4c#52a-32sur;Casa;1
+286;4080;"FERNANDO MENDEZ";1026253787;3133067695;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"EL CONTADOR";"CL 136 # 17A-33";"AP 203";1
+287;4369;"Neider Quintero";11110592064;3023647289;CO;73001000;"IBAGUÉ , TOLIMA";"La pola";"Carrera 2 #6-50";"Parqueadero San Andrés";1
+288;4372;"Stiwenson saldarriaga";1128056514;3137458070;CO;13001000;"CARTAGENA , BOLÍVAR";Turbaco;"Conjunto multifamiliar brisas de galicia";"Bloque Q apto 106";1
+289;4352;"Santiago Cifuentes escobar";1007393988;3106675253;CO;5756000;NULL;"La plaza";"Cr 7 # 7-38";"Casa blanca";1
+290;4381;"Edward Perilla";1000134073;3126869522;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa de cali";"Cr 86C # 56-04 sur";"Casa esquinera";1
+291;4385;"Fabián Gonzalez";1012348808;3102781525;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Class;"Carrera 80j #57h-04";Casa;1
+292;4391;"Jean Javier Silva Jaramillo";72215731;3132066595;CO;66170000;"DOSQUEBRADAS , RISARALDA";"La alameda Dosquebradas Risaralda";"Carrera 10 # 64 d 28 casa 38";"Casa 38";1
+293;4390;"Cristhian Camilo Montaño López";1019105320;3115438201;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Suba caminos de la esperanza";"Carrera 145 # 150 64";"Torre 2 apto 1214";1
+294;4394;"Liliana Bravo Mesa";1018435589;3213954177;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudadela sucre, los pinos";"Calle 38a #30este 54";Casa;1
+295;4404;"Javier Andrés zorrilla avila";1030702978;3206286518;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa santa fe";"Calle 57 b bis #98 c 82";"Casa 2 cuadras arriba del salón comunal bosa santa fe";1
+296;4411;"Fabian alexander neira celis";1030653351;3239879085;CO;25430000;"MADRID , CUNDINAMARCA";"San jose";"CALLE 13 sur NO 21-76";"Primer piso";1
+297;4419;"Cristian Mateo Patarroyo Ramirez";1031177084;3202714864;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Lomas , rresurrecion .";"Cr 12 a bis 32f-05 piso 2";Casa;1
+298;4423;"SMITH GALINDO";1033726627;3209624427;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Agustín";"Calle 48 z bis #5f-11 sur";Casa;1
+299;4412;"FABIAN AGUSTO RINCÓN CAMELO";1020767911;3185896828;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Antonio Norte";"cra 18 a # 182-59 torre 3 apto 302";"t 3 apto 302";1
+300;4429;"Marcos Rubén Monroy Niño";1049643450;3146201093;CO;15001000;"TUNJA , BOYACÁ";"La Fuente";"Calle 33a #17-26";Casa;1
+301;4434;"Jhonatan Stiven Uribe itaz";1003822443;3236137836;CO;41298000;"GARZÓN , HUILA";"Santa Teresa";"Cr 13 #3-28";"Al lado de medi mas";1
+302;4327;"Mario Daniel Rodríguez Rubio";79216998;3152480604;CO;50001000;"VILLAVICENCIO , META";"El jardín";"Transversal 25 # 13-34 casa 6-13 conjunto la cabaña";NULL;1
+303;4439;"Cristian garzon";1069099900;3046700537;CO;25486000;"NEMOCÓN , CUNDINAMARCA";"Los profesores";"Carrera 5 # 7a-35";"Primer piso";1
+305;4450;"Sebastian aguirre";1016069538;3024674505;CO;25260000;"EL ROSAL , CUNDINAMARCA";"San juan";"Cra 8a #11-04";101;1
+306;4451;"Johan Reyes";1001670819;3043960928;CO;5147000;NULL;Jardín;"Carrera 66, calle 81 casa 80 - 02";"Casa 80 - 02";1
+307;4465;"César Felipe Montealegre Castellanos";1000127097;3160426801;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Zarzamora;Cra91a#71a-16;Casa;1
+308;4469;"Cristian restrepo castro";104048243;3137487118;CO;5376000;NULL;"Ciudadela de las flores";"Carrera 8a #13b 09";Casa;1
+309;4482;"Javier monar";932989998;3214794822;CO;73001000;"IBAGUÉ , TOLIMA";Samaria;"Fortezza uno torre e apartamento 1501";NULL;1
+310;4484;"Juan David Diaz Romero";1019982429;3023652422;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La Riviera";"Calle 70DBis114A54";"Casa puerta blanca tres pisos";1
+311;4485;"Omar Garzón";1.115.915.498;3102564264;CO;17380000;"LA DORADA , CALDAS";Laureles;"Crr 2c #26-259";NULL;1
+312;4495;"Carlos Felipe Gómez VARON";1005827017;3134641817;CO;25175000;"CHÍA , CUNDINAMARCA";NULL;"Avenida pradilla #9-00 este centro comercial centro Chia local 161 el carnal";"Local 161";1
+313;4497;"Javier Fernando Alayon";79859597;3008996019;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa Gladys";"Calle 64 D 112 C 50 Torre 15 apartamento 303";Apartamento;1
+314;4498;"Juan Diego Vargas Soto";1017191501;3507264157;CO;5001000;NULL;"La milagrosa";"Cr 23 # 38-73";307;1
+316;4504;"Sindy yohana diaz";1073153473;3197981712;CO;25473000;"MOSQUERA , CUNDINAMARCA";Arboleda;"Crr 13 #22-15 interior 1";Casa;1
+317;3734;"Leonardo Martín";79893687;3238152339;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"República del Canadá";"Calle 53d sur 12a43este";Casa;1
+318;4513;"Oscar Buitrago";1077083101;3102792303;CO;25817000;"TOCANCIPÁ , CUNDINAMARCA";"Los Alpes";"CRA 4#7-62";Casa;1
+319;4564;"Johan garay";1070384774;3224475895;CO;25099000;"BOJACÁ , CUNDINAMARCA";"Las Vegas";"Calle 8 número  9 23";Casa;1
+320;4566;"Daniel rentería";1148444411;3105200351;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Ciudad Tintal 2 etapa 6";"Calle 6A#93D-67";Apartamento;1
+321;4572;"Javier Rendón";12447234;3014469454;CO;47189000;"CIÉNAGA , MAGDALENA";Miramar;"Calle 3 7-36";Casa;1
+322;4577;"Alejandro García Perez";80725941;3173778148;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La esmeralda";"Calle46 #55-51";Casa;1
+323;4593;"Camilo Murillo";1070386799;3202224875;CO;25286000;"FUNZA , CUNDINAMARCA";"El lago";"Calle 14#16-50";"Casa blanca alpie de una tapicería";1
+324;4596;"Adelaida sofia Galicia González";1033805883;3014079048;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La fiscala alta";"Calle 64 sur #5 - 18 este";Propia;1
+325;4599;"Daniel martinez";79848157;3208008280;CO;25473000;"MOSQUERA , CUNDINAMARCA";"El trebol";"Calle 10# 4e23";"Mz 7, Int 2, casa 24";1
+326;4623;"Yeison Murillo";1110523439;3229130922;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San José sur";Cra11#25-15sur;"Casa 2 piso llamar antes gracias";1
+327;4634;"José Gregorio Pérez Tarriba";1048277947;3005321068;CO;8433000;NULL;"Via caracoli";"Sexta entrada via caracoli km2-701 agrosan";"Empresa portón verde";1
+328;4636;"Erik Machuca";1028481371;3144015016;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Prado veraniego";"Calle 128b #50a13";NULL;1
+329;4637;"Luis bolaño";1081813372;3003556712;CO;20001000;"VALLEDUPAR , CESAR";"Los cortijos";"Cra 19c #9c 85";"Apartamento blanco 1 piso";1
+330;4640;"Jefreyth Gil";1027401062;3142022440;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bochica sur";"Cll 48 j bis c sur #5b 27 int 9";Casa;1
+331;4646;"Sebas Pineda";1075871074;3008417628;CO;25758000;"SOPÓ , CUNDINAMARCA";"La Montana";"Cra 5 # 3-22";"Oficina de transporte";1
+332;4662;"Efraín González";80069338;3058909835;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Parques de Bogotá Bosa";"Calle 78 bis sur # 94-27";"Conjunto Villa Verde Torre 6 apartamento 2022";1
+333;4676;"Hector Fabio Mosquera";1088008799;3148103874;CO;66170000;"DOSQUEBRADAS , RISARALDA";"Los Reyes";"Manzana 4a casa 7";NULL;1
+334;4694;"Andrés Cubillos";1013669654;3022120502;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Buenos Aires";"Kr 18 78 83 Sur";NULL;1
+335;3552;"Ronaldo Mosquera parada";1005062009;3103583856;CO;19100000;"BOLÍVAR , CAUCA";Interapidicimo;Interapidicimo;Interapidicimo;1
+336;4705;"Jhonder Ramirez";1247368455;3112911494;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San José sur";"Calle 25 sur #12-44";NULL;1
+337;4742;"Santiago Franco Aguirre";1055838362;3118005440;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La perseverancia";"Carrera 5 #32-78";"Casa primer piso";1
+338;4746;"Axell Alejandro Torres Mora";1000501997;3113533989;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Monteblanco;"Calle 92 b sur #14-81";NULL;1
+339;4750;"Mauricio Alejandro Garcia Alvarez";1000077778;3016243731;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Claret;"carrera 25a #44-92 apt 202";"Apto 202";1
+340;4755;"Santiago felipe peluffo ortega";9239246;3003649153;CO;13654000;"SAN JACINTO , BOLÍVAR";Conejito;Calle25;NULL;1
+341;4761;"Jonnathan Vasquez";79222637;3104067344;CO;25754000;"SOACHA , CUNDINAMARCA";"Bochica soacha";"Calle 24a c-15";Casa;1
+342;4764;"Ricardo castillo";11206387;3015310240;CO;25307000;"GIRARDOT , CUNDINAMARCA";Santander;"Calle 26 7a 32";Casa;1
+343;4766;"Zamir abiantun";1129512393;3216872525;CO;8372000;NULL;Porvenir;"Calle 2 #5-39";Apartamento;1
+344;4702;"Oscar carrero";1018487392;3192969108;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"7 de agosto";Calle63a#27-21;603;1
+345;4772;"Brayan smith Pérez parra";1018503235;3227942912;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosasa concepción";Calle69sur#87g16;Casa;1
+346;4775;"Juan Diego González";1062326658;3106388053;CO;19698000;"SANTANDER DE QUILICHAO , CAUCA";"Sabernabe primera etapa";"Calle 4 sur #14-53";NULL;1
+347;4778;"Julián David pineda";1016075862;3192115760;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Fontibon zona franca";"Carrera 99bis#14-61";"Casa 280";1
+348;4780;"Maryluz bohorquez";52764598;3232268430;CO;91001000;"LETICIA , AMAZONAS";"Victoria Regia";"Callé 13#10_50";"Frente ala notaría";0
+349;4791;"Julián pajaro";1140882564;3053992585;CO;8001000;NULL;"Adelita de Char  la playa";"Calle 21a #10-50";"Etapa 2";1
+350;4795;"Daniel López";1032366905;3222160033;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La playa 1";"Calle 60 c sur # 18 b 08";Casa;1
+351;4798;"Felipe Martínez";1024598929;3227952590;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudad Verde";"KR 31 #15-165";"Conjunto granado";1
+352;4800;"Alexis Yate";1032493542;3192569835;CO;25754000;"SOACHA , CUNDINAMARCA";Portalegre;"Calle 22 12 17 apto 101";"Apto 101";1
+353;4817;Stiven;1000116776;3044392678;CO;25754000;"SOACHA , CUNDINAMARCA";"Olivos segundo sector";"Calle 42 Nº22b-43";Casa;1
+354;4821;"Yesenia Florez";1004600760;3178207945;CO;52001000;"PASTO , NARIÑO";"Alameda 1";"Carrera 19 #26-60";"Condominio vista hermosa. Apto 607C";1
+355;4824;"Dario Sanchez";1081052235;3053756667;CO;5001000;NULL;"Ciudadela Sevilla";"Calle 66a 55a 51";"Apto 165";1
+356;4826;"Ferney Salamanca";1010148694;3013173388;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La Cañiza";"Calle 128A #123-22";"Casa 3 pisos, puertas doradas";1
+357;4828;"Nicolas Gamboa";1003838178;3125728834;CO;25758000;"SOPÓ , CUNDINAMARCA";"Vereda Hatogrande";"Autopista norte Km 15 Vereda Hatogrande, Sopó";03-10;1
+358;4829;"Luis esneyder florez díaz";80224043;3212581717;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Primavera del tintal";"Calle 26sur #89d38";"Bloque A casa 30";1
+359;4831;"Edier Santamaría";1096800853;3242713092;CO;68081000;"BARRANCABERMEJA , SANTANDER";Colombia;"Cra 19 #51-25 barrio colombia";"Diagonal al D1";1
+360;4782;"Cristian Castro";1233891979;3168968716;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa maria";"Carrera 109a 132a 50";"Casa esquinera, primer piso";1
+361;4843;"Juan david rivera";1025521557;3222318770;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa recreo";"Calle 83 sur 91 -70 torre 11 apy 403";"Torre 11 apt 403";1
+362;4860;"Angie juliana";1052387771;3117330183;CO;15516000;"PAIPA , BOYACÁ";"San Felipe";"Cll 30 #24-22";NULL;1
+363;4861;"Cesar Salamanca";1031148811;3107638725;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El portal";"Cra5c #51a-16 sur";Casa;1
+364;4864;"Santiago sanchez";1000;3234394171;CO;5001000;NULL;Caicedo;"Calle 53 # 10 c93";NULL;1
+365;4865;"Alex David Bonilla Zuleta";1003249590;3126378570;CO;20001000;"VALLEDUPAR , CESAR";Novalito;"Calle 7c#8a-47";Local;1
+366;4847;camila;1033098521;3229546882;CO;15001000;"TUNJA , BOYACÁ";"la florida";"cll 1a sur #6d18 nogales de la florida";"apto 902";1
+367;4873;"Miguel Ángel León Prieto";1000622211;3144337420;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa la libertad";"calle 59 89a - 15sur";NULL;1
+368;4874;"German Osvaldo Alvarez carvajal";1070585748;3028466700;CO;25001000;"AGUA DE DIOS , CUNDINAMARCA";Centro;"Carrera 8 # 18-39";Casa;1
+369;4879;"Guillermo Molina";19469298;3132426472;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bochica 3";"Calle 83#96-51";"Int 5 Ap 201";1
+370;4884;"Marcos Calderón";1024520005;3013138416;CO;25754000;"SOACHA , CUNDINAMARCA";"Ducales Primer Sector";"Cra 12c #9-50 Sur";"Casa Color Azul";1
+371;4885;"Andrés bello";1032472388;3118291007;CO;25754000;"SOACHA , CUNDINAMARCA";Portalegre;"Calle 18A #12-57";Casa;1
+372;4896;"Jose delgado";10774282;3204461891;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Suba Gloria lara";"Calle 131f #94-11";"Local sipotu";1
+373;4904;"Abner Fuentes";1118811601;3009685791;CO;73001000;"IBAGUÉ , TOLIMA";"El Carmen La guavinal";"Avenida octava 23 # 85";"Casa azul con blanco, Una cuadra + arriba del hospital San Francisco ibagué.";1
+374;4905;"Gabriel Díaz";1010964181;3185237485;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Tintal;"Cll 7 n 90 - 64";"Almendros de nueva castilla torre 1 apto 402";1
+375;4907;"DORIS OCHOA";43468480;3127586684;CO;05318000;NULL;ALCALDIA;"CR 50 50-01";"OF. IMPUESTOS";1
+376;4600;"Luis Gómez Castro";79630121;3239438103;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Las Mercedes - suba";"Calle 152 # 115-20 torre 5 apt 504";"Torre 5 apto 504";1
+377;4914;"Cristián Camilo sabogal";1005959067;3213320040;CO;73275000;"FLANDES , TOLIMA";"Alfonzo López";"CR 9 N-° 6-53";Casa;0
+378;4914;"Cristián Camilo sabogal";1005959067;3213320040;CO;73275000;"FLANDES , TOLIMA";"Alfonzo López";"CR 9 N-° 6-53";Casa;1
+379;4921;"camilo rios";39755321;315258165;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";kenedy;"cra 78 n bis _#40 b - 15 sur";casa;1
+380;4925;"Diego merlano";1047379563;3246688822;CO;8001000;NULL;"Caribe verde";"Cll 131 # 9-125 villas del caribe";"Torre 22 apto 201";1
+381;4927;"Robinsón rojas uchuvo";1022932011;3138054951;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Puerta al llano";"Carrera 8b este #104-37 sur";Casa;1
+382;4937;"Gerardo Bayona Rodríguez";1012325621;3105824552;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Gran colombiano";Cra81h#73-73sur;Casa;1
+383;4942;"Cristian Javier Parada Jauregui";1090176771;3045599039;CO;54172000;"CHINÁCOTA , NORTE DE SANTANDER";"El Centro";"Carrera 4 #7-56";NULL;1
+384;4946;"Dilan Montealegre González";1141319512;3133808367;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Kennedy socorro";"calle 48 bis sur #77 N 10";"casa de 4 pisos color ladrillo y puertas color dorado";1
+385;4947;"David Torres";1005297478;3059292874;CO;68547000;"PIEDECUESTA , SANTANDER";"Paseo Galicia";"Calle 1 NC #7-77 casa 203";"Casa 203";1
+386;4951;"Yeison castaño";1007074893;3113223041;CO;5308000;NULL;"Cra 18a #5b 17";castanostiven1128@gmail.com;NULL;1
+387;4954;"Victor Manuel castellanos";1193557767;3212659596;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Quintanares;"Callé 46 2b -51E";Casa;1
+388;4958;"Omar pinzon";1007866162;3053154165;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa el recreo";"Cr 98 B #69-06 sur";"Casa 120";1
+389;4961;"Camilo rios";39775321;3156470918;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Bogotá;"Cra 78 n bis #40b -15 sur";Casa;1
+390;4965;"Farncisco marin";1024485337;3187972458;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"lucero bajo";"Cra 18k # 62 a 19 sur";casa;1
+391;4969;Jorge;1094285934;3154469827;CO;54518000;"PAMPLONA , NORTE DE SANTANDER";"La romero";"Calle 8a N11-29 la romero";N11-29;1
+392;4982;"Luis Enrique Molina";1004485886;3118411852;CO;73001000;"IBAGUÉ , TOLIMA";"Simón bolívar";"Manzana 9 casa 7 simon Bolvar etapa 2";Casa;1
+393;5004;"Andrés delgado";1000992088;3209422617;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La victoria";"Calle 42 a sur #4-30";Casa;1
+394;5007;"Yan Carlos";5166078;3117021409;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Rincón suba";"Kr92bis 129f 20";301;1
+395;5011;"Katherin Garcia";1073518158;3024939282;CO;25473000;"MOSQUERA , CUNDINAMARCA";Serrezuelita;"Calle 5 #8-26 alejandria 5";"Torre 5 apto 302";1
+396;5014;"Byron Sánchez";1005911304;3043950214;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Las margaritas";"Calle 45a sur #88c-98";"Torre 15 apto 203";1
+397;5028;"Sebastian Rodriguez";1013260069;3196854873;CO;25286000;"FUNZA , CUNDINAMARCA";Serrezuelita;"Cll 13 2-93";NULL;1
+398;5042;"Angel Perez";12453710;3203512112;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Barrancas;"Carera 7 c bis número 153 b 43";Apto;1
+399;5054;"Jhon Ramos Rojas";1003630887;3103056912;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa porvenir";"Calle50sur #98b-67";"Casa 250";1
+400;5079;"Jeison rojas";1033679414;3007787034;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Potosi;Cra44a#77-48;NULL;1
+401;5088;Rafael;1053584645;3105515857;CO;85250000;"PAZ DE ARIPORO , CASANARE";"Camilo torres";"Carrera 6#11-44";NULL;1
+402;5095;"Andrés Felipe Carreño Castellanos";1016832055;3194777581;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Altos de chozica";"Calle 137#85-76";"Int 2 apto 142";1
+403;5110;"Daniela L&oacute;pez";1024551681;3112812937;CO;11001000;NULL;Castilla;"Calle 8A 72B 52";"Casa 25";1
+404;5111;"Daniela Lop&eacute;z";1024551681;3112812937;CO;11001000;NULL;Castilla;"Calle 8A 72B 52";"Casa 25 Quintas de Castilla 2";1
+405;5118;"Brahian gomez";1030700142;3015173848;CO;25754000;"SOACHA , CUNDINAMARCA";"El bosque";"KR 18 Este #32B-56";Casa;1
+406;5127;"Estefanny reina";1019057207;3143731255;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa María suba";Calle132b#118-98;"Casa piso 4";1
+407;5130;"Luis David Ballesteros Pérez";1118648757;3185833610;CO;15097000;"BOAVITA , BOYACÁ";"Sacachova sector México";Sacachova;NULL;0
+408;5130;"Luis David Ballesteros Pérez";1118648757;3185833610;CO;15097000;"BOAVITA , BOYACÁ";"Sacachova sector México";Sacachova;NULL;0
+409;5130;"Luis David Ballesteros Pérez";1118648757;3185833610;CO;15097000;"BOAVITA , BOYACÁ";"Sacachova sector México";Sacachova;NULL;1
+410;5137;"Ricardo Durán";1002157704;3045739845;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Gabriel";"Carrera 5#127b-38";"Edificio punta cana torre a2 apartamento 506";0
+411;5137;"Ricardo Durán";1002157704;3045739845;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Gabriel";"Carrera 5#127b-38";"Edificio punta cana torre a2 apartamento 506";1
+412;5138;"Jerson Sotelo";1007576047;3144031862;CO;25754000;"SOACHA , CUNDINAMARCA";"Prado Vegas";"Kra 18G #15-70";"Conjunto Armonía 1/ Torre 5/ Apt 402";1
+413;5152;"Joseph rodriguez";1233512607;3123423536;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"María paz";"Calle 1b 83 11";"Cuarto piso casa";1
+414;5164;Brandon;1110517231;3185236360;CO;73001000;"IBAGUÉ , TOLIMA";"Ciudadela simon bolivar";"Mz 4 cs 7 etpa 2";NULL;1
+415;5165;"Jhon Triana";1019987865;3224274203;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Tierra buena";"Calle 34a sur #99 A-45";"Casa 208";1
+416;5168;"Luis Alejandro Nempeque Pinzón";1013265265;3192946668;CO;25899000;"ZIPAQUIRÁ , CUNDINAMARCA";"Algarra III";"Calle 4A #19-12";Casa;1
+417;5173;"Nestor Torres";79652679;3213272452;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Ciudad Alsacia";"Calle 12a 71cv60 apt 626";"Apto 626";1
+418;5156;"Diana Sotelo";1073242346;3175795042;CO;25473000;"MOSQUERA , CUNDINAMARCA";"PLANADAS segundo sector";"Calle 3#13b-21";"Casa 1 piso verde esquinera";1
+419;5185;"Alejandra Gomez";1101692240;3186443680;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Suba;"Calle 132A # 123B 25";"2do piso";1
+420;5186;"Adriana quitian";52464181;3102426253;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa Andrea Kennedy";"Calle 51c # 81i -30";Casa;1
+421;5189;"Jan Carlos Alvear";1143972196;3027920361;CO;76001000;"CALI , VALLE DEL CAUCA";"Manuela Beltrán";"Cr26ñ #108-10";"Apto 202";1
+430;5198;Antonio;79521642;66666;CO;15022000;"ALMEIDA , BOYACÁ";NULL;"Calle tttt";NULL;1
+431;4213;"Juan Camilo Gomez";1076666311;3112964991;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Chapinero;"Calle 66# 11 37 apt 305";Bogotá;1
+432;3595;"Fayber mape";1014226175;3228539992;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa Amalia";"Calle 72a#107c04";Casa;1
+434;3461;"Antonio María Díaz";79521642;3138322413;CO;5002000;NULL;NULL;"Calle 127 C No 11 B 85, Torre B 304";NULL;1
+435;4136;Laura;1014251592;3118712110;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Chapinero;"Av caracas #65 a - 66";NULL;1
+436;4426;"Diana lizarazo";5315456;3187669466;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Chapinero;"Av caracas 65 a 66";NULL;1
+437;5214;"Jonathan osso";1013602186;3104005209;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Cedritos;"Diagonal 159b#14a40";"Bloque 19 apt 202 villas de Mediterraneo";1
+438;5216;"Jhonatan Gongora";1000120651;3108523109;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa Piamonte";"Carrera 80k bis #67a sur 04";"Casa esquinera";1
+439;5218;"John Edilberto Rincón Rojas";80813296;3143146109;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Vicente sur oriental";"CRA 5A ESTE # 31C-47 SUR";"Media cuadra del parque Gaitán cortes";1
+440;5228;"Sergio Andrés Salazar";1071163486;3219131294;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Los Rosales";"Cl. 70 Bis #4-2 a 4-98, Bogotá";"Tienda specialized";1
+441;5231;"Jhojan Alexander Villamil";1000132520;3232534039;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa el recreo";"Cra 95 #71-46 sur";"Casa 212 compartir etapa 1";1
+442;5234;"Juan Felipe González Herrera";1025143699;3108082876;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Olarte;Kra72a#55b17sue;Casa;1
+443;5237;"Sergio Bernal Ruiz";1013591512;3118360213;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Santander;"Carrera 29 # 28-49 sur";"Apartamento 803";1
+444;5242;"William Toro";1032358889;3212259837;CO;15238000;"DUITAMA , BOYACÁ";"El milagro";"Carrera 33 # 16 - 31";NULL;1
+445;5244;"David Guzmán";1030695289;3133406422;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Villanueva;"Call 39 sur N 68g 89";"Casa con café internet y negocio de camas";1
+446;5247;"Sebastián Bahamon";1075312989;3219913993;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Cada blanca";"Calle 146d bis #75c - 19";Casa;1
+447;5249;"Juan Pablo upegui";1062438202;3123837198;CO;5002000;NULL;Normandia;"Dg. 46 #76-39, Bogotá";"Conjunto recidencial cantabria torre 3 - 1001";1
+448;5252;"Claudia Patricia peluffo ortega";9239246;3003949153;CO;13654000;"SAN JACINTO , BOLÍVAR";Conejito;"Calle 25";Casa;1
+449;5217;"Jhon Sebastián Quiroga Villamarin";1020836324;3183488867;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";NULL;NULL;"Casa 3 piso sebastian";1
+450;5254;"John jimenez";79561194;3102797849;CO;25430000;"MADRID , CUNDINAMARCA";"La prosperidad";"Carrera 24 # 5-55";NULL;1
+451;5256;"Andrés Puccini";1143452641;3192462277;CO;8758000;NULL;Porvenir;"Carrera 26c No. 15 - 94";NULL;1
+452;5261;"David Martinez";1022397553;3005544976;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Santa Viviana";"Cra 74 g # 75 d 21 sur";"Casa al lado de la antena";1
+453;5276;"Franklyn Diaz arango";93395833;3114220705;CO;73001000;"IBAGUÉ , TOLIMA";"La samaroa";"Calle 93 #7 Sur 90 conjunto alta gracia bloque 5 apto 505";NULL;1
+454;4622;"Diego cordero";1011089206;3107535449;CO;25754000;"SOACHA , CUNDINAMARCA";"Prado vegas";"Kr 18G No.16-72 el encanto";"El encanto 1 torre 9 404";1
+455;5258;"Oscar cardenas";1003289754;3147120501;CO;23466000;"MONTELÍBANO , CÓRDOBA";NULL;"Inter rapidisimo";Oficina;1
+456;5287;Andrés;1032388673;3170159864;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Teusaquillo;"Calle30 17#86";Casa;1
+457;5292;"Andres garay";1018440949;3102066942;CO;25430000;"MADRID , CUNDINAMARCA";"San Luis";"Carrera 9 # 4 - 37";"Casa de un piso rejas negras a una cuadra de la principal calle 7";1
+458;5294;"Cristian Benavides Coral";1086755911;3187294267;CO;52323000;"GUALMATÁN , NARIÑO";"San Antonio";"Calle 6 #5-31";NULL;0
+459;5294;"Cristian Benavides Coral";1086755911;3187294267;CO;52001000;"PASTO , NARIÑO";Pandiaco;"Calle 18B, cra 44A #31";NULL;1
+460;5295;"Juan David Murillo";1035575605;3235890716;CO;5002000;NULL;"Barrio nuevo";"Crr 63# 25-74 int-139";Casa;1
+461;5298;"Carlos Moreno";79916283;3005174213;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa luz";"Cr 77A #64H-43";"Local 2";1
+462;5301;"alvaro castañeda";1010177694;3203466154;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"fontibon refugio";"cra  120 #22G49";casa;1
+463;5304;"Marcel ramos berrio";1007781736;3222642838;CO;25175000;"CHÍA , CUNDINAMARCA";Samaria;"Calle 6 #3e 17 casa 47 conjunto vivir mejor 1";"47 conjunto vivir mejor 1";1
+464;5307;"Juan assias";1233340235;3225719393;CO;23001000;"MONTERÍA , CÓRDOBA";"Barrio el poblado";"Mz I lote 8";"Casa blanca a mitad de cuadra";1
+465;5308;"Jadiz Alberto Muñoz rivera";1005840118;3202180138;CO;73001000;"IBAGUÉ , TOLIMA";Ambala;"Manzana k casa 22";Casa;1
+466;5309;"Dayanna Muñoz";1072195978;3209975541;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";NULL;"Calle 72 #65b 15";NULL;1
+467;5314;"Mario Quintero Ariza";1015404282;3135366768;CO;5887000;NULL;"San Luis";"Calle 20 # 16-21 Apto 502";"Apto 502";1
+468;5315;"Jonathan alexander achicanoy";1085347685;3182532194;CO;52001000;"PASTO , NARIÑO";"Las cuadra";"Cr 30 #21-60 Las cuadras REHABILITAR";"Rehabilitar las cuadra";1
+469;5211;"Ronald Luzardo";1151479401;3219342374;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Quinta Camacho";"Cra 9#70-23";"Sagrado Pecado";1
+470;5322;"Maryoli concepcion";6596012;3114514433;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Chapinero;"Carrera 16 61 A 25";"Papelería masappi";1
+471;5335;"Javier Osorio Alvarez";71794230;3196325905;CO;5266000;NULL;"La Mina";"Cra 25 # 40 F Sur - 66";"Ciudadela Nazareth, bloque 17 apto 201";1
+472;5338;"Julián Camilo Bocanegra";1073703181;3017828661;CO;25754000;"SOACHA , CUNDINAMARCA";"San mateo";"Calle 34 # 7-35 este";"Conjunto alameda de tibanica bloque 43 casa 02";1
+473;5339;"Edwin guerrero";1016041194;3212798623;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Barrancas norte";"Cra7d #156-94";"Piso 3";0
+474;5340;"Harry rodriguez";79212664;3227597424;CO;25754000;"SOACHA , CUNDINAMARCA";Satelite;"Callé 8#5-05";Casa;1
+475;5342;Gabriela;1233904138;3503004259;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Toberin;Calle164#16a-14;Casa24;1
+476;5345;"José Jaime deluque";1193550691;3152078528;CO;44035000;"ALBANIA , LA GUAJIRA";"San Martin";"Carrera 5 #6-66";NULL;1
+477;5347;"Juan David Perez";1010117976;3137259046;CO;5002000;NULL;"Tierra buena";"Kr 95 a 34 75 sur";"Bloque 38 Apt 502";1
+478;4918;"Gustavo sierra maceas";1065576654;3042034139;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"María paz";"Calle 5a sur 82 10";NULL;1
+479;5348;"Edgar Andres simbaqueva";1023911493;3228336021;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Carvajal;"Av boyacá 39-27 sur";Empresa;0
+480;5348;"Edgar Andres simbaqueva";1023911493;3228336021;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Carvajal;"Av boyacá 39-27 sur";Empresa;1
+481;5358;"Sebastián Muñoz";10124188332;3102681307;CO;25269000;"FACATATIVÁ , CUNDINAMARCA";"Puente San Cristóbal";"Carrera 1#9-234";"Edificio San Juan primer piso";1
+482;5366;"Fernando herrera";1073689865;3222030977;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Engativa villa luz";Calle67#77-05;Casa;1
+483;5368;"Hans Salomón Carrillo";74130403;3228204003;CO;15516000;"PAIPA , BOYACÁ";"Los Rosales";"Carrera 28A # 22-14";NULL;1
+484;5360;"Kevin Santiago Garay";1007466558;3102328689;CO;25290000;"FUSAGASUGÁ , CUNDINAMARCA";Pekín;"Cra 4 # 3-40 este";"Casa ubicada en el callejón de al frente del nuevo edificio altos de Cataluña.";1
+485;5380;"Elimeleth González Arteaga";1047471775;3005381486;CO;25885000;"YACOPÍ , CUNDINAMARCA";"La soledad";"Yacopi calle 11 #5-25";"Hospital San Antonio de Yacopi- Laboratorio";0
+486;5365;"Jacobo Ernesto  Martinez Polo";1068417065;3117506005;CO;23001000;"MONTERÍA , CÓRDOBA";"Barrio 20 de julio mocari";"calle 5 #5-28";"Al frente de la inglesa soldados de la cruz";1
+487;5380;"Yasmin Pacheco";1047472079;3002025221;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Kennedy;"Ciudad tintal etapa 9 Cra. 94a #6a 44, Bogotá";"Torre 7 apartamento 503";1
+488;5382;"Fabio enrique Ortiz claro";1090369620;3123327700;CO;54001000;"CÚCUTA , NORTE DE SANTANDER";Centro;"Avenida 6#10-84 edificio banco de Bogotá oficina microfinanzas 3 piso centro";"Edificio banco de Bogotá";1
+489;5387;"Magaly Ballesteros";1052411720;3114902667;CO;15238000;"DUITAMA , BOYACÁ";"San pedro";"Cra 4 # 22-16";NULL;1
+490;5388;"Alexander Peñuela";1070324363;3022156735;CO;25245001;"EL TRIUNFO , CUNDINAMARCA";Chapineroto;"Calle 5#3/52 inspección el triunfo municipio de el colegio";"2 casa abajo del jardín infantil mi tierna edad";1
+491;5389;"Diego Javier Ordoñez Meneses";1055313792;3132743039;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa del campo";"Calle 103#159-06";"Piso 2 casa esquinera";1
+492;5391;"Falcao pirachican";1030524863;3214394938;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Andalucia;"Carrera 81c 15a 36";Casa;1
+493;5398;"Andrés Briceño";1099738590;3188343874;CO;68001000;"BUCARAMANGA , SANTANDER";Centro;"Calle 23 número 14-16";NULL;0
+494;5398;"Andrés Briceño";1099738590;3188343874;CO;68001000;"BUCARAMANGA , SANTANDER";Centro;"Calle 23 número 14-16";NULL;1
+495;5404;"Junior Padilla";1085909811;3105238013;CO;52001000;"PASTO , NARIÑO";"Villas del sol";Mz-D-C18;"Ap 1";1
+496;5407;"Wilmer Aparicio";1098751845;3215615697;CO;68001000;"BUCARAMANGA , SANTANDER";Monterredondo;"Carrera 34w#63-47";"1 piso";1
+497;4366;"Calle 11 # 10 a 05";65717766;3209725719;CO;73411000;"LÍBANO , TOLIMA";"Los pinos";"Calle 11 # 10 a 05";Casa;1
+498;5238;"Danny Julián rincón";1105670004;3115091780;CO;73268000;"ESPINAL , TOLIMA";Iguaima;"Manzana 19 casa 29 urbanización iguaima";NULL;1
+499;5410;"Jhonatan Márquez";2349491;3052853091;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Valladolid;"Carrera81f #8b-16";Casa;1
+500;5415;"Juan segura";1082888340;3135689640;CO;47001000;"SANTA MARTA , MAGDALENA";"Los laureles";"Carrera 21 A número 29 k 47";Casa;1
+501;5422;80791394;80791394;3217570686;CO;5002000;NULL;"Alamos norte";"Carrera 10#69-35";"Interior 1 apt 604";1
+502;5001;"Héctor Armando ardila";91513384;3227182321;CO;68276000;"FLORIDABLANCA , SANTANDER";"Villa efrain";"Carrera 128-62trasversal oriental";"Casa 7";1
+503;5429;"Marco Muñoz";1118287558;3164279114;CO;76377000;"LA CUMBRE , VALLE DEL CAUCA";"La manzana";"Calle 1 #4-24";"Enseguida de notaría única";1
+504;5433;"ANDRÉS FELIPE OSORIO";80831301;3146251113;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Patio bonito";"Calle 5b#87a-87";"Casa 2do piso";1
+505;5436;"Fredy Agudelo";1020401419;3192570544;CO;23182000;"CHINÚ , CÓRDOBA";"31 de octubre";"Carrera 13a 10b - 45";"La casa del Fercho";1
+506;5437;"Camilo segundo González Tamara";1005489122;3011699968;CO;70001000;"SINCELEJO , SUCRE";"20 de enero";"Carrera 4E#37C-20";Casa;1
+507;5442;"Eder José Pérez morales";1042578810;3016711123;CO;13001000;"CARTAGENA , BOLÍVAR";"El pozon";"14 de febrero 1 MZ E LOTE 10A";Casa;1
+508;5444;"Edwin guerrero";1193205594;3145919943;CO;52001000;"PASTO , NARIÑO";Pilar;"Calle 12Bis #4B-46";Casa;1
+509;5413;"Guillermo León Serna";15435845;3193720851;CO;5440000;NULL;"Los Giraldo";"Calle 35 N 30 B 20";NULL;1
+510;5446;"Cristiam Rodríguez";1073384495;3057208097;CO;15676000;"SAN MIGUEL DE SEMA , BOYACÁ";NULL;"Finca miraballes";NULL;0
+511;5446;"Cristiam Rodríguez";1073384495;3057208097;CO;15676000;"SAN MIGUEL DE SEMA , BOYACÁ";NULL;"Finca miraballes";NULL;1
+512;5447;"Luigy Nicolay";1001288648;3229495470;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Belen;"Cl 6c 1 34 este";"Casa esquinera tienda al frente de montallantas";1
+513;5455;"Jhoan verjel";1090522938;3214654417;CO;54001000;"CÚCUTA , NORTE DE SANTANDER";Aeropuerto;"Calle 7#3-56";Casa;1
+514;5461;"Héctor Ricardo Bermudez";1092455383;3217728788;CO;63190000;"CIRCASIA , QUINDÍO";"Alto de la taza";"Manzana C #31";"Donde está el fogón de arepas";1
+515;5474;"David Leyva";1033730630;3213951768;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Restrepo;"Carrera 24 f #17-41";"Edificio 4 piso";1
+516;4463;"Jeison quiceno";1012449360;3023813238;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa esperanza";"Calle79sur#77g75 interior 152 mazana 1a";Casa;1
+517;5477;"Henry vargas";1024491954;3017780904;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Paraiso;"Cr 27i # 71g-68 sur";Casa;1
+518;5483;"yeison benavides";1018418340;3144858011;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Venecia;"diagonal 49a sur 52c 75";"local de ferreteria";1
+520;5492;"Juan Diego montoya";1017229499;3108300896;CO;73001000;"IBAGUÉ , TOLIMA";"Prados del norte";"Carrera 7 # 60-21 , edificio distrito 60, apto 203, Ibague, Tolima";"Carrera 7 # 60-21 , edificio distrito 60, apto 203, Ibague, Tolima";1
+521;5494;"Carlos vega";1143347640;3176623957;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Suba;"Cra 111 a #148-75 apto 301 torre 9";NULL;1
+522;5210;"Antonio María Díaz";79521642;3138322413;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";NULL;"Calle 127 C No 11 B 85, Torre B 304";NULL;1
+523;5498;"Manuel Alejandro Castillo Gil";1092851107;3122997648;CO;63001000;"ARMENIA , QUINDÍO";"La Aldea";"Condominio la Aldea carrera 16 26-24";"Bloque 3 apto 504";1
+524;5501;"Roger Méndez Mendoza";9146601;3145218972;CO;13001000;"CARTAGENA , BOLÍVAR";"El Conquistador";"cll 27a#46-54";NULL;1
+525;5502;"Brayan melo";11389062;3142126600;CO;25743005;"SUBIA , CUNDINAMARCA";"La florida";Cr5#2-03;Casa;1
+527;5503;"BRAYAN SARAVIA";1001331192;3046223172;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Alqueria la fragua";"CRA 68D # 34 SUR 50";"Piso 3";1
+528;5506;"Jhon Vargas";1001273867;3232460988;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La estrella";"Carrera 18D bis# 73 A sur 22";Casa;1
+529;5511;"Esteban Camilo tivera";1003579356;3015917358;CO;25377000;"LA CALERA , CUNDINAMARCA";"Parque principal";"Parque principal";.;1
+530;5516;"Juan Esteban Jiménez Rivera";1005718287;3222193596;CO;73001000;"IBAGUÉ , TOLIMA";Granada;"Carrera 28 sur #17-21";"Cerca a la escuela";1
+531;5500;"Yulieth Tatiana Barrera Rojas";1075872125;3115787164;CO;25295000;"GACHANCIPÁ , CUNDINAMARCA";NULL;"Oficina Principal Interrapidisimo";NULL;1
+532;5456;"José Lizardo Carabali";1080365636;3132480398;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa Brasil";"Cll49c #87d-15sur";Casa;1
+533;5518;"Edward Ortiz";80858601;3102414460;CO;25175000;"CHÍA , CUNDINAMARCA";"El Campincito";"Calle 7 # 5-08";"Casa 2 pisos, reja blanca, al lado de panaderia esquinera";1
+534;5506;"Jhon Vargas";1001273867;3232460988;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La estrella sur";"Carrera 18 D bis # 73 A 22 sur";Casa;0
+535;5508;"Jair berbeo";1072644652;3124605636;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa hermosa Alfonso López";"Calle 97 f sur #7b 11este";Casa;1
+536;5530;"Andrea Carolina Ramos Marentes";1014227602;3157211361;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Molinos de viento";"Carrera 102a#77b-90";Casa;1
+537;5531;"Sebastian Serrano Arias";60445958;3209826089;CO;86885000;"VILLAGARZÓN , PUTUMAYO";Fátima;"# a 5-68,, Cl. 7 #52, Villagarzón, Putumayo, Colombia";Interapidisimo;0
+538;5532;"Walter Guzmán Rodríguez";1022948672;3242346516;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa Israel";"Calle 111 sur #5-46";Casa;1
+539;5533;"Julian amezquita";1058351347;3226482499;CO;15759000;"SOGAMOSO , BOYACÁ";Sugamuxi;"Calle7B #6A-15";Casa;1
+540;5534;"Pedro aguillon";1088285376;3148310882;CO;66170000;"DOSQUEBRADAS , RISARALDA";"Vía Japón. Frailes";"Conjunto residencial majestic 1 torre 5 apto 206";NULL;0
+541;5541;"Cristian Rodríguez";1012442478;3057487528;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Bosa;"Dirección Calle 77 sur - 81 # 80 Bosa villa Javier conjunto flamencos 2";"Torre 16 apto 601";1
+542;4171;"Diana marin";39442344;3137112101;CO;5615000;NULL;"4 esquinas";"Calle 41  37-71";"Lácteos ranchero";1
+543;5550;David;1049609596;3229534606;CO;15001000;NULL;Centro;"Cra 11 # 17-46";"San Andresito local 206 piso 2";1
+544;5302;"Jorge Orlando Echeverry";14704784;3212563956;CO;76520000;"PALMIRA , VALLE DEL CAUCA";"Bosque de Cenaprov";"Carrera 24 69 93";"Casa Blanca de 2 pisos";1
+545;5557;"Jose viera";18166228;3103321738;CO;47001000;"SANTA MARTA , MAGDALENA";Rodadero;"Rodadero calle 6 con carrera 3";"Vista el mar calle 12 casa n23a";1
+546;5562;"Alejandro martinez";1032503400;3014852169;CO;25754000;"SOACHA , CUNDINAMARCA";"Julio rincon soacha";"Cll 43 h bis a 19 36 e";"Casa esquina";1
+547;5567;"Cristian torres";1094370420;3222778553;CO;54001000;"CÚCUTA , NORTE DE SANTANDER";"San Luis";"Edificio navío tower apartamento 1101";Apartamento;0
+548;5567;"Cristian torres";1094370420;3222778553;CO;54001000;"CÚCUTA , NORTE DE SANTANDER";"San Luis";"Edificio navío tower apartamento 1101";Apartamento;1
+549;5568;"Sebastian Pinzón";1000325554;3212971701;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa Atalayas";"Cl 61 Bis sur 92 31";Casa;1
+550;5053;"Andrés oliveros";1193533306;3022068241;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Los campos";"Calle 72 #86-60";"Centro empresarial punto 72";1
+552;5577;"Fernando Gutierrez Pineda";8162527;3154171116;CO;5001000;NULL;"Manrique Las Esmeraldas";"Carrera 44a #86-50 segundo piso reja negra";"Segundo Piso Reja Negra";1
+553;5578;"ISABEL REGINA HURTADO";1052070785;3014880833;CO;13244000;"EL CARMEN DE BOLÍVAR , BOLÍVAR";"EL PORVENIR";"Calle 22 # 45-94";CASA;1
+554;5584;"Carlos Aizpurua";2757576;3016547483;CO;44001000;"RIOHACHA , LA GUAJIRA";"Los nogales";"Calle 33 Carrera 12A1 casa 52";"Casa 52 al lado de la iglesia divino niño";1
+555;5590;"Juan Camilo Gualdron Quintero";1090449247;3167484018;CO;54001000;"CÚCUTA , NORTE DE SANTANDER";Bellavista;"Calle 22#12-46";"Casa portón gris porche";1
+556;5593;"David Reyes";1021667574;3106252510;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Gran Yomasa";"KR 9A 81B Sur #71";Casa;1
+557;5594;"Leonardo Lopez";1049636214;3154171952;CO;15001000;"TUNJA , BOYACÁ";"Las nieves";"Carrera 7 #28-15";NULL;1
+558;1413;"Rafael Pino";7165814;3002150908;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Suba;"Trv 80 213-20";C47;1
+559;5598;"David Camacho";1016086333;3204940976;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Versalles -fontibon";"Carrera 108 #22-49";"Casa 2 piso";1
+560;5600;"Edgardo Castro";72283897;3017335007;CO;8001000;NULL;"Santa María";"Carrera 1 #92-26";Casa;1
+561;5601;"Heiler Andrés Hernández Rojas";1070820127;3116544844;CO;5604000;NULL;"Pérez colmero";"Calle 9 Pérez colmero #11-79";"Local 1";1
+562;4959;"Juan Pablo Agudelo";1027887387;3234178069;CO;5861000;NULL;"El socorro";"Calle 52 parque principal";NULL;1
+563;5479;"Bryan Álvarez";1234092912;3046249268;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Patio Bonito";"Calle 38 d Sur#83a-52";"Apto 301";1
+564;5606;"Alejandro ruiz";8064811;3160556015;CO;5001000;NULL;Castilla;"Calle 96 74b 51";Casa;1
+565;4581;"Marlon López";1002249623;3023485194;CO;13001000;"CARTAGENA , BOLÍVAR";Membrillal;"Barrio Membrillal Sector la Ceiba Mz E Lote 6";"Mz E Lote 6";1
+566;4647;"Fabián Calderón";1077851065;3023987655;CO;25754000;"SOACHA , CUNDINAMARCA";Hogares;"Cr 19A#1-84";"Torre 19 apto 402";1
+567;5608;"Edilberto Figueredo";1057577711;3167501815;CO;15759000;"SOGAMOSO , BOYACÁ";Centro;"Carrera 12 # 10-632";Apartamento;1
+568;5609;"David santiago meneses y";1020451258;3013253609;CO;5001000;NULL;"Belencito-villa laura";"Carrera 106c#34e25";"Casa 2°piso";1
+569;5610;"Milton Restrepo";1037627352;3105097190;CO;44430000;"MAICAO , LA GUAJIRA";"San Francisco";"Calle 15 c número 36-83 dan Francisco";36-83;1
+570;5617;"Carlos garcia";72828292;3005209228;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudad verde";"Carrera 32 17 198 conjunto manzano";"Apto 602 torre 7";0
+571;5617;"Carlos garcia";72828292;3005209228;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudad verde";"Carrera 32 17 198 conjunto manzano";"Apto 602 torre 7";1
+572;5620;"Ricardo Velandia";1014222447;3203945697;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Samper Mendoza";"Kr 24 22 c 08 apto 208";"Apto 208";0
+573;5620;"Ricardo Velandia";1014222447;3203945697;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Samper Mendoza";"Kr 24 22 c 08 apto 208";"Apto 208";1
+574;5624;Cristian;1193089037;3105202123;CO;15600000;"RÁQUIRA , BOYACÁ";NULL;Centro;NULL;1
+575;5628;"Andrés Arias";1033800299;3183248138;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Nuevo Muzú";"Diagonal 51a #61c 09 Sur";"Casa antejardín,  color rosada, frente a paradero del sitp";1
+576;5629;"Sara lucia rincon vallejo";1075239943;3156440562;CO;76364000;"JAMUNDÍ , VALLE DEL CAUCA";"La pradera";"Calle 22 # 15-31";NULL;1
+577;5630;"Javier Alonso Molano camaron";1099282716;3118508049;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa Claudia";"Carrera 69b#18-29 sur";"Restaurante San Sebastián";1
+579;5547;"Antonio José Velez Ocampo";1144160533;3024872284;CO;76364000;"JAMUNDÍ , VALLE DEL CAUCA";"CIUDADELA TERRANOVA";"CALLE 13A # 50 SUR 32";"PRIMERA ETAPA";1
+580;4728;"Jaime hidalgo";80030506;3013839367;CO;73001000;"IBAGUÉ , TOLIMA";Arkaparaiso;Arkaparaiso;NULL;1
+581;5057;"Camilo Tunubalá";1019042223;3212878008;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Suba rincón";"Calle128c #93b13";Casa;1
+582;5631;"Calle 68 D sur # 14 C 05 San Andrés - usme";11803582;3116461514;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Andrés usme";"Calle 68 D sur # 14 C 05 San Andrés - usme";"Casa esquinera 2 piso";1
+583;5264;"Fernando Cárdenas";1057574933;313426471;CO;15759000;"SOGAMOSO , BOYACÁ";Rosales;"Calle 7 19 52";NULL;1
+584;4557;"Oscar Camacho";5594138;3002924320;CO;25473000;"MOSQUERA , CUNDINAMARCA";"La Arboleda";"Calle 21 D # 12 A 04 interior 2";"Interior 2";1
+585;5497;"Gustavo Vargas";80232259;3173604495;CO;25320000;"GUADUAS , CUNDINAMARCA";Centro;"Interrapidisimo oficina centro";NULL;1
+586;5644;"Wilmer Gonzalez";1120376785;3142850368;CO;50313000;"GRANADA , META";"Nueva Granada";"Calle 20 A # 6 - 51";NULL;0
+587;5645;"Andrés Orlando peña Guzmán";1084332011;3177604449;CO;41807000;"TIMANÁ , HUILA";"Santa Lucia";"Carrera 6#7-21";"casa tres pisos";1
+588;5650;"Juan David Pinzón Mora";1007718560;3016844131;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa Teresita";"Carrera 116A #70A - 76";"Conjunto parque Engativá/ T.9/ Apto. 604";1
+589;5653;"Duvan Pico";1021674225;3027055483;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Cristóbal, 20 De Julio";"Diagonal 25c Sur #5a-15";Casa;1
+590;5655;"Alkias Martínes";1065673172;3059105131;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Carlos";"Cl  41a Sur #82d";Casa;1
+591;5657;"German Nemocon";80011214;3502500616;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Patio bonito";"Carrera 87i#0-64";Casa;1
+592;5659;"Andres Felipe Marquín";1031160885;3028464606;CO;41001000;"NEIVA , HUILA";"San martín";Calle1a#15d66;Casa;1
+593;5660;"Carlos Humberto yepes gaviria";98632190;3218457000;CO;5001000;NULL;"Guayabal medellin";"Calle 9 sur # 53-55";"Casa primer piso";1
+594;5664;"Wilmer villa";1032383802;3212333699;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Montebello;"Cra. 2a # 26-23 sur";Casa;1
+595;5665;"Danilo erazo";1086551015;3103227129;CO;86749000;"SIBUNDOY , PUTUMAYO";Recreo;"Barrio recreo";NULL;1
+596;5670;Alvaro;1014273996;3103609610;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosques de mariana";"Calle 70d # 107 a 64";"Casa amarilla";1
+597;5671;"Jer&oacute;nimo Polo Giraldo";1034988145;3206899619;CO;05001000;NULL;"Buenos Aires";"Carrera 37A #29-89";Casa;1
+598;5673;"Jose Javier García";1015458390;3195069082;CO;25175000;"CHÍA , CUNDINAMARCA";"El Cairo";"Carrera 4 # 4 - 38";"Int 2 Apto 401";1
+599;5675;"David Vargas";1016105444;3212430371;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Santa Catalina";"Carrera 82 #11a 08";"Casa segundo piso";1
+601;4989;"Oscar David Orozco Llamas";1137221574;3213885665;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa betania";"Calle 50sur #87-39";Casa;1
+602;5678;"Laura garzon";1001187471;3239172961;CO;47001000;"SANTA MARTA , MAGDALENA";"20 de julio";"Calle 5 #14a-83";NULL;1
+603;5679;"Carolina Cruz Triana";1031644872;3243833070;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Cataluña;"Calle 133 bis 103 f 52";Casa;1
+604;5681;"Óscar Contreras";1050720373;3004856472;CO;13430000;"MAGANGUÉ , BOLÍVAR";Prado;"Por la Gavia alfrente de la cancha de fútbol";"Dónde chayo";1
+605;5682;"Juan Felipe Marín";1025536257;3003225770;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villas de Bolívar";"DG 68jsur No. 31-18";"Casa de tres pisos frente a la tienda";1
+606;5686;"Jose Antonio Suárez Robles";1049625591;3123704380;CO;15001000;"TUNJA , BOYACÁ";"Los Lanceros";"Calle 24 # 6-13";"Casa blanca";1
+607;5688;"Joel alfonso mejia calderin";1072260909;3023582871;CO;23670000;"SAN ANDRÉS SOTAVENTO , CÓRDOBA";"Frente hospital";"Calle 8 #7-5";NULL;1
+608;5691;"Edwin Fabian";"Muñoz Morcillo";3193640683;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Isla del sol";"Calle 65 #62 -21, Isla del sol";NULL;1
+609;5698;"Mauricio Arley Guerra Ortega";1122784818;3148084488;CO;86749000;"SIBUNDOY , PUTUMAYO";NULL;NULL;Casa;1
+610;5700;"Lisandro arias";1041204081;3045260751;CO;5001000;NULL;"Robledo Kennedy";"Carrera 75a 92-144";Interior;1
+611;5701;"Juan David Barrios González";1106770433;3209342072;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Las Margaritas";"Calle 48 A Sur N 88 C-10";"Conjunto Residencial San jose Alameda 4 etapa";1
+613;5711;"Jaider Pacheco";30863484;3026495288;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa recreo";"Cl. 74a Sur #92-71";Apto;1
+616;5715;"Smith Medina";1058547887;3127867083;CO;19001000;"POPAYÁN , CAUCA";"El empedrado";"Calle 12#7-48";Casa;1
+617;5716;"Eduin Miranda";1090176636;3232842015;CO;54172000;"CHINÁCOTA , NORTE DE SANTANDER";"La victoria";"Calle 11 Av 7";Esquina;1
+618;5719;"José malaver";1012399435;3507850522;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La estación";"Calle 59 a sur # 78d 62";"1 piso";1
+629;5737;Angel;1027524801;3148508167;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Inglés;"Calle 39 sur # 28-20";Casa;1
+630;5704;"Brayan Corpa";1010963812;3125928020;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Roma;"Cra 78i 57f 21 sur";Casa;1
+631;5739;"Andrés Felipe González chaves";1003488828;3115502302;CO;25322000;"GUASCA , CUNDINAMARCA";"Barrio guasuca";"Carrera 4 No 2-31";Casa;1
+632;5740;"Santiago Trujillo Alvarez";1000001932;3209770850;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Primavera;"Cl. 59b Sur #80d- 70, Cdad. Bolívar, Bogotá, Cundinamarca";"Casa me escriben en WhatsApp porfa";1
+633;5748;"Luis Rivaldo";8749830;3195873205;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Ciudad jardín prado";"Calle 129a # 56b - 88";"Conjunto Villa campestre . Dejar en portería";1
+634;5754;"Fernando Calderón ospina";1012410408;3227259323;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El remanso";"Calle 74B sur # 87 i 83";NULL;1
+637;5759;"Juan Manuel";1105467684;3026466955;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Madelena;"Calle 66a sur #66-81";"conjunto bosques de san jose, torre 3, apto 209";1
+638;5762;"Andres Basto";14136178;3223655154;CO;73001000;"IBAGUÉ , TOLIMA";NULL;"Av Ambala Edf Moticello apto 51";NULL;1
+639;5766;"Estiven Andrés Insuasty Tello";1004540105;3146977964;CO;52683000;"SANDONÁ , NARIÑO";"URB. MADRIGAL";"K1 8A-28 MZ E CS10";"Efecty, interapidisimo, envía";1
+640;5768;"David higuera";1000336174;3204490432;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Luis Carlos galan";"Cll 95#92-07";"Apto primero piso";1
+641;5769;"Cristian Camilo cano";1053839539;3137076185;CO;17001000;"MANIZALES , CALDAS";Bengala;"Calle 48 g # 6_06";Casa;1
+642;3503;"Juan de la cosa";98789789789;98789789789;CO;76001000;"CALI , VALLE DEL CAUCA";"las velas";"Cra 12 # 123-23";"apto 1";1
+645;5772;"Nicolás avila";1011091997;3144934756;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Marruecos;"Tv 5 g bis #48p 04 sur";"Apt 201 conjuntos de ibari al lado del colegio liceo San pablo";1
+646;5773;"DIANA MARIN";39442344;3137112101;CO;5615000;NULL;"4 ESQUINAS";"CALLE 41 37-72";"LACTEOS RANCHERO";1
+647;5777;"Ricardo Marín salinas";79431085;3043751296;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Santa librada";"Carrera 8d 74c 05sur";Casa;1
+648;5778;"Francisco ramos molina";1044391586;3042113602;CO;8372000;NULL;Centro;"Oficina interrapidisimo Juan de acosta Atlántico";"Plaza principal";1
+649;5786;"Alfredo perdomo";17345780;3176214444;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Pradera;"Pradera carrera 65 #4b611";Apartamento;1
+650;5646;"William Muñoz";79920080;3508771279;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Meissen;"Calle 61 # 17a 61 sur";NULL;1
+651;5791;"Didier Cubides";1145224018;3024789109;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Fontanar del rio";"Calle 144c # 141a 82";"Bloque 6 casa 8";1
+652;5794;"María Rubiela Arenas Cardenas";39270505;3233964027;CO;5154000;NULL;"Pueblo nuevo la barranca";"Carrera 17 #15-41";Casa;0
+653;5794;"María Rubiela Arenas Cardenas";39270505;3233964027;CO;5154000;NULL;"Pueblo nuevo la barranca";"Carrera 17 #15-41";Casa;1
+654;5795;"JOSE SANTOS HERNANDEZ PRIETO";79330186;3107515942;CO;11001000;NULL;Tunal;"Avcalle 56A sur # 24 - 60";"casa 405";1
+655;5797;"Andrés Palomo";1113649927;3193831871;CO;25269000;"FACATATIVÁ , CUNDINAMARCA";"La arboleda";"Cr 2a este 7-32";Droguería;1
+656;5800;"Esteban Nanclares";1073517313;3202952728;CO;25286000;"FUNZA , CUNDINAMARCA";"Altos del guali 2";"Calle 13 # 2-93 altos del guali 2";"Torre 7 apt 304";1
+657;5801;"Pedro Valderrama";1031151705;3208891642;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La coruña";"Calle 59 a bis sur No 48 b 10";NULL;1
+658;5803;"Uriel Murcia Romero";80541455;3144268652;CO;25899000;"ZIPAQUIRÁ , CUNDINAMARCA";"Bolívar 83";"Carrera 3 # 11-64";"Diagonal a la tienda de Rosita. A mano izquierda";1
+659;5805;"David Estrada";1050462427;3027685733;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Pablo";"cra 120 19 05";"Llamar al llegar";1
+660;5806;Andrea;1069493220;3202441963;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Venecia;"Tv44 #52-25";Casa;1
+661;5808;"José Andrés Arango Gonzalez";1017267811;3026967196;CO;5001000;NULL;Aranjuez;"Cra 51 #95-73";"Casa 2 piso";1
+662;5809;"Jonangel Rivero";4737152;3183557584;CO;25899000;"ZIPAQUIRÁ , CUNDINAMARCA";"La concepción";"Carrera 6 calle 1 01";Casa;1
+663;5811;Esteban;1085341931;3206138625;CO;76001000;"CALI , VALLE DEL CAUCA";Sanpedro;"Calle 4 #8 63";"Edificio josenao notará 10";1
+664;5812;"Guillermo torres";3825699;3225825608;CO;5380000;NULL;"Las brisas";"Calle 77 sur #55-156";"Callé séptima via al parque la estrella";1
+665;5815;"Erwin Rojas";1143447109;3006982369;CO;25817000;"TOCANCIPÁ , CUNDINAMARCA";"La Aurora";"Calle 11 #3e 32 vereda La Esmeralda, Sector La Aurora";Local;1
+666;5819;"Dario Ruiz";1085313425;3104288603;CO;52001000;"PASTO , NARIÑO";"Villa flor 2";"Mz 3 casa 8";NULL;1
+667;5821;"Jhoana Echeverría";1005568627;3023045479;CO;13001000;"CARTAGENA , BOLÍVAR";NULL;NULL;NULL;0
+668;5821;"Jhoana Echeverría";1005568627;3023045479;CO;13001000;"CARTAGENA , BOLÍVAR";"El laguito";"Carrera 1 # 1A -23 playa el laguito";"Restaurante el laguito";1
+669;5822;"Harrison Ortiz";1007555152;3134776383;CO;68001000;"BUCARAMANGA , SANTANDER";"San alonso";"Calle 14 # 26-28";"Apto 906";1
+670;5824;"Christian Nicolas Fandiño";1007341787;3227239862;CO;25899000;"ZIPAQUIRÁ , CUNDINAMARCA";"Rincón del zipa";"Carrera 11 # 24-32";"Segundo piso";1
+671;5826;"Sleyter Vivas";1093804655;3135557901;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Cedritos;"Carrera 20 143-7";"Restaurante, entrega por detrás en el parque.";1
+672;5827;"Juan Sebastian Umaña Castro";1097781986;3107850107;CO;68081000;"BARRANCABERMEJA , SANTANDER";"Sector comercial";"Cr8a #50-16";"Edificio vanguardia liberal apto 202";1
+673;5832;"Diego ariza mosquera";1130044033;3134357030;CO;68077000;"BARBOSA , SANTANDER";NULL;"Para empresa";NULL;1
+674;5834;"Julian Dimate";1073172321;3043605712;CO;25430000;"MADRID , CUNDINAMARCA";"Conjunto residencial el Peñol";"Carrera 7 No 20-15 este";"Torre 7 apto 101";1
+675;5841;"Fabián mahecha";80800486;3233292339;CO;25394000;"LA PALMA , CUNDINAMARCA";"La cabaña";"Cll 3 N 6-05";Casa;1
+676;5838;"Jhon leal";16422293;3144147297;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Porvenir;"Crr93c49f17 porvenir";"Piqeteadero el triunfo";1
+677;5847;"Nelson Miramag";1012452748;3208536381;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Rincón de Santa fé";"Dig32 #10-40 soacha";"Balcones de Mercurio T:32 Apt:502";1
+678;5852;"Lorena guarin perez";52063072;3102651747;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Colonia oriental galan";"Calle 4cbis #50-33";Casa;1
+679;5854;"Marlon Rivas";7921054;3007793050;CO;13001000;"CARTAGENA , BOLÍVAR";"7 de agosto";"Calle 74. N#27-68";"Casa 2 piso";1
+680;5855;"Santiago Zambrano Toro";1104695429;3108031325;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Brazuelos;"CALLE 101 A SUR #14 - 05";"Torre 5, apto 810";1
+681;5858;"Severo Enrique sarmiento torres";81741308;3142139022;CO;25290000;"FUSAGASUGÁ , CUNDINAMARCA";Fusacatan;"Carrera 5#19-68";"Torre estelar apt301";1
+682;3503;"Juluan Góme";78678678;987978978978;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Los Rosales";"Trv 123 # 21-2";"C 39";0
+683;5863;"Sara Michelle";1022376660;3177980972;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Galán;"Cra 53D bis #5B 34";"1 piso";1
+684;5865;"Santiago Rosales Anka";1005257477;3137454601;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Mazuren;"CRA 50 #150a-85";"Interior 12 apto 302";1
+685;5870;"Elkin samuel";1081274537;3157908268;CO;52001000;"PASTO , NARIÑO";"Briseño alto";"Briseño alto";"Via que va hacia genoy";1
+686;5020;"Eferson Barreto";1000065616;3135220557;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Santa fe";"Cl 22#19-30";"Casa segundo piso";1
+687;5872;"Yeison Bermudez Medina";1232890572;3152367241;CO;68001000;"BUCARAMANGA , SANTANDER";"Tejar norte 2";"Calle 17 A N # 10 D 34";"Es por la 17 AN peatonal en el primer piso al lado de una casa de rejas blancas";1
+688;5339;"Edwin guerrero";1016041194;3212798623;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Zona franca";Calle14#107-54;"Parques 1D casa 313";1
+689;5874;"Santiago lopez";1036939397;3127168795;CO;5615000;NULL;"San antonio";"Cr 55a # 22 23";NULL;1
+690;5875;"Andrés Sarmiento";37753032;3182235547;CO;68001000;"BUCARAMANGA , SANTANDER";"Barrio Bucaramanga";"Calle 66 con 3ra #3-08 barrio Bucaramanga";"Casa Blanca Con Una Palmera";1
+691;5876;"Andre santos";1098772075;3188372885;CO;68276000;"FLORIDABLANCA , SANTANDER";"Prados del sur";"Cra 45 manzana d casa 53 piso 2";Casa;1
+692;5055;"Nicolás Carreño";1030697698;3123839574;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Palenque Kennedy";"Cra 78c 41g 64 sur";"Portón derecho";1
+693;5880;Sebastián;1033706788;3104215696;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"11 de noviembre";"Carrera 29b#72-55";Casa;1
+694;5884;"jose mape";7845141;31414133407;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa amalia";"Calle falsa 123";321;1
+695;3447;"MARIELA DELGADO";123456789;3508123184;CO;11001000;NULL;"calle 66 11 15 chapinero";"CHAPINERO, BOGOTA";"LOCAL PREGUNTAR POR MARIELA";1
+696;5886;"Santiago Sandoval";1025143947;3222149450;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Rionegro;"Calle 93b #60-10";Casa;1
+697;5887;Ferney;1127598885;3112862981;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El motorista";"Carrera 75f #57 L - 31 sur";"Casa azul";1
+698;5889;"Carlos Andres Varela";1116437157;3117403814;CO;76895000;"ZARZAL , VALLE DEL CAUCA";"Gonzalo Echeverry";"Calle 11 #4-65";Casa;1
+699;5890;"Laura Inés Roa Vargas";51846493;3143802807;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Nueva Granada";"Calle 65 #2-40";"Edificio del cerro-Apartamento 505";0
+700;5891;"Jackson Quintero";11275584;31463899777;CO;25572000;"PUERTO SALGAR , CUNDINAMARCA";"Barrio Seis de Enero";"Calle 15#7-245";NULL;1
+701;5892;"Alejandra Rendón";52727611;3142228363;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La nueva gloria";"Transversal 12aEste #49-41sur";Casa;1
+702;5894;"Yordan González";80140926;3045969186;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa nueva granada";"Carrera 77k#69b-71 sur";Casa;1
+703;5895;"Jhon Hamilton soler";79992471;3114649565;CO;25754000;"SOACHA , CUNDINAMARCA";"El sol";"Cr 3a# 20a-05";Casa;1
+704;5896;"Carlos diaz";79892707;3103741167;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Quiroga;"Cra 18 sur # 32 43 sur";NULL;1
+705;5898;Sergio;1000382277;3041224310;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El gaco";"Cll 77b #120a-45";"Torre 2 APTO1104";1
+706;5899;"David mauricio arango";71379928;3006234026;CO;5001000;NULL;"belen las margaritas";"carrera 76 # 9a -24";NULL;0
+707;5899;"David mauricio arango";71379928;3006234026;CO;5001000;NULL;"belen las margaritas";"carrera 76 # 9a -24";NULL;1
+708;5901;"Duvan Felipe Guerrero";1028940837;3022214053;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bogotá D,C - TIBABUYES";"Kr 114F No 151 C 51";"Apartamento 301";1
+709;5902;"Nayive Cancimance";1080048585;3145009401;CO;52001000;"PASTO , NARIÑO";NULL;"Cra 14a #3-03";NULL;1
+710;5903;"Miguel quintana";1067848866;3228418467;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Bilbao;"Carrera 145a 143b 13";Casa;1
+711;5905;"Giovanny Cuesta";1057690293;3123058909;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudad verde";"Carrera 38 # 10 a 206";"Conjunto cala apto 5079 torre 21";1
+712;5644;"Wilmer Gonzalez";1120376785;3142850368;CO;50313000;"GRANADA , META";"Villas de Granada";"MZA A 1 Casa # 25";NULL;1
+713;5908;"Diego Armando Lascano Moreno";1075220424;3222219041;CO;41001000;"NEIVA , HUILA";"San jorge";"Calle 23 b sur #26-58";Casa;1
+714;5912;"Andres Felipe Marin Clavijo";1077476582;3126571093;CO;5649000;NULL;Polideportivo;Cra17#19-36;"Al dado de la bomba seuz .  Pintamax";1
+716;5916;"Luís Alberto Ramírez";80439037;3127881827;CO;19001000;"POPAYÁN , CAUCA";Pandiguando;"Calle 4# 19_17";"Ferrobloques la20";1
+717;4491;"Milton acosta";79752883;3153798923;CO;5002000;NULL;"Leon 13";"Calle 43 # 8-26 soacha";"Cundinamarca, soacha";1
+718;5924;"Rosmira ortega";60318711;3125824861;CO;54001000;"CÚCUTA , NORTE DE SANTANDER";Belén;"Av.26 # 26-06 Belén";Casa;1
+719;5925;"Daniel Nieto";1014308263;3217674059;CO;76834000;"TULUÁ , VALLE DEL CAUCA";Fatima;"Calle 42b #33-25";"Segundo piso";1
+720;5928;"Vincen Castiblanco";1011324271;3107596670;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Las brisas";"Cra 89 d # 40 a sur 42";"Apto 201";1
+721;5936;José;Almerida;3044654722;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Principe de Bochica";"Diagonal 48j #5c-16";"Local barberia, Llamar al 3044654722 cuando esté en la dirección";1
+722;5933;"Michael Beltrán";1000579102;3123697703;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Antonio";"Carrera 14 #4 sur-23";"Apto 401";1
+723;5938;"Oscar garcia";80225597;3192740300;CO;25126000;"CAJICÁ , CUNDINAMARCA";"Vereda La palma";"Carrera 19b # 1a - 39s";"Via cajica  Tabio Vereda la palma";1
+724;5940;"Natalia urrea";1000126898;3024220662;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudadela sucre bellavista";"Transversal 49 # 38-05";NULL;1
+725;5943;"Mauricio Almario";79916771;3232371943;CO;25754000;"SOACHA , CUNDINAMARCA";"Leon 13";"Traversal 12 #38b-76";"Almacén de pintura";1
+726;5944;"Pilar S&aacute;nchez";52048557;3118088112;CO;11001000;NULL;"Jos&eacute; Joaquin Vargas";"Calle 67abis 65a 04";Casa;1
+727;5946;"Jennifer Carolina";1033712630;3138452038;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Molinos;Cl49gsur5m36;Casa;1
+728;5942;"Carlos Andrés Bolaños Alvarez";1048969641;3144430243;CO;19100000;"BOLÍVAR , CAUCA";"Cristo Rey";"Cara 1 No 4-47";NULL;1
+729;5949;"Juan Estevan Yepes Gómez";1016006466;3236246382;CO;25473000;"MOSQUERA , CUNDINAMARCA";"Porvenir Rio";Kr6;NULL;1
+730;5948;"Leídy Bibiana Cañón Zarate";1069129537;3209026439;CO;25785000;"TABIO , CUNDINAMARCA";NULL;"Oficina interrapidisimo";Tabio;1
+731;5945;"Yeins Eferson Gil Martinez";1000698763;3229115774;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Arborizadora Alta";"Carrera 38 #73-48sur";Casa;1
+732;5950;"Angelo Nava";1127670160;3213229634;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Veraguas;"Calle 5b #31-28";201;1
+734;5922;Felipe;12349911722;3044917191;CO;5001000;NULL;"San Antonio de prado";"#11-2 a, Cra. 77 #1176, San Antonio de Prado, Medellín, Antioquia";NULL;1
+735;5881;"Luis Caicedo";1087006543;3164688122;CO;76130000;"CANDELARIA , VALLE DEL CAUCA";"Villasilvena cerca del arenal";"Barrio villasilvena manzana c casa 73";"Casa de un solo piso blanca con rejas blancas";1
+736;5954;"Miguel González";1096801234;3026110676;CO;8001000;NULL;"Ciudadela 20 de julio";"Callé 46k # 1-36";Casa;1
+737;5957;"Juan camilo Gómez Guzmán";1006503316;3225375321;CO;50001000;"VILLAVICENCIO , META";"LA ROSITA ETAPA 3";"Carrera 32.ª #10-50 sur";"Cuadra sin salida";1
+738;5958;"JUAN JOSE GOMEZ";1002969460;3176625343;CO;19001000;"POPAYÁN , CAUCA";"El limonar";"Cra 12 # 13 - 14";NULL;1
+739;5959;"Juan José Marín Mesa";1000537686;3002782315;CO;5001000;NULL;"Manrique oriental";"CLL 70#35-35";Casa;1
+740;5960;"John Montes";14010162;3192989002;CO;73483000;"NATAGAIMA , TOLIMA";Centro;"Cra 2 # 4-56";Casa;1
+741;5961;"CRISTHIAN CAMILO ESCOBAR";1057588375;3008407383;CO;15759000;"SOGAMOSO , BOYACÁ";"Valdez tavera";"Carrera 27 nuemro 7 63";"CASA LOTA AL LADO DEL EDIFICIO Y DEL POTRERO VALDIO";1
+742;5965;"Teresa Amaya";35355348;3213384897;CO;25430000;"MADRID , CUNDINAMARCA";"Calle 24 N° 2 este – 210 TO 7 –apto 504. Smz . Madrid";"Calle 24 N° 2 este – 210 TO 7 –apto 504. Smz . Madrid";"Calle 24 N° 2 este – 210 TO 7 –apto 504. Smz . Madrid";1
+743;5968;"Omar dario naranjo morales";10777167;3193829143;CO;23001000;"MONTERÍA , CÓRDOBA";Mogambo;"Mz 38 lt 17";NULL;1
+745;5964;Fabian;1019089254;3208920067;CO;25320003;"PUERTO BOGOTA , CUNDINAMARCA";"Suba, Lisboa";"Calle 132a , 149c - 37";"Casa primer piso";1
+746;3503;"Julian G";0989089089;779879879;CO;50006000;"ACACIAS , META";"Los laureles";"Trv 2090 12-23";"Cas 12";0
+747;4776;"eduardo Quintero";14620171;3007501652;CO;76001000;"CALI , VALLE DEL CAUCA";"EL VALLADO";"CRA 41 #56-74";"ESQUINA PISO 2";1
+748;5973;"Paola cruz";1010202689;3103129292;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Suba rincon";"Calle 127 B 91 35";"Casa primer piso";1
+749;5981;"Karol gutierrez";1000337407;3125530884;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bravo paez, Rafael uribe uribe";"Calle 35A sur #26d-47 int 4";"Casa de 4 pisos verde en callejon costado izquierdo";1
+750;5969;juan;1023020419;3177163822;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"QUINTAS DEL SUR";"CL 72 sur # 17B 56";NULL;1
+751;5722;"EDIE BENJUMEA";1118860721;3208417386;CO;44001000;"RIOHACHA , LA GUAJIRA";"Urbanización iguaraya";"Cra 7f #40-52 urb iguaraya";"Urbanización iguaraya";1
+752;5978;"Oscar pinilla";13285298;3167711566;CO;54385000;"LA ESPERANZA , NORTE DE SANTANDER";NULL;"Agua Azul AAA";Planta;1
+753;5994;"Angel David";1.21313492;3117534405;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La estanzuela";"Calle6a # 15a-54";Bodega;1
+754;5998;"Esteban Ruiz";1010249007;3022041567;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Santa fe";"Carrera 9 #19-40";Edificio;1
+755;5999;"Andrés Valencia";1013117323;3244653658;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Las luces";"Cra. 77u #51a Sur-98 a 51a Sur-2";Casa;1
+756;6006;"Kimberly Pinto";6840760;3046417663;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Veraguas;"Cra 34 #4b 14";Casa;1
+757;6007;"Brayan Triana";1026597784;3164555099;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Veraguas o asunción";"Avenida calle 3 # 31D-71";"Almacén Yelmo Sport";1
+758;6008;"Santiago palacio";1023379834;3103238807;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudad verde";"Calle 17 #38-173";"Olivo1 torre 11 apto 402";1
+759;6011;"Adrián Thomas";1140916976;3212111202;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Monteblanco;"Carrera 14a número 96-12 sur";"Casa azul";1
+760;3933;"John cantor";1023898031;3214011203;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Chico;Carrera11#99-21;"Consecionario auteco";1
+761;6013;"Stiward rojas";1031164673;3102917645;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Quiroga;"Crr18a #32a49sur";"Barrio Quiroga una cuadra abajo de la estación de trasmilenio";1
+762;6016;"Daniel Puerto";1023303219;3104236129;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Fontibón / San Pedro los Robles";"Carrera 98 #16d 23 - interior 4/ piso 1";Callejón;1
+763;6015;"Keyner cardenas";1072099850;3214879421;CO;73275000;"FLANDES , TOLIMA";"Orquideas 2";"Manzana 7 casa 4";"Casa de segundo piso";1
+764;6020;"Jorge William Ramirez";1033779188;3118850486;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villas del Diamante";"Carrera 18n # 70d 12 sur";"Casa frente a colegio Fanny Mikey";1
+765;6021;"Javier Uzcátegui";1016115829;3025903121;CO;5042000;NULL;"Santafe de Bogotá";"Calle 96 #12-31";"Torre Márquiz";1
+766;4414;"Camilo Prieto";1023959616;3044099995;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La gloria";"Calle 43 a sur #10-42 este";Casa;1
+767;6024;"Yasmina Torres Oviedo";43744133;3148787121;CO;70001000;"SINCELEJO , SUCRE";"Uribe - uribe";"CR 18C 45A -32";"Casa mostaza";1
+768;6027;"Martín herrera";77021224;3008849761;CO;5088000;NULL;"Gran Avenida";"Carrera 50 #32a 03";"Local el Parrandon";0
+769;6027;"Martín herrera";77021224;3008849761;CO;5088000;NULL;"Gran Avenida";"Carrera 50 #32a 03";"Local el Parrandon";1
+770;5727;"Jairo Enrrique Tuta Diaz";80226885;3017679352;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villas del Dorado Engativá";"Cra 107 A bis # 69b - 58";"Piso 2";1
+771;6031;"María Betancourt";1034661966;3107759671;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Venecia;"Carrera 54b #51-27 sur Venecia";Casa;1
+772;6033;"Camilo Gómez";1070950898;3142694716;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa Pablo sexto";"Carrera 77i #70b sur 56";"Casa color rosado con tercer piso sin pintar";1
+773;5710;"Jorge Grajales";1022143418;3225433379;CO;5001000;NULL;"Antonio Nariño, San Javier";"Carrera 107 #45B-41";"Interior 101";1
+774;6046;"Cristian Sepulveda";1007444846;3207438944;CO;5154000;NULL;"Camello #2";"Calle 27 B 28 25 Camello #2";Casa;1
+775;6047;"Jhonny Alexander Jiménez";1033119749;3017683123;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Santa Cecilia baja";"Calle 163a#4-32";"Casa verde primera puerta";1
+776;6049;Deiby;1055333494;3108107194;CO;15814000;"TOCA , BOYACÁ";"Toca centro";Toca;Casa;1
+777;6054;"Luisa Valencia";1002971826;3205554271;CO;19001000;"POPAYÁN , CAUCA";"La paz/ villa del norte";"Calle 70cn # 3a-04";"Casa esquinera";1
+778;6058;"TOMAS SANTIAGO";1070961320;3163810870;CO;25430000;"MADRID , CUNDINAMARCA";"La finca";"La finca mnz 10b";"Mnz 10b torre 24 apt 103";1
+779;6061;"Yamile Rios";52204967;3007301214;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El Libertador";"Calle 31 b sur # 24 b - 95";"Tienda esquinera";1
+780;6062;"Juan Felipe Gómez Lopez";1011097255;3229014907;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La Acacia";"Calle 62 A sur # 18 T 22";Casa;1
+781;6065;"Santiago hoyos";1128400328;3044503239;CO;5088000;NULL;"Santa ana";"Transversal 38 aa # 57 110 apto 315 torre dos";"Urb Puerto paraiso";1
+782;6066;"Wilmer Muñoz";1010232073;3143026633;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudad verde";"Cra 32 #17-215";"Torre 15 apt 4060 malva";1
+783;6000;"Andres Barreo";1016718202;3213387483;CO;41020000;"ALGECIRAS , HUILA";Floresta;"Carrera 7a Número 1B-34";Casa;1
+784;6067;"Sergio Esteban Valencia Campos";1000378750;3192934159;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa Teresita Engativá";"Cra 115b #68-64";NULL;1
+785;6079;Anderson;1028880652;3202547579;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Patio bonito";"38b sur 39c84 cl";Casa;1
+786;6080;"Roberto Acosta";1023030624;3222296695;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Sabana de Tibabuyes";"Calle 143ª #128 51";"Conjunto San Andrés afidro Torre 33 Apto 304";1
+787;6097;"Sebastian Malaver Garcia";1033677276;3223344123;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Meissen - La playa 1 sector";"Calle 60 b bis # 18 b 43 sur";Casa;1
+788;6127;"Ronald Steven Mayorga Cardenas";1019765195;3112284339;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Caminos de la esperanza";"Carrera 145 #145 a-61";"Casa 4";1
+789;6128;"Angel Malagón";1078346445;3203529504;CO;25772000;"SUESCA , CUNDINAMARCA";Centro;"Calle 8#56";Casa;1
+790;6135;"Duvan castro";1073603316;3207044565;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Andalucía;"Carrera 80c #13a 32";"Torre 9 204 Gerona del vergel";1
+791;6034;"Julio Pacheco";88135651;3184722165;CO;54498000;"OCAÑA , NORTE DE SANTANDER";"Primero de mayo";"Carrera 28b # 3-26";"Apartamento 202";1
+792;6144;Yinosaenz;1000114634;3202459340;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa brasilia";"Carrera 88 b # 50 33 sur";Casa;1
+793;6158;"Carlos andres";1023906406;3502663844;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La belleza";"Carrera 10b este 63 20 sur";Casa;1
+794;6177;"Nicolás Valencia Mellizo";1061718514;3175577000;CO;19001000;"POPAYÁN , CAUCA";"Benito Juárez";"Cra 11 a #9-34";"Casa al lado de conectic";0
+795;6182;"Yhorman Gómez Martos";1006847630;3175455360;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa recreo";"Calle 85 sur #92-85";"Eucalipto Torre 34 apartamento 503";1
+796;6191;"Fabi&aacute;n Castrillon";14621496;+573194151260;CO;76001000;NULL;Floralia;"CALLE 72 G 4 N 42";CASA;1
+797;6192;"Ariel Fernando";1.102.489.120;3143473809;CO;68296000;"GALÁN , SANTANDER";NULL;"Galán Santander";"Galán Santander";1
+798;6196;"Juan Yate";7713826;3236173169;CO;41001000;"NEIVA , HUILA";Ventilador;"Calle2c #18-13";NULL;1
+799;6216;"Sonia Arias Mieles";53000757;3183740658;CO;11001000;NULL;"EL REDIL";"Carrera 8 N. 173-50 Casa 69";"CASA 69";1
+800;6226;"Mateo Vasquez";1013114829;3219843028;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La Asuncion";"Carrera 32 B # 1H79 Barrio la asunción";NULL;1
+801;6240;Walter;1024582645;3005621623;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El espino";"Calle 67a sur #77a15";Casa;1
+802;5983;"Yeison Quiroz";1142714352;3185058626;CO;68001000;"BUCARAMANGA , SANTANDER";"La Juventud";"Calle 1 #20 A-08";Casa;1
+803;6243;"Andrés Morera";1022328153;3115782065;CO;15001000;"TUNJA , BOYACÁ";NULL;"Cra 2 este 75 a 84";"Casa 13 Conjunto Alameda";1
+804;6260;"Diego Andres Aguillon Quintana";1025529915;3143414260;CO;68167000;"CHARALÁ , SANTANDER";NULL;"1597 Cl. 23";NULL;1
+805;6267;"Franklyn Ortiz";1033748442;3115664693;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Virrey;"Carrera 3 f # 97 a - 11 sur";Casa;1
+806;6283;"Jaiber cerón";1122728613;3212446593;CO;86573000;"LEGUÍZAMO , PUTUMAYO";Rancholindo;"Calle 14/15 barrio rancholindo";"Frente sintética las villas";1
+807;6298;"Michel giraldo";1059784695;3246618655;CO;17616000;"RISARALDA , CALDAS";"Detrás del hospital";"CRA 5 CL 9";"Casa azul";1
+808;6303;"Brandon Alexander Castillo Núñez";1002525462;3219611466;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Comuneros;"Kr1d #97-06 sur";Usme;1
+809;6086;"Dilan Santiago Cortes Gutiérrez";1027528303;3142823951;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Villa Gladys";"Calle 48d #10-57 sur";Casa;1
+810;6315;"Sebastian Garcia Mezu";1112486639;3017887985;CO;19845000;"VILLA RICA , CAUCA";Terronal;"Calle 3 # 13 - 17";NULL;1
+811;6263;"Cristian Pulido";1000334347;3205032152;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El Vergel";"Carrera 24 #1D-24";Empresa;1
+812;6333;"Andrés Narvaez";1144183437;3186258693;CO;76001000;"CALI , VALLE DEL CAUCA";Guabal;"Carrera 39 13b 36 guabal apto 102 torre 3";NULL;1
+813;6334;"Samuel duran";1052838400;3125584342;CO;15238000;"DUITAMA , BOYACÁ";"La paz";"Tv 19#27-10";"Al lado del rafael reyes";1
+814;6336;"Juan David castro";1016003677;3007757297;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El tintal";"Calle 8c#87b-90";"Nueva Castilla 2 casa 95";1
+815;6337;"Jair Andrés Mora Rozo";1023889322;3133516515;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San José obrero";"Cll26 a sur # 12-82";"Casa segundo piso";1
+816;6338;"Hernan Dario Guasialpud Pianda";5205509;3104740880;CO;52001000;"PASTO , NARIÑO";"El Rosario";"Diagonal 15 # 13E 09";NULL;1
+817;6339;"Andrés Vives";1083019576;3028469875;CO;47001000;"SANTA MARTA , MAGDALENA";"Pescaito (Olaya Herrera)";"Calle 5 carrera 13";"Casa #13-13";1
+818;6342;"David Enrique Sierra Rodríguez";1073523636;3223745607;CO;25286000;"FUNZA , CUNDINAMARCA";"Santa Teresita";"Calle 10 # 23 - 16 Int 1";"Casa azul puertas negras.";1
+819;6343;"Julian roldan";1014979423;3195648335;CO;5002000;NULL;Tintal;"Cra 90 # 6 a 98 int 17 apto 201";"Interior 17 apto 201";1
+820;6345;"Andrés Vives Franco";1083019576;3028469875;CO;47001000;"SANTA MARTA , MAGDALENA";"Pescaito (Olaya Herrera)";"Calle 5 carrera 13";"Casa #13-13";1
+821;6346;"Jose torres";73198376;3042560164;CO;13001000;"CARTAGENA , BOLÍVAR";"Daniel lemaitre";"Carrera 17#68-67 en toda la carretera casa color fuscia con amarillo";Casa;1
+822;6348;"Wilmer neuta";1012400448;3228053299;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa, la libertad.";"Cll 58 sur #89-63";NULL;1
+823;6349;"Nelly yaqueline";53091911;3106690055;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa Jiménez de quesada";"Transversal 80 G No 65 i29 sur";Casa;1
+824;6350;"Antonio Guzmán";79756506;3132892963;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Castilla;"Cra 72b # 6d-73";"Casa 12";1
+826;6352;"Daniela suarez";1034399812;3209759880;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Puerto rico";"Cra 9D #40-47 sur";"Casa de dos pisos, en obra gris";1
+827;4153;"Leider Arrieta Hernández";1192794606;3242612091;CO;5425000;NULL;"Ur villas del ensueño";"Urbanización villas del ensueño";"Torre 3 Apa 301";1
+828;6356;"D&iacute;ana barajas";1069432736;3143256413;CO;11001000;NULL;"Santa In&eacute;s";"CRA 13#9-39";"Torre sur apto 611";1
+829;6360;"Laura Camila";1001342746;3017869821;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";kenedy;"avenida carrera 80 # 2-51,";"puerta 4";1
+830;6363;"Carlos Mario";1016086385;3045966667;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Normandia;"Transversal 85#52c-19";"Int 1 apartamento 502";1
+831;6369;"Brayan romero";1016949723;3025281082;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Suba los naranjos";"Calle 129f#88c12";NULL;1
+832;6371;"Alejandro Carvajal";1016912802;3174622205;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Pio XII";"Calle 6b #79c 81";"Apartamento 594";1
+833;6372;"Daniel laguna";1014596133;3186025743;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Gran granada";Cll79#119-95;"Torre 2 apto 102";1
+834;6373;Bairon;1014476596;3132688611;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Egipto;"Calle 9a 4-04 este";"Color amarillo con verde puerta negra";1
+835;6379;"Leandro Moreno García";1036396111;3112340086;CO;5148000;NULL;Ospina;"Cra33a #22-19 apto303";NULL;1
+836;6381;"Jhon Aristizabal Prieto";1110363103;3148901163;CO;76001000;"CALI , VALLE DEL CAUCA";"San Luis";"Cra. 1a 14 #70-25, Cali, Palmira, Valle del Cauca";Casa;1
+837;6380;"Jeison niño";1233688520;3186815613;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La floresta";"Calle 98b#68b-52";Casa;1
+839;6385;"Esteban Rubio";1032797016;3003110745;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La unión";"Cll 75g sur #73 c 29";NULL;1
+840;6390;Tatian;1114736289;3187790223;CO;76001000;"CALI , VALLE DEL CAUCA";"Los alcázares";"Calle 70 A 1A3 bloque 34 apto 202";Apartamento;1
+841;6389;"Javier Steven";1073686409;3144486557;CO;25754000;"SOACHA , CUNDINAMARCA";"Santa Ana";"Cll 8 sur 9 b 18";Casa;1
+842;6391;"Brayan  Tarapuez";1086105599;3162883419;CO;52585000;"PUPIALES , NARIÑO";"San Francisco";"Carrera 4 número 4-39";"Apartamento 3";0
+843;6391;"Brayan  Tarapuez";1086105599;3162883419;CO;52585000;"PUPIALES , NARIÑO";"San Francisco";"Carrera 4 número 4-39";"Apartamento 3";1
+844;6392;"Edimerth Stiven Zamora rojas";1030540782;3232435457;CO;25754000;"SOACHA , CUNDINAMARCA";"Hogares Danubio";Cra19a#1-175;Apt;1
+845;6395;"Brian  Perdomo Rojas";1033766833;3043656786;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Mirandela;Calle187#55b-90;"torre 4 apto 401";1
+846;6396;"Julián Ballen";1000035218;3053857648;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Marruecos;"Cll 49 A sur No 5J80";Casa;1
+847;6401;"Antonio criollo";1004232749;3173819144;CO;52399000;"LA UNIÓN , NARIÑO";Obreo;"Calle 14#4-30";"Almacen pasto rines la union";1
+848;6403;"Santo grove";1010233635;3015179363;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Timiza;Cra78f#41f32sur;Casa;1
+849;6403;"Santo grove";1010233635;3015179363;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Timiza;Cra78f#41f32sur;Casa;1
+850;6409;"Yersson Ricardo Marín patiño";1012353833;3183935990;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa Islandia";"Calle 71 a sur no 83 b 85";"Conjunto alameda del otoño torre 2 apto 203";1
+852;4033;"Carlos Ardila";1057606776;3148918273;CO;15759000;"SOGAMOSO , BOYACÁ";Universitario;"Carrera 14 # 2 sur - 46";"Bloque 5, apto 502";1
+853;6417;Jeisson;1013612862;3244847205;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Bernardo";Cr13#2-77;Apartamento;1
+854;6420;"Juan Pablo Acevedo";1003533965;3134197941;CO;25269000;"FACATATIVÁ , CUNDINAMARCA";Girardot;"Carrera 2 #1-63";"Casa de dos pisos frente a escuela pública Jhon F. Kennedy";1
+855;6426;"David Malpica";1032413144;3208269279;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Eduardo Santos";"Av calle 1 # 18-46";"Local Autoelectricos";1
+856;6428;"Gustavo pelaez";15434690;3122262408;CO;5615000;NULL;Hospital;"Cra 48#52-54 edifico santa barbara local 103 almacén costuadornos";Edificio;1
+857;6430;"Carlos Álvarez";1021668092;3124769513;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Policarpa;"Calle 4 Sur #10 51";NULL;1
+858;6432;"Ricardo aguazaco";1054094458;3006367678;CO;15407000;"VILLA DE LEYVA , BOYACÁ";Santander;"Calle 7 #13 a76";NULL;1
+859;6439;"Johnatan Vélez";1001020430;3127594283;CO;5034000;NULL;"Detrás de la iglesia del parque principal";"Calle 49 # 50-63";"Parqueadero San Bernardo";1
+860;6440;"Andres lopez";1073697641;3105868188;CO;25754000;"SOACHA , CUNDINAMARCA";"Compartir soacha";"Calle 20 sur no 14 08";"Segundo piso soacha compartir";1
+861;6441;"Diego Enrique Leiva Lizarazo";79702001;3023365699;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San José Obrero localidad Rafael Uribe Uribe";"Carrera 12D #22sur-34";"Casa piso 2";1
+862;6442;"Cesar Luis Taimbud";1124312861;3138673087;CO;86749000;"SIBUNDOY , PUTUMAYO";"El cedro";"Cra 20#16-95";"Diagonal a unimap, casa esquine naranja";1
+863;6429;"Laura daniela gonzalez quevedo";1003741452;3114707560;CO;25286000;"FUNZA , CUNDINAMARCA";Provivienda;"Calle 6 #7D 04";"Casa 2° piso";1
+864;6177;"Nicolás Valencia Mellizo";1061718514;3175577000;CO;19001000;"POPAYÁN , CAUCA";"Benito Juarez";"Carrera 11A No. 9-34";Casa;1
+865;5917;"Hansel Sánchez";1129525157;3016204007;CO;8001000;NULL;"Simón Bolívar";"Carrera 6D # 19 - 62";Casa;1
+866;6445;Jonatan;1011089105;3003505278;CO;25772000;"SUESCA , CUNDINAMARCA";"El capricho";"CLL 8a #3-63";"Casa azul puertas verdes";1
+867;6451;Ivan;79955139;3203223078;CO;76001000;"CALI , VALLE DEL CAUCA";Santander;"Calle 34 #1-05";NULL;1
+868;5077;"Gilberto Villamarín Alvarez";1193047742;3028324063;CO;76001000;"CALI , VALLE DEL CAUCA";"Terrón Colorado";"Avenida 6 Oeste #28a-30 Vía al Mar";"Droguería Manantial de Betania";1
+869;6453;"Angie Velandia";1022937952;3102928817;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Monteblanco;"Calle 95sur #14a-63";"Casa roja de puertas negras";1
+870;6454;"Armando Orta";1065639854;3006915496;CO;20001000;"VALLEDUPAR , CESAR";Obrero;"Calle 13c # 11-21";NULL;1
+871;6456;"Lucas grajales";1040752345;3041099966;CO;5380000;NULL;Ancon;Cr55c#83csur57;"Casa 193";1
+872;6457;"Carlos Freile";1016943778;3025840386;CO;25754000;"SOACHA , CUNDINAMARCA";"Parque campestre, via indumil";"Carrera 7B #3-86 parque campestre et13";"Apto 15-601";1
+873;6382;"Paula rubio";1014661012;3025418183;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La Uribe";"Carrera 20A #173-03";"Portal del comendador III INT 1 APTO 504";1
+874;6458;"Diego Fernando Guerrero pertuz";1001089912;3044644283;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Barrios unidos";"Cl. 99 #60-59, Barrios Unidos";Conalcreditos;1
+875;3553;"RONNY CARRILLO ARAUJO";1129510389;3012844997;CO;8001000;NULL;"Las Nieves";"Carrera 12 # 27-72";"Apartamento 1";1
+876;5906;"Wilber lopez";5001779766;3234752316;CO;5001000;NULL;"Robledo el diamante";"Carrera 86#80-07";201;1
+878;6465;"Andrés Martín";1007510200;3132931006;CO;25430000;"MADRID , CUNDINAMARCA";"Parques de Santamaría";"Carrera 22a#10 32 sur";"Agrupacion 5 bloque 4 casa 8";1
+879;6467;"Juan Carlos Medina López";15442326;3144860505;CO;5615000;NULL;"Quebrada arriba";Calle52#56-02;Casa;1
+880;6468;"Darwin Rodríguez";23860264;3213022671;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosque popular";"Carrera 69L #63c-41";Casa;1
+881;5680;"Juan Diego Marulanda Cano";1020493162;3016707150;CO;5088000;NULL;Navarra;"Av. 20 #5250, Navarra, Medellín, Bello, Antioquia";"Plaza Navarra apartamentos- 2120 torre 3";1
+882;6472;"Daniel Valencia";1053846157;3174719096;CO;17001000;"MANIZALES , CALDAS";"La sultana";"Calle 67 # 9A 21";"Tercer piso";1
+883;6478;"Yerson Fernández pardo";1003741648;3114849796;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Andalucia;Cra81f#13a-45;"Casa 1piso";1
+884;6479;"Carlos fabian garcia";1.065.595.507;3153533041;CO;20001000;"VALLEDUPAR , CESAR";"Los musicos";"Calle 5 # 19 - 09";"Apto 201, frente montacarga del norte";1
+885;6485;"Juan Esteban";1193558434;3108972975;CO;66400000;"LA VIRGINIA , RISARALDA";Gavilanes;"Calle 13a #6-60";NULL;1
+886;6077;"Yulaih virguez";1022924749;3219303750;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Escala segundo sector";"Cr 18 m # 62-12 sur bis";"Primer piso";1
+887;6489;"Juan barreto";1014669258;3115978326;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Tibana;"Cra 38d #3 a 28";"Conjunta tibana manzana 3 , apartamento 201";1
+888;6491;"Jesica Yuranis Ditta Sarmiento";1063560376;3143906481;CO;50001000;NULL;"Bosques de rosablanca";"Calle 3sur #30b-03";"Apto 302";1
+889;6474;"Daniel Castro";1002559133;3148848908;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Verbenal;"Cra16 #183-2";"Trailer de medias y gorras";1
+890;6492;"janet pinto";5649885;3173133932;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";madelena;"carrera 67#58-31 sur";"torre 4 apto 1101";1
+891;6493;"Julián pardo";1001046698;3028569260;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El triunfo";"CL 81 sur # 87 J 60";NULL;1
+892;6494;"santiago rojas peralta";1019002234;3138341424;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"El ruby";"Cl. 22m Bis #96g-19, Bogotá";206;1
+893;6495;"Jesús sotaquira";1031646547;3028232526;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa atalayas";"Calle 62 a sur #99 a 14";Casa;1
+894;6496;"Laura Hernandez";1033176860;3059063061;CO;5001000;NULL;Boston;"Calle 50b #37-75";"Urbanización Villas del telar 1. Apto 143";1
+895;6497;"Cirley Gutiérrez Lozano";1108930730;3212960727;CO;18001000;"FLORENCIA , CAQUETÁ";"La paz";"Calle 33d #7a27";Casa;1
+896;6506;"Alexandro molano";1192775357;3002221775;CO;20710000;"SAN ALBERTO , CESAR";Centro;"Calle 3 via la palma";"Apartamento 2";1
+897;6508;"Brayan stivens López Díaz";1073711999;3228023702;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa el palmar";"Calle 73 b sur #77k-52";Casa;1
+898;6509;"Santiago Guio Rodriguez";1070005322;3146683486;CO;25126000;"CAJICÁ , CUNDINAMARCA";"Puente vargas";"Cll7 #2a 46e";"2do piso de un apartamento";1
+899;6513;"Diego León Gutiérrez Gómez";1014662897;3239572540;CO;50568000;"PUERTO GAITÁN , META";Margaritas;"BLQ P TORRE 33 APTO 303 Las margaritas";NULL;1
+900;6516;"Hernan ramirez castro";1105057681;3114930647;CO;73217000;"COYAIMA , TOLIMA";"las brisas";"carrera 4 5-77";casa;1
+901;6518;"Benjamín Forero";1032877143;3167016032;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Modelo Norte";"Carrera 54 #64A-45";"Torre 9, Apartamento 904";1
+902;6519;Angélica;52879188;3208906475;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La coruña";"Calle 59 sur #48b32";Casa;1
+903;6521;"Leonardo mendoza";1018433303;3103734344;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Granjas de san Pablo";"Carrera 13b#36-09 sur";Casa;1
+904;6524;"Ricardo amezquita";1052393244;3219942828;CO;15238000;"DUITAMA , BOYACÁ";Manzanares;"calle 17b #4a 26";"Piso 1";1
+905;6525;"Josué cajica";80248495;3143917998;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La estancia torres del portal";"Tv 73b #57r 89";"Torre 2 apto 1208";1
+906;6528;Juan;1024512590;3245412262;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa la amistad";"Calle 65 h sur número 78 g 21";"Casa esquinera  , piso";1
+907;6534;"Jeisson Stiven Gacha Pinzón";1104935444;3117136064;CO;73124000;"CAJAMARCA , TOLIMA";"Calle larga";"Cra 7 # 13-55";"Piso 1";1
+908;6540;"Gustavo Perez";1020818953;3053457335;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Cortijo;"Calle 83a # 116a - 85";"Casa 101";1
+909;6542;"Michael Holguin";1057605971;3227821424;CO;85410000;"TAURAMENA , CASANARE";"Barrio libertadores Bajo";"Cll 18 #12 - 35";NULL;1
+910;6543;"John beltran";79005041;3106889858;CO;25320000;"GUADUAS , CUNDINAMARCA";NULL;"Calle 4 #0-02";NULL;1
+911;6544;"Diego MARROQUÍN";1026552381;3188994653;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Roma;"Calle 57 d bis sur # 79-04";"Casa piso 2";1
+912;6545;"maribel castro rodas";1040182332;3122539523;CO;5664000;NULL;"san Pedro de los milagros antioquia";"recojo en oficina interrapidisimo san Pedro de los milagros antioquia";"san Pedro de los milagros antioquia";1
+913;6553;"Luis Clavijo";1027524678;3222454396;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Pensilvania;"Carrera 35 #10-85";Casa;1
+914;6554;"Jonathan peña";80728113;3014240283;CO;25754000;"SOACHA , CUNDINAMARCA";"Hogares soacha";"Transversal 12 # 4a-60";"T5 401";1
+915;6555;Jhon;1193348989;3002461093;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";NULL;"Cra27a #67-34";NULL;1
+916;6558;"Abel Rodríguez";1001875449;3003215574;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Suba tibabuyes";"Cra. 127d # 142c-65";Casa;1
+917;6560;"Juan David";1006124748;3213795804;CO;25286000;"FUNZA , CUNDINAMARCA";Serrezuelita;"Calle 10 #7-01";"Interior 1";1
+918;6557;"Walter moreno";9862769;3118543113;CO;66572000;"PUEBLO RICO , RISARALDA";"Manga del mster";"Cll4 # 5-26";"Diagonal hospital san rafael";1
+919;6562;"Eva mejias";36789077;3107366943;CO;70001000;"SINCELEJO , SUCRE";Florencia;"Cra 41 23-68 barrio Florencia I";NULL;1
+920;6564;"Gloria Farías";52226645;3222173190;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Gran Granada";"Diagonal 77 B 116-51";"Bloque 5 Apto 401";1
+921;6565;"Diego Galvis";1216976752;3229257660;CO;47245000;"EL BANCO , MAGDALENA";"San Francisco";"Calle 7 #9-03";"Tienda Exito";1
+922;6568;"Jhosep emanuel Herrera";1071788286;3228379171;CO;25290000;"FUSAGASUGÁ , CUNDINAMARCA";Gaitán;"Carrera 13 1 a 16 norte gaitán";"Antes de bajar al colegio";1
+923;6570;"Nicolas Calderón";1105782942;3222423842;CO;73349000;"HONDA , TOLIMA";"Virgilio Barco";"Cra 15# 19-28";Casa;1
+925;6573;"Angie Natalia";1105750033;3224234838;CO;73319000;"GUAMO , TOLIMA";libertador;calle7#5-16;casa;1
+926;6530;Ismael;10003536660;3238116084;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"La Francia";"Carrera 43c #5 - 55";"Casa/3 piso";1
+927;6574;"Johan Alexander Velásquez";"C.c 1059812068";573223728276;CO;17653000;"SALAMINA , CALDAS";Cuchilla;"Calle 12 # 6-26";"Calle 12 #6-26";1
+928;6575;"Donni Javier patiño Gómez";72295441;3016239907;CO;68276000;"FLORIDABLANCA , SANTANDER";"Ciudad Valencia";"Calle 17#13-26 apto";"Apto 301";1
+929;6576;"Juan gonzalo garcia";1039463079;3153285625;CO;5001000;NULL;Belencito;"Calle 34 cc carrera 106 c 10";"Int 201";1
+930;6577;"Pilar Gualteros";52534675;3115597810;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Normandia;"Clle 53#71C-20";"Apto 206 A";1
+931;6580;"Yosimar Serna Berrocal";1043121637;3052599211;CO;8758000;NULL;"Los Robles II Etapa";"Carrera 21a #79-40";NULL;1
+932;6581;"Feiber Esteban Cortes Garzon";1073710913;3125234133;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Santa Monica";"Carrera 29 # 75a - 26";"Puntualmente S.A";1
+933;5215;"Andrés Arteaga Rosero";87215156;3005558136;CO;52356000;"IPIALES , NARIÑO";"Altamira 1";"Altamira 1 casa 249";NULL;1
+934;6416;"Omar mancera";79757416;3124424463;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Eduardo Santos";"Cra 16a # 4a-56";Casa;1
+935;6584;"Juan Sebastián Cabrera";1004156491;3134663608;CO;41001000;"NEIVA , HUILA";"Santa Inés";"Cra5w #38-09";"Súper mercados líder";1
+936;6594;"Sandra paola rojas galindo";1006122315;3154403757;CO;25754000;"SOACHA , CUNDINAMARCA";"Ciudad verde";"Calle 35 # 34 - 72 ciudad verde";"Conjunto victoria 1 ciudad verde";1
+937;6602;"Seila mayorca";49783486;3044503702;CO;08001000;NULL;"Alameda del rio";"Calle 117 #42B-189 edificio azulejo torre 12-701";Apartamento;1
+938;6603;"Omar david hernandez";1055313944;3102972976;CO;15806000;"TIBASOSA , BOYACÁ";"Tibasosa centro";"Calle 3 no 8-12";"Panaderia cafeteria la uvita";1
+939;6604;"Fernando Prieto";79907782;3209600316;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Ciudad Montes";"Calle 8 sur # 40B 04";"Casa 2 piso";1
+940;6612;"Sergio Andrés Quintero";1090335392;3147195615;CO;66001000;"PEREIRA , RISARALDA";"Bella sardy";"Carrera 48bis #67-17";"Casa segundo piso";1
+941;6613;Carlos;1152190955;3126485982;CO;5001000;NULL;Laureles;"Circular 1#73-06";Local;1
+942;6616;"Oscar Romero";1023864465;3108378065;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Madelena;"Calle 60 sur 70 90";"interior 1 apto 605";1
+943;6511;"andrés narvaez";1033781269;3102025879;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"santa san jorge sur";"cll 42 sur #11c-65 barrio santa lucia";"bloque b casa 26";1
+944;6620;"Yubher Alejandro";1029652342;3144061579;CO;85010000;"AGUAZUL , CASANARE";Remanso;"Calle 17a #5-15";Casa;1
+945;6621;"Juan Diaz";1007493881;3112198270;CO;15759000;NULL;"barrio 20 de julio";"calle 12 #20b 09";;1
+946;6623;"Alexander Sánchez";79715715;3222956947;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"San Cipriano";"Calle 167c # 55a 26";"Apto 101";1
+947;6619;Daniel;1069646100;3219694729;CO;25269000;"FACATATIVÁ , CUNDINAMARCA";Girardot;"Cra4sur número 178";Casa;1
+948;6626;Luis;1049624818;3107801658;CO;15001000;"TUNJA , BOYACÁ";Suarez;"Calle 9a 10-67";"Piso 2";1
+949;6630;"Fernando sehuanes";1002495965;3023410149;CO;8001000;NULL;"La pradera";"Carrera 29#116-08";Apartamento;1
+950;6635;"Jair prieto";1016112633;3015068499;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Fontibon centro";"Cra 97# 17-48";"Casa  taller de motos";1
+951;6638;"Daniel godoy";1005815038;3016041767;CO;73001000;"IBAGUÉ , TOLIMA";"Los martires";"Carrera 2 # 37-10";NULL;1
+952;5763;Miguel;1033740575;3145135787;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Meissen la playa";"Calle 60 b bis # 18 - 40 sur";Casa;1
+953;6641;"Jhonatan tovar";1026251702;3028339231;CO;85001000;"YOPAL , CASANARE";"Villa vargas";"Carrera 10#46-82";Casa;1
+954;6642;Rafael;24902048;3178096056;CO;41001000;"NEIVA , HUILA";"Villa María";"Calle 64A 1-52";"Casa verde";1
+955;6659;"Alejandro Arteaga";1080048813;3238618296;CO;41206000;NULL;"Villa flor 2";"Manzana 9 Casa 7 Villa Flor 2";;1
+956;6784;"Andrés Socha";1020731074;3222453621;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Altablanca;"Calle 159 #8c-09";Cada;1
+957;6640;"Oscar forero";80188999;3124786312;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Estrada;"Calle 64h 69f 27";NULL;1
+958;6842;"mario ramos";11377816;3155198886;CO;;NULL;"poblado 2";"calle 72U1 # 28 E 64";;1
+959;6851;"David ascanio";1127046125;3002383950;CO;68001000;"BUCARAMANGA , SANTANDER";"Diamante 2";"Carrera 19 #87-06";Casa;1
+960;6859;"Julián Andrés Gonzáles";1070325736;3219282865;CO;25772000;"SUESCA , CUNDINAMARCA";Centro;"Calle 8 6-23";Casa;1
+961;6869;"Cra 3 este n15a 21";1024561722;3186740641;CO;25754000;"SOACHA , CUNDINAMARCA";"Chico soacha";"Cra 3 este n 15a 21";"Casa de dos pisos cerca al cai del chico";1
+962;6873;"Pier armando";1100950183;3194188164;CO;54518000;"PAMPLONA , NORTE DE SANTANDER";Centro;"Carrera 8#8-81";Corponor;1
+963;6886;"Ferney Vega";1098638935;3206406767;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Puente Aranda";"Batallón aspc21 en puente Aranda";"Batallón por la 50 puente Aranda";1
+964;7041;"Oscar Tangarife";80161038;3002360616;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Fontibón Recodo";"Calle 14 B N 119A 17";"Interior 5 Apartamento 103";1
+966;7181;"Olier Durango Holguín";1040372190;3123638184;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Arborizadora alta";"Calle 74 a sur 33-49";"Casa, puerta negra";1
+967;7350;"Andrés Vives Franco";1083019576;3028469875;CO;47001000;"SANTA MARTA , MAGDALENA";"Pescaíto (Olaya Herrera)";"Calle 5 carrera 13";"Casa #13-13";1
+968;6625;"Eduard López castro";16830425;3174737579;CO;76001000;"CALI , VALLE DEL CAUCA";Tequendama;"Calle 5# 45a-125 bloq 27";"Apto 203";1
+969;7461;"Jesús Acosta";"Cc: 1014479751";3204585903;CO;25754000;"SOACHA , CUNDINAMARCA";"Br Mariscal Sucre";"Cr 2C No. 26-31 Br Mariscal Sucre San Mateo";"Casa 3 pisos, el primer piso";1
+970;7651;"Sebastian Rivera";10113467;3123325396;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Las Ferias";"Calle 78 Bis 69 A 17";"Casa puerta verde";1
+971;7666;"Brayan diaz";1003670741;3126298839;CO;25290000;"FUSAGASUGÁ , CUNDINAMARCA";"Pekin ladrillera";"Manzana 1 casa 38";NULL;1
+972;7706;"Johon fajardo";79843683;3177871167;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Gran granada";"Carrera 116b 72 f 70";"Torre 10 apt 102";1
+973;7748;"Julian ruiz";1106978027;3134757115;CO;73585000;"PURIFICACIÓN , TOLIMA";"Ospina perez 1";"Calle 12 N7-08";Casa;1
+974;7819;"Marco Antonio Useche Pinto";79689501;3132372181;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Ricaurte;"Carrera 27 #10-05";"Local 212";1
+975;6106;"Alvaro marin";1022342203;3124532680;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";Fátima;"Cl. 54a Sur #37a-81 ( conjunto residencial portal de Santa fe v)";"Torree 6 apt 203";1
+976;3593;"cesar gonzalez";79771153;3214247222;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";perdomo;"carrera 71F 64a 54 sur";ok;1
+977;8261;"Samir Narváez";1085908549;3174188709;CO;52356000;"IPIALES , NARIÑO";Manzano;Cra14#24-66;Cra14#24-66;1
+978;8271;Daniel;1141319667;3133596278;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";boita;cll45sur#72u14;int;1
+979;6233;"Fabian Puentes";1010042616;3204264838;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Bosa metrovivienda";"Calle 72 sur #95-17";"Conjunto senderos de recreo 1";1
+980;8433;"Magda Carolina Montoya Bustamante";1047995304;3132826121;CO;5001000;NULL;"La Candelaria";"Calle 50 #47-28";"Interior 407";1
+981;8441;"Felipe Reynoso";1073162828;3102492497;CO;25430000;"MADRID , CUNDINAMARCA";"La finca";"Calle24 no 1-60E";"Manzana 8 T6-603";1
+982;8577;"Camilo andres";18510501;3044507490;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Escala 3";"Cra 18k # 62 a sur 17";Casa;1
+983;8629;"Argenis Suárez";063772498;3044092927;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Polo club";"Calle 86A nro 22A -04  el polo club";Casa;1
+984;8730;"Paula Calderón";1016951633;3243858280;CO;25754000;"SOACHA , CUNDINAMARCA";"la veredita";"Cra. 18 #4188";"conjunto la confianza 2 torre 15 apto 403";1
+985;8753;"Anyel Zuñiga";1096800416;3106578096;CO;5761000;NULL;"La miranda";"La miranda";NULL;1
+986;8768;"Johan Arboleda";1120100304;3219653801;CO;25430000;"MADRID , CUNDINAMARCA";NULL;"CL 6, 2-21";NULL;1
+987;5890;"Samuel Chavarro";1014870125;3213607844;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Ciudad Jardín Sur";"Carrera 12d #13a-32s";"Casa roja rejas blancas";1
+988;8914;"Rusben Alberto Sissa Daza";4288591;3212558253;CO;15087000;"BELÉN , BOYACÁ";Esmeralda;"Cra 2 sur # 11 A 09";NULL;1
+989;8915;"Matías roncancio pastor";1019029813;3239392478;CO;11001000;"BOGOTÁ D.C. , BOGOTÁ D.C.";"Casa blanca suba";Cra.78#146-37;Casa;1
