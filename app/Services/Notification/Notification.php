@@ -40,19 +40,19 @@ class Notification
             $dataenvio['de'] = "Baulito";
             $dataenvio['sujet'] = "Comprobante de compra no. ".$compra->negocio_compra_id;
         }
-        Mail::to($compra->negocio_compra_correo)->send(new Compraemail($data,$dataenvio));
+        //Mail::to($compra->negocio_compra_correo)->send(new Compraemail($data,$dataenvio));
         $dataenvio['email'] = "notificaciones@togroow.com";
         $dataenvio['de'] = "Notificaciones Togroow";
         $dataenvio['sujet'] = "Orden de pedido No. ".$compra->negocio_compra_id." en Togroow";
         $correo = $infoenvio[0]->correo;
-        $correonegocio = $negocio->registro_contacto_correo;
+
         //$correo = "alos1212@gmail.com";
         //$correonegocio = "alos1212@gmail.com";
-        if($correo == $correonegocio ){
+        /*if($correo == $correonegocio ){
             Mail::to($correo)->send(new Compraemail($data,$dataenvio));
         } else {
             Mail::to($correo)->cc([$correonegocio])->send(new Compraemail($data,$dataenvio));
-        }
+        }*/
         
 
     }
