@@ -69,14 +69,17 @@ class VentasController extends Controller
         $array['ciudad'] = $venta->negocio_compra_ciudad;
         $array['lugar'] = $venta->negocio_compra_lugar;
         $array['observacion'] = $venta->negocio_compra_observacion;
+        $array['estadopago'] = $venta->negocio_compra_estado_texto;
         $array['items'] = [];
+
+
         foreach ($venta->items as $key => $item) {
             $item->producto;
             /*echo "<pre>";
             print_r($item->producto);
             echo "</pre>";*/
             $array['items'][$key] = [];
-            $array['items'][$key]['sku'] = $item->producto->store_producto_sku;
+            $array['items'][$key]['sku'] = $item->producto->sku;
             $array['items'][$key]['nombre'] = html_entity_decode($item->negocio_compra_item_nombre);
             $array['items'][$key]['valor'] = $item->negocio_compra_item_valor;
             $array['items'][$key]['moneda'] = $item->negocio_compra_item_moneda;
