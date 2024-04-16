@@ -2,7 +2,7 @@
 
 namespace App\Models\Servicios\Togroow;
 
-
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Servicios\Togroow\Compra;
 use App\Models\Servicios\Togroow\Productos;
@@ -22,6 +22,6 @@ class Itemscompra extends Model
 
     public function producto()
     {
-        return $this->hasOne(Productos::class, 'store_producto_id', 'negocio_compra_item_idproducto');
+        return $this->hasOne(Product::class, 'id', 'negocio_compra_item_idproducto');
     }
 }
