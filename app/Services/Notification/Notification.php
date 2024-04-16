@@ -38,7 +38,7 @@ class Notification
             $dataenvio['email'] = $infoenvio->correo;
             $dataenvio['email'] = "notificaciones@togroow.com";
             $dataenvio['de'] = "Baulito";
-            $dataenvio['sujet'] = "Comprobante de compra no. ".$compra->negocio_compra_id." en  ".$negocio->registro_nombre;
+            $dataenvio['sujet'] = "Comprobante de compra no. ".$compra->negocio_compra_id;
         }
         Mail::to($compra->negocio_compra_correo)->send(new Compraemail($data,$dataenvio));
         $dataenvio['email'] = "notificaciones@togroow.com";
