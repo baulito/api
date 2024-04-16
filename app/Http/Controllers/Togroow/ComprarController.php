@@ -152,7 +152,6 @@ class ComprarController extends Controller
         $array = [];
         foreach ($compras as $key => $compra) {
             $compra->items ;
-            $compra->negocio;
             $array[$key] = $compra;
         }
         return response()->json($array);
