@@ -44,7 +44,7 @@ class VentasController extends Controller
             if(isset($data['hasta'])){
                 $ventas->where("negocio_compra_fecha","<=",$data['hasta']);
             }
-            $ventas = $ventas->orderBy("negocio_compra_fecha","DESC")->get();
+            $ventas = $ventas->orderBy("negocio_compra_fecha","DESC")->orderBy("negocio_compra_id","DESC")->get();
             $datos = [];
             foreach ($ventas as $key => $venta) {
                 $datos[$key] = $this->ventaformat($venta);
