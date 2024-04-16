@@ -35,9 +35,8 @@ Route::group(['middleware' => 'cors'], function () {
     Route::get('/togroow/products/category', 'Togroow\ProductoController@getCategoriasNegocio')->name('listado_getCategoriasNegocio');
     Route::get('/togroow/products/scout/import', 'Togroow\ProductosController@cargaScout')->name('scout_productos');
     //Route::get('/togroow/productos/detail/{id}', 'Togroow\ProductosController@detailProduct')->name('detail_product');
-    Route::get('/togroow/productos/detail/{id}', 'Togroow\ProductoController@detail')->name('detail_product');
-    Route::get('/togroow/pruebas/ventas/', 'Togroow\VentasController@listado2')->name('listado_ventas2');
-    Route::get('/negocios/banners/{id}', 'NegociosController@banners')->name('negocio_banners');*/
+    Route::get('/togroow/productos/detail/{id}', 'Togroow\ProductoController@detail')->name('detail_product');*/
+    Route::get('/ventas', 'Togroow\VentasController@listado2')->name('listado_ventas2');
 
     Route::any('/store/pay', 'Togroow\ComprarController@comprar')->name('comprar_productos');
     Route::any('/envio/ciudades', 'Togroow\EnvioController@ciudades')->name('ciudades_envio');

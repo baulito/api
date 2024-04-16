@@ -20,7 +20,6 @@ class VentasController extends Controller
     public function listado(Request $request){
         $data = $request->all();
         $user = auth()->user()->user_id;
-      
             $ventas = Compra::where("negocio_compra_estado","<>","0");
             if(isset($data['desde'])){
                 $ventas->where("negocio_compra_fecha",">=",$data['desde']);
@@ -38,7 +37,6 @@ class VentasController extends Controller
 
     public function listado2(Request $request){
         $data = $request->all();
-        $user = 3009;
             $ventas = Compra::where("negocio_compra_estado","<>","0");
             if(isset($data['desde'])){
                 $ventas->where("negocio_compra_fecha",">=",$data['desde']);
