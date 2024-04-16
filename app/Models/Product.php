@@ -44,7 +44,7 @@ class Product extends Model
         return $product;
     }
 
-    public function getStatus(){
+    public static function getStatus(){
         $array = [];
         $array['1'] = "Nuevo con empaque";
         $array['2'] = "Nuevo sin empaque";
