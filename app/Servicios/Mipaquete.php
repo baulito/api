@@ -3,6 +3,7 @@
 namespace App\Servicios;
 use Illuminate\Support\Facades\Http;
 use App\Models\Servicios\Togroow\Compra;
+use App\Models\Mipaquete as ModelMipaquete;
 
 class Mipaquete
 {
@@ -61,7 +62,7 @@ class Mipaquete
 
     public function consultarcompra($idcompra){
         $compra = Compra::find($idcompra);
-        $mipaquete = $compra->negocio->mipaquete;
+        $mipaquete = ModelMipaquete::find(1);
         $fechacompra = $compra->negocio_compra_fecha;
         if($fechacompra == ''){
             $fechacompra = date("Y-m-d");  
