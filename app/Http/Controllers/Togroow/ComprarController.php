@@ -79,9 +79,6 @@ class ComprarController extends Controller
             $newcompra = Compra::find(868);
         }*/
         if(isset($newcompra) && $newcompra != false){
-            $idnegocio = $newcompra->negocio_compra_negocio;
-            $negocio = Negocio::find($idnegocio);
-            $negocio->mercadopago;
             $pagos = Servicemercadopago::pagarProductos($newcompra->negocio_compra_id);
             return response()->json($pagos);
         } else {
