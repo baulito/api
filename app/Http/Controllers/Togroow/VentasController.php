@@ -39,10 +39,7 @@ class VentasController extends Controller
     public function listado2(Request $request){
         $data = $request->all();
         $user = 3009;
-        $negocio = Negocio::where("registro_usuario",$user)->get();
-        if(isset($negocio[0])){
-            $negocioid = $negocio[0]->registro_id;
-            $ventas = Compra::where("negocio_compra_negocio",$negocioid)->where("negocio_compra_estado","<>","0");
+            $ventas = Compra::where("negocio_compra_estado","<>","0");
             if(isset($data['desde'])){
                 $ventas->where("negocio_compra_fecha",">=",$data['desde']);
             }
@@ -55,11 +52,7 @@ class VentasController extends Controller
                 $datos[$key] = $this->ventaformat($venta);
             }
             return response()->json($datos);
-        } else{
-            $datos = [];
-            $datos['error'] = "No se encontraron negocios para este usuario";
-            return response()->json($datos);
-        }
+        
     }
 
     public function ventaformat($venta){

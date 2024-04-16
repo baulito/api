@@ -148,9 +148,6 @@ class ComprarController extends Controller
         $user  = auth()->user();
         $user->user_id;
         $compras = Compra::where("negocio_compra_usuario",$user->user_id)->where("negocio_compra_estado",1)->orderBy("negocio_compra_fecha","DESC");
-        if(isset($data['negocio'])){
-            $compras->where("negocio_compra_negocio",$data['negocio']); 
-        }
         $compras = $compras->get();
         $array = [];
         foreach ($compras as $key => $compra) {
