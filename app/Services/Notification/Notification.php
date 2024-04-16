@@ -44,7 +44,7 @@ class Notification
         $dataenvio['email'] = "notificaciones@togroow.com";
         $dataenvio['de'] = "Notificaciones Togroow";
         $dataenvio['sujet'] = "Orden de pedido No. ".$compra->negocio_compra_id." en Togroow";
-        $correo = $infoenvio[0]->correo;
+        
 
         //$correo = "alos1212@gmail.com";
         //$correonegocio = "alos1212@gmail.com";
