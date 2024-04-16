@@ -91,7 +91,7 @@ class VentasController extends Controller
            /* echo "<pre>";
             print_r($estadoenvio);
             echo "</pre>";*/
-            if($estadoenvio['tracking']){ 
+            if(isset($estadoenvio) && isset($estadoenvio['tracking'])){ 
                 $pos = count($estadoenvio['tracking']) - 1; 
                 $estado = $estadoenvio['tracking'][$pos]['updateState'];
                 $codigomipaquete =  $estadoenvio['Código mipaquete'];
