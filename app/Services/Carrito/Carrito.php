@@ -101,7 +101,6 @@ class Carrito
         return $newcarrito;
     }
     public static function guardarCarrito($carrito,$user){
-        $negocio = $carrito['negocio'];
         $validacion =  self::validar($carrito,$user->user_id,$carrito['tipoenvio']);
         if($validacion['error'] == 0   || ( $validacion['sindireccion'] == 1 && isset( $carrito['tipoenvio']) &&  $carrito['tipoenvio'] == 1 )){
             $direcciona= Useraddress::where("principal",1)->where("user_id",$user->user_id)->get();
@@ -141,7 +140,7 @@ class Carrito
                 $data['negocio_compra_medio'] = "3";
                 $data['negocio_compra_url'] = "https://baulito.co/mypurchases/";
                 $data['negocio_compra_desde'] = $carrito['desde'];
-                $data['negocio_compra_negocio'] = $negocio;
+                $data['negocio_compra_negocio'] = 1;
                 $data['negocio_compra_tipoenvio'] = $carrito['tipoenvio'];
                 $datoscompra = Compra::create($data);
                 $items = $carrito['Items'];
