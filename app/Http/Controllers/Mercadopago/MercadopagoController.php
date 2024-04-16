@@ -285,11 +285,7 @@ class MercadopagoController extends Controller
                     //return view('close')
                     return redirect('api/mercadopago/pagopsefinal');
                 } else {   
-                    if($compra->negocio_compra_negocio == 1384){
-                        $url = "https://baulito.co/mypurchases/".$compra->negocio_compra_id."?payments=res";
-                    } else {
-                        $url = "https://togroow.com/sistem/store/detallecompra/".$compra->negocio_compra_id;
-                    }
+                    $url = "https://baulito.store/mypurchases/".$compra->negocio_compra_id."?payments=res";
                     return Redirect::to($url);
                 } 
             }
@@ -306,11 +302,7 @@ class MercadopagoController extends Controller
             if($compra->negocio_compra_desde == 1){
                 return redirect('api/mercadopago/pagopsefinal');
             } else {   
-                if($compra->negocio_compra_negocio == 1384){
-                    $url = "https://baulito.co/mypurchases/".$compra->negocio_compra_id."?payments=res";
-                } else {
-                    $url = "https://togroow.com/sistem/store/detallecompra/".$compra->negocio_compra_id;
-                }
+                $url = "https://baulito.store/mypurchases/".$compra->negocio_compra_id."?payments=res";
                 return Redirect::to($url);
             }
         } else {
