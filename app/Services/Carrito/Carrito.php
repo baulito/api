@@ -148,7 +148,7 @@ class Carrito
                 foreach ($items as $key => $item){
                     $data = [];
                     $producto = Product::find($item['id']);
-                    if($producto->store_producto_estado == 1){
+                    if($producto->state == 1){
                         if($producto->old_value > 0){
                             $valori = $producto->old_value;
                         } else {
