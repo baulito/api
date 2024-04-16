@@ -69,7 +69,7 @@ class UserController extends Controller
         if($user->user_foto != ''){
             $usuario["user_foto"] = "https://togroow.com/images/".$user->user_foto;
         }
-        $usuario["address"] = Useraddress::where("usuario",$user->user_id)->orderBy("id","DESC")->get();
+        $usuario["address"] = Useraddress::where("user_id",$user->user_id)->orderBy("id","DESC")->get();
         return response()->json($usuario);
     }
 

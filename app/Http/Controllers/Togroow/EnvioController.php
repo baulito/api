@@ -77,27 +77,27 @@ class EnvioController extends Controller
     public function principalChange($id){
         $user  = auth()->user();
         $principal = Useraddress::find($id);
-        if( isset($principal) && $principal->usuario == $user->user_id ){
-            Useraddress::where("usuario",$user->user_id)->update(["principal"=>0]);
+        if( isset($principal) && $principal->user_id == $user->user_id ){
+            Useraddress::where("user_id",$user->user_id)->update(["principal"=>0]);
             $principal->principal = 1;
             $principal->save();
         }
-        $address = Useraddress::where("usuario",$user->user_id)->orderBy("id","DESC")->get();
+        $address = Useraddress::where("user_id",$user->user_id)->orderBy("id","DESC")->get();
         return response()->json($address, 200, [], JSON_NUMERIC_CHECK);
     }
 
     public function new(Request $request){
         $user  = auth()->user();
-        Useraddress::where("usuario",$user->user_id)->update(["principal"=>0]);
+        Useraddress::where("user_id",$user->user_id)->update(["principal"=>0]);
         $data = $request->all();
         $ciudades = $this->ciudadesformat();
-        $data['usuario'] = $user->user_id;
+        $data['user_id'] = $user->user_id;
         $data['principal'] = 1;
         if(isset($ciudades[$data['ciudad']])){
             $data['ciudadnombre'] =$ciudades[$data['ciudad']];
         }
         $data = Useraddress::insert($data);
-        $address = Useraddress::where("usuario",$user->user_id)->orderBy("id","DESC")->get();
+        $address = Useraddress::where("user_id",$user->user_id)->orderBy("id","DESC")->get();
         return response()->json($address, 200, [], JSON_NUMERIC_CHECK);
     }
 
@@ -114,7 +114,7 @@ class EnvioController extends Controller
                 }
                 $address->update($data);
             }
-            $address = Useraddress::where("usuario",$user->user_id)->orderBy("id","DESC")->get();
+            $address = Useraddress::where("user_id",$user->user_id)->orderBy("id","DESC")->get();
             return response()->json($address, 200, [], JSON_NUMERIC_CHECK);
         }
        
@@ -128,7 +128,7 @@ class EnvioController extends Controller
                 $address->delete();
             }
         }
-        $address = Useraddress::where("usuario",$user->user_id)->orderBy("id","DESC")->get();
+        $address = Useraddress::where("user_id",$user->user_id)->orderBy("id","DESC")->get();
         return response()->json($address, 200, [], JSON_NUMERIC_CHECK);
     }
 

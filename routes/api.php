@@ -71,6 +71,9 @@ Route::group(['middleware' => 'cors'], function () {
 
     Route::get('/categories', 'Main\CategoryController@list')->name('list_categories');
     Route::get('/categories/detail/{id}', 'Main\CategoryController@detail')->name('detail_categories');
+
+    Route::get('/banner', 'Main\BannerController@list')->name('list_banner');
+    Route::get('/banner/detail/{id}', 'Main\BannerController@detail')->name('detail_banner');
     Route::get('/campus', 'Main\CampusController@list')->name('list_campus');
     Route::get('/campus/detail/{id}', 'Main\CampusController@detail')->name('detail_campus');
     Route::get('/product', 'Main\ProductController@list')->name('list_product');
@@ -156,6 +159,13 @@ Route::group(['middleware' => 'cors', 'middleware' => 'auth:api'], function () {
     Route::put('/user/update/{id}', 'Main\UserController@update')->name('update_User');
     Route::delete('/user/delete/{id}', 'Main\UserController@delete')->name('delete_User');
 
+     
+    /*banners*/
+    
+    Route::post('/banner/create', 'Main\BannerController@create')->name('create_banner');
+    Route::put('/banner/update/{id}', 'Main\BannerController@update')->name('update_banner');
+    Route::delete('/banner/delete/{id}', 'Main\BannerController@delete')->name('delete_banner');
+    Route::post('/banner/updateorder', 'Main\BannerController@updateOrder')->name('updateorder_banner');
      
      
 });

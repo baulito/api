@@ -26,15 +26,17 @@ class ProductController extends Controller
         if(isset($data['category'])){
             $contents->where("category",$data['category']);
         }
+
+        if(isset($data['out'])){
+            $contents->where("state",'1')->where("amount",">",'0');
+        }
         $paginate = 40;
         if(isset($data['paginate'])){
             $paginate = $data['paginate'];
         }
         $contents = $contents->paginate($paginate);
         foreach ($contents as $key => $content) {
-            if(isset($content->image_1) && file_exists(public_path("/images/".$content->image_1))){
-                $content->thumbnail =  url('/')."".Images::ImageResize($content->image_1,200);
-            }
+            $content = Product::formatProduct($content);
         }
         return response()->json($contents);
     }
@@ -84,11 +86,7 @@ class ProductController extends Controller
 
     public function detail($id){
         $content = Product::find($id);
-        for ($i=1; $i <10 ; $i++) { 
-            $nameimageurl = 'image_url_'.$i;
-            $nameimage = 'image_'.$i;
-            $content->$nameimageurl =  url('/')."/images/".$content->$nameimage;
-        }
+        $content = Product::formatProduct($content);
         return response()->json( $content);
     }
 

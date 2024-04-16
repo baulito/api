@@ -2,22 +2,22 @@
 namespace App\Http\Controllers\Main;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Category;
+use App\Models\Banner;
 use Illuminate\Support\Facades\Storage;
 use App\Services\Images\Images;
 /**
  * @group  Categoria de productos
  */
 
-class CategoryController extends Controller
+class BannerController extends Controller
 {
 
     public function list(){
-        $categories = Category::orderBy("order","ASC")->get();
-        foreach ($categories as $key => $category) {
-            $category = Category::formatCategory($category);
+        $banners = Banner::orderBy("order","ASC")->get();
+        foreach ($banners as $key => $banner) {
+            $banner->image_url =  url('/')."/images/".$banner->image;
         }
-        return response()->json($categories);
+        return response()->json($banners);
     }
 
     public function create(Request $request){
@@ -28,47 +28,47 @@ class CategoryController extends Controller
         } else if(isset($data['image'])){
             $data['image'] = Images::uploadImage($data['image']);
         }
-        $order = Category::max('order') + 1;
+        $order = Banner::max('order') + 1;
         $data['order'] = $order;
         
-        $category = Category::create($data);
+        $banner = Banner::create($data);
         
-        return response()->json( $category);
+        return response()->json( $banner);
     }
 
     public function update(Request $request,$id){
-        $category = Category::find($id);
+        $banner = Banner::find($id);
         $data = $request->all();            
         if($request->file('image')){
             //$data['image'] = "entro por este lado";
-            if($category->image != ''){
-                Storage::disk('public')->delete($category->image);
+            if($banner->image != ''){
+                Storage::disk('public')->delete($banner->image);
             }
             $data['image'] = Images::uploadImage($request->file('image'));
         } else if(isset($data['image'])){
-            if($category->image != ''){
-                Storage::disk('public')->delete($category->image);
+            if($banner->image != ''){
+                Storage::disk('public')->delete($banner->image);
             }
             $data['image'] = Images::uploadImage($data['image']);
         }
-        $category->update($data);
+        $banner->update($data);
         
-        return response()->json( $category);
+        return response()->json( $banner);
     }
 
     public function detail($id){
-        $category = Category::find($id);
-        $category = Category::formatCategory($category);
-        return response()->json( $category);
+        $banner = Banner::find($id);
+        $banner->image_url =  url('/')."/images/".$banner->image;
+        return response()->json( $banner);
     }
 
     public function delete($id){
-        $category = Category::find($id);
-        if ($category->image) {
-            Storage::delete(public_path('/images/'.$category->image));
+        $banner = Banner::find($id);
+        if ($banner->image) {
+            Storage::delete(public_path('/images/'.$banner->image));
         }
-        $category->delete();
-        return response()->json(["message"=>"Categoria Eliminada"]); 
+        $banner->delete();
+        return response()->json(["message"=>"Banner Eliminado"]); 
     }
 
 
@@ -77,14 +77,14 @@ class CategoryController extends Controller
         $orderId = $request->input('order_id');
         $currentOrder = $request->input('current_order');
         $direction = $request->input('direction');
-        $content = Category::find($orderId);
+        $content = Banner::find($orderId);
         if ($content) {
             $currentOrder = $content->order;
             $adjacentContent = null;
             if ($direction === 'up') {
-                $adjacentContent = Category::where('order', '<', $currentOrder)->orderBy('order', 'desc')->first();
+                $adjacentContent = Banner::where('order', '<', $currentOrder)->orderBy('order', 'desc')->first();
             } else {
-                $adjacentContent = Category::where('order', '>', $currentOrder)->orderBy('order')->first();
+                $adjacentContent = Banner::where('order', '>', $currentOrder)->orderBy('order')->first();
             }
             if ($adjacentContent) {
                 // Intercambia los valores de order entre los dos registros
