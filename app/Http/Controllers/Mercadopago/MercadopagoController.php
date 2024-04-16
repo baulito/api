@@ -190,14 +190,7 @@ class MercadopagoController extends Controller
     }
     public function estadocompra($id){
         $compra = Compra::find($id);
-        if(isset($compra->negocio->mercadopago)){
-          $tienda = $compra->negocio->mercadopago;  
-        }
-        if(isset($tienda) && $tienda->negocio_mercadopago_token != '' && $tienda->negocio_mercadopago_fecharenovacion >= date("Y-m-d")  && env('TOOGROW_TESTIG') != 1){
-            MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tienda->negocio_mercadopago_token]);
-        } else {
-            MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
-        }
+        MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
         if($compra && $compra->negocio_compra_idmp && $compra->negocio_compra_idmp != '' && $compra->negocio_compra_idmp != null){
             $payment = MercadoPago\Payment::find_by_id($compra->negocio_compra_idmp);
             if(isset($payment->status)){
