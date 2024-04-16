@@ -2,9 +2,8 @@
 namespace App\Services\Mipaquete;
 
 use App\Models\Servicios\Togroow\Compra;
-use App\Models\Servicios\Togroow\Negocio;
-use App\Models\Servicios\Togroow\Mipaquete;
-use App\Models\Servicios\Togroow\Negociopuntos;
+use App\Models\Mipaquete;
+use App\Models\Campus;
 
 
 class Empaque
@@ -22,17 +21,10 @@ class Empaque
         foreach ($productos as $key => $producto) {
             $ubicacion = 0; 
             $ciudad = 0;  
-            if($producto->store_producto_ubicacion > 0){
-                $ubicacion = $producto->store_producto_ubicacion;
-                $punto = Negociopuntos::find($ubicacion);
-                if(isset($punto)){
-                    $ciudad = $punto->ciudad;
-                }
-            } else {
-                $infoMipaquete = Mipaquete::where("negocio",$producto->store_producto_negocio)->get();
-                if(isset($infoMipaquete[0])){
-                    $ciudad = $infoMipaquete[0]->ciudad;
-                }
+            $ubicacion = $producto->campus;
+            $punto = Campus::find($ubicacion);
+            if(isset($punto)){
+                $ciudad = $punto->city;
             }
             if(!isset($dimensiones[$ubicacion])){
                 $dimensiones[$ubicacion] = [];
@@ -41,11 +33,11 @@ class Empaque
             }
             $dimensionesp = explode("x",$producto->store_producto_envio_dimenciones);
             $dimensiones[$ubicacion]['productos'][$key] = [];
-            $dimensiones[$ubicacion]['productos'][$key]['ancho']= (float)$dimensionesp[2];
-            $dimensiones[$ubicacion]['productos'][$key]['largo']= (float)$dimensionesp[1];
-            $dimensiones[$ubicacion]['productos'][$key]['alto']= (float)$dimensionesp[0];
-            $dimensiones[$ubicacion]['productos'][$key]['peso']= (float)$producto->store_producto_envio_peso;
-            $dimensiones[$ubicacion]['productos'][$key]['valor']= (float)$producto->valorcompra;
+            $dimensiones[$ubicacion]['productos'][$key]['ancho']= (float)$producto->height;
+            $dimensiones[$ubicacion]['productos'][$key]['largo']= (float)$producto->long;
+            $dimensiones[$ubicacion]['productos'][$key]['alto']= (float)$producto->width;
+            $dimensiones[$ubicacion]['productos'][$key]['peso']= (float)$producto->wheight;
+            $dimensiones[$ubicacion]['productos'][$key]['valor']= (float)$producto->value;
             $dimensiones[$ubicacion]['productos'][$key]['cantidad'] = $producto->cantidaditem;
         }
         return $dimensiones;

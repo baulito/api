@@ -30,11 +30,8 @@ class ComprarController extends Controller
     public function validar(Request $request){
         $user  = auth()->user();
         $carrito = $request['carrito'];
-        $datacarrito = $carrito;
+        $datacarrito = Carrito::validar($request['carrito'],$user->user_id);
         $datacarrito['user_id'] = $user->user_id;
-        foreach ($datacarrito['CarritoNegocios'] as $key => $negociocarrito) {
-            $datacarrito['CarritoNegocios'][$key] = Carrito::validar($negociocarrito,$user->user_id);
-        }
         return response()->json($datacarrito);
     }
     

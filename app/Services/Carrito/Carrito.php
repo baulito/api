@@ -1,11 +1,12 @@
 <?php 
 namespace App\Services\Carrito;
 
+use App\Models\Campus;
 use App\Models\Servicios\Togroow\Compra;
 use App\Models\Servicios\Togroow\Itemscompra;
 use App\Models\Servicios\Togroow\Negocio;
-use App\Models\Servicios\Togroow\Productos;
-use App\Models\Servicios\Togroow\Mipaquete;
+use App\Models\Product;
+use App\Models\Mipaquete;
 use App\Services\Mipaquete\Empaque;
 use App\Services\Mipaquete\Mipaquete as Servicemipaquete;
 use App\Models\Servicios\Togroow\Useraddress;
@@ -21,43 +22,36 @@ class Carrito
 {
 
     public static function validar($carrito,$iduser,$sinenvio = 0){
-        $negocio = $carrito['negocio'];
         $items = $carrito['Items'];
         $productos = [];
         $error = 0;
-        if(count( $items) == 0){
+        if(count($items) == 0){
             $error = 1;
         }
-        $productoactual = Productos::find($items[0]['id']);
+        $productoactual = Product::find($items[0]['id']);
         foreach ($items as $key => $item) {
-            $producto = Productos::find($item['id']);
-            $producto->cantidaditem = $item['cantidad'];
-            $producto->valorcompra = $item['valor'];
+            $producto = Product::find($item['id']);
             $carrito['Items'][$key]['disponibilidad'] = 1;
-            if($producto->store_producto_estado == 0){ 
+            if($producto->state == 0){ 
                 $carrito['Items'][$key]['disponibilidad'] = 0;
                 $error = 1;
-            } else if( $item['caracteristica'] != null){
-                $cantidad = Productoscantidades::where('idproducto',$producto->store_producto_id)->where("ids_opciones",$item['caracteristica'])->first();
-                if(!isset($cantidad) || $cantidad->cantidades < $item['cantidad'] ){
-                    $carrito['Items'][$key]['disponibilidad'] = 0;
-                    $error = 1;
-                }
-            } else if($producto->store_producto_cantidad < $item['cantidad']){
+            } else if($producto->amount < $item['cantidad']){
                 $carrito['Items'][$key]['disponibilidad'] = 0;
                 $error = 1;
             }
+            $producto->cantidaditem = $item['cantidad'];
             array_push($productos,$producto);
         }
-        //$infoMipaquete = Mipaquete::where("negocio",$negocio)->get();
-        $infoMipaquete = Mipaquete::where("correo","storeamberes@outlook.com")->get();
+
+        $infoMipaquete = Mipaquete::find(1);
         $paquetes = Empaque::calcularempaque($productos);
+        
         $valorenvio = [];
         $errordireccion = 0;
-        if(isset($infoMipaquete[0])){
-            $mipaquete = $infoMipaquete[0];
+        if(isset($infoMipaquete)){
+            $mipaquete = $infoMipaquete;
             $api = $mipaquete->apikey;
-            $direccion = Useraddress::where("principal",1)->where("usuario",$iduser)->get();
+            $direccion = Useraddress::where("principal",1)->where("user_id",$iduser)->get();
             $valortotalenvio = 0;
             $dataenvios = [];
             if(isset($direccion[0])){
@@ -90,12 +84,13 @@ class Carrito
         if(count($paquetes) > 1){
             $tipoenvio = 2;
         } else {
-            $puntodeventa = self::getpuntodeventa($productoactual);
+            $puntodeventa = Campus::campusformat($productoactual->campus);
         }
         $carrito['tipoenvio'] = $tipoenvio;
         $carrito['valorenvio'] = $valortotalenvio;
         //$carrito['dataenvio'] =  $dataenvios;
-        $carrito['puntoventa'] = $puntodeventa;
+        $carrito['campusid'] = $productoactual->campus;
+        $carrito['campus'] = $puntodeventa;
         $carrito['sindireccion'] = $errordireccion;
         $carrito['error']  = $error; 
         return $carrito;
@@ -109,7 +104,7 @@ class Carrito
         $negocio = $carrito['negocio'];
         $validacion =  self::validar($carrito,$user->user_id,$carrito['tipoenvio']);
         if($validacion['error'] == 0   || ( $validacion['sindireccion'] == 1 && isset( $carrito['tipoenvio']) &&  $carrito['tipoenvio'] == 1 )){
-            $direcciona= Useraddress::where("principal",1)->where("usuario",$user->user_id)->get();
+            $direcciona= Useraddress::where("principal",1)->where("user_id",$user->user_id)->get();
             if(isset($direcciona[0]) || ( isset( $carrito['tipoenvio']) &&  $carrito['tipoenvio'] == 1 ) ){
                 if(isset($direcciona[0])){
                     $direccion = $direcciona[0];
@@ -153,45 +148,22 @@ class Carrito
                 $subtotal = 0;
                 foreach ($items as $key => $item){
                     $data = [];
-                    $producto = Productos::find($item['id']);
+                    $producto = Product::find($item['id']);
                     if($producto->store_producto_estado == 1){
-                        if($producto->store_producto_promocion == 1 && $producto->store_producto_promocion_valor > 0 && $producto->store_producto_promocion_inicio <= date("Y-m-d") && $producto->store_producto_promocion_fin >= date("Y-m-d")  ) { 
-                            if($producto->store_producto_promocion_tipo == 1){
-                                $valori = $producto->store_producto_promocion_valor;
-                                $moneda = "COP";
-                            } else if($producto->store_producto_promocion_tipo == 3){
-                                $valori = $producto->store_producto_promocion_valor;
-                                $moneda = "USD";
-                            } else {
-                                $valori = $producto->store_producto_valor  - (($producto->store_producto_valor/100)*$producto->store_producto_promocion_valor);
-                            }
-                        } else { 
-                            if($producto->store_producto_moneda == 2){
-                                $moneda = "USD";
-                            } else {
-                                $moneda = "COP";
-                            }
-                            $valori = $producto->store_producto_valor; 
+                        if($producto->old_value > 0){
+                            $valori = $producto->old_value;
+                        } else {
+                            $valori = $producto->value;
                         }
                         $data['negocio_compra_item_compraid'] = $datoscompra->negocio_compra_id;
-                        $data['negocio_compra_item_idproducto'] = $producto->store_producto_id;
-                        $data['negocio_compra_item_nombre'] = $producto->store_producto_nombre;
-                        $data['negocio_compra_item_imagen'] = $producto->store_producto_imagen;
+                        $data['negocio_compra_item_idproducto'] = $producto->id;
+                        $data['negocio_compra_item_nombre'] = $producto->name;
+                        $data['negocio_compra_item_imagen'] = $producto->image_1;
                         $data['negocio_compra_item_cantidad'] = $item['cantidad'];
                         $data['negocio_compra_item_valor'] = $valori;
-                        $data['negocio_compra_item_moneda'] = $moneda;
-                        if($item['caracteristica']){
-                            $data['caracteristicas'] = $item['caracteristica'];
-                            $data['caracteristicastxt'] = self::getCaracteristica($item['caracteristica']);
-                        }
+                        $data['negocio_compra_item_moneda'] = 'COP';
                         $data['negocio_compra_item_valorenvio'] = 0;
-                        $data['negocio_compra_item_enviotipo'] = $producto->store_producto_envio_tipo;
-                        if($producto->store_producto_envio_empresa == 1){
-                            $data['negocio_compra_item_mipaquete'] = 1;
-                            $mipaquete = 1;
-                        } else {
-                            $data['negocio_compra_item_mipaquete'] = 0;
-                        }
+                        $data['negocio_compra_item_enviotipo'] = 1;
                         $query = Itemscompra::insert($data); 
                         $subtotal = $subtotal + ($valori* $item['cantidad']);
                     }
@@ -239,29 +211,12 @@ class Carrito
     public static function getpuntodeventa($producto)
     {
         $ubicacion = $producto->store_producto_ubicacion;
-        if ($ubicacion == 0 || $ubicacion == null) {
-            $lugar = Mipaquete::where("negocio", $producto->store_producto_negocio)->first();
+        
+            $lugar = Campus::find($ubicacion);
+            
             $aubicacion = [];
             $aubicacion['id'] = 0;
-            $aubicacion['negocio'] = $lugar->negocio;
-            $aubicacion['nombre'] =  "Tienda Principal";
-            $aubicacion['pais'] = $lugar->pais;
-            if ($aubicacion['pais'] == "CO") {
-                $aubicacion['pais'] = "Colombia";
-            }
-            $aubicacion['ciudad'] = $lugar->ciudad;
-            $ciudad = Mipaqueteciudades::find($lugar->ciudad);
-            $aubicacion['ciudadnombre'] = $ciudad->ciudad . " , " . $ciudad->departamento;
-            $aubicacion['direccion'] = $lugar->direccion;
-            $aubicacion['adicional'] = $lugar->adicional;
-            $aubicacion['telefono1'] = $lugar->telefono1;
-            $aubicacion['telefono2'] = $lugar->telefono2;
-        } else {
-            $lugar = Negociopuntos::find($ubicacion);
-            $aubicacion = [];
-            $aubicacion['id'] = 0;
-            $aubicacion['negocio'] = $lugar->negocio;
-            $aubicacion['nombre'] =  $lugar->nombre;
+            $aubicacion['nombre'] =  $lugar->name;
             $aubicacion['pais'] = $lugar->pais;
             $aubicacion['ciudad'] = $lugar->ciudad;
             $ciudad = Mipaqueteciudades::find($lugar->ciudad);
@@ -270,7 +225,7 @@ class Carrito
             $aubicacion['adicional'] = $lugar->adicional;
             $aubicacion['telefono1'] = $lugar->telefono1;
             $aubicacion['telefono2'] = $lugar->telefono2;
-        }
+        
         return $aubicacion;
     }
 }

@@ -1,6 +1,7 @@
 <?php 
 namespace App\Services\Mercadopago;
 
+use App\Models\Product;
 use App\Models\Servicios\Togroow\Compra;
 use App\Models\Servicios\Togroow\Negocio;
 use App\Models\Servicios\Togroow\Productos;
@@ -29,44 +30,14 @@ class Mercadopagos
         $compra = Compra::find($idcompra);
         if(isset($compra)){
             $dataitems = $compra->items;
-            $negocio = $compra->negocio;
-            $tienda = $compra->negocio->mercadopago;
-            /*echo "<pre>";
-            print_r($negocio);
-            echo "</pre>";*/
-            if(isset($tienda) && env('TOOGROW_TESTIG') != 1){
-                MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tienda->negocio_mercadopago_token]);
-                $rutas = array(
-                    "success" => "https://api.togroow.com/api/mercadopago/res",
-                    "failure" => "https://api.togroow.com/api/mercadopago/failure?idpago=TGN-".$idcompra,
-                    "pending" => "https://api.togroow.com/api/mercadopago/res?idpago=TGN-".$idcompra
-                );
-                $urlnotification = "https://api.togroow.com/api/mercadopago/notification?cliente=".$compra->negocio_compra_negocio;
-            } else {
-                $tokenmp = env('MP_ACCESS_TOKEN');
-                MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tokenmp ]);
-                if(env('TOOGROW_TESTIG') == 1){
-                    $rutas = array(
-                        "success" => "https://apitesting.togroow.com/api/mercadopago/res",
-                        "failure" => "https://apitesting.togroow.com/api/mercadopago/failure?idpago=TGN-".$idcompra,
-                        "pending" => "https://apitesting.togroow.com/api/mercadopago/res?idpago=TGN-".$idcompra
-                    );
-                    $urlnotification = "https://apitesting.togroow.com/api/mercadopago/notification?cliente=".$compra->negocio_compra_negocio;
-                    $rutas = array(
-                        "success" => "https://api.togroow.com/api/mercadopago/res",
-                        "failure" => "https://api.togroow.com/api/mercadopago/failure?idpago=TGN-".$idcompra,
-                        "pending" => "https://api.togroow.com/api/mercadopago/res?idpago=TGN-".$idcompra
-                    );
-                    $urlnotification = "https://api.togroow.com/api/mercadopago/notification?cliente=".$compra->negocio_compra_negocio;
-                } else {
-                    $rutas = array(
-                        "success" => "https://api.togroow.com/api/mercadopago/res",
-                        "failure" => "https://api.togroow.com/api/mercadopago/failure?idpago=TGN-".$idcompra,
-                        "pending" => "https://api.togroow.com/api/mercadopago/res?idpago=TGN-".$idcompra
-                    );
-                    $urlnotification = "https://api.togroow.com/api/mercadopago/notification?cliente=".$compra->negocio_compra_negocio;
-                }  
-            }
+            $tokenmp = env('MP_ACCESS_TOKEN');
+            MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tokenmp ]);
+            $rutas = array(
+                "success" => "https://api.baulito.store/api/mercadopago/res",
+                "failure" => "https://api.baulito.store/api/mercadopago/failure?idpago=TGN-".$idcompra,
+                "pending" => "https://api.baulito.store/api/mercadopago/res?idpago=TGN-".$idcompra
+            );
+            $urlnotification = "https://api.baulito.store/api/mercadopago/notification?cliente=".$compra->negocio_compra_negocio;
             $items = [];
             $total = 0;
             foreach ($dataitems as $key => $item) {
@@ -112,15 +83,6 @@ class Mercadopagos
             $preference->expires = true;
             $preference->expiration_date_from =  $fechainicio;
             $preference->expiration_date_to =  $fechafin;
-            if($negocio->registro_id == 1246 ){
-                $preference->marketplace_fee = ($total/100)*25;
-            } else if($negocio->registro_id == 1384){
-                $preference->marketplace_fee = ($total/100)*2.5;
-            } else if($negocio->registro_id == 1279){
-                $preference->marketplace_fee = ($total/100)*10;
-            } else {
-                $preference->marketplace_fee = ($total/100)*7;
-            }
             $preference->save();
             if(isset($preference->collector_id) &&  isset($preference->init_point) ){
                 self::restarcantidades($compra);
@@ -142,19 +104,12 @@ class Mercadopagos
         if($compra){
             $dataitems = Itemscompra::where('negocio_compra_item_compraid',$compra->negocio_compra_id)->get();
             foreach ($dataitems as $key => $item) {
-                $producto = Productos::find($item->negocio_compra_item_idproducto);
+                $producto = Product::find($item->negocio_compra_item_idproducto);
                 if(isset($producto)){
-                    if($item->caracteristicas != null){
-                        $cantidad = Productoscantidades::where('idproducto',$producto->store_producto_id)->where("ids_opciones",$item->caracteristicas)->first();
-                        if(isset($cantidad)){
-                            $newcantidad = ($cantidad->cantidades - $item->negocio_compra_item_cantidad);
-                            Productoscantidades::where('idproducto',$producto->store_producto_id)->where("ids_opciones",$item->caracteristicas)->update(array("cantidades"=> $newcantidad));
-                        }
-                    } else if($producto->store_producto_cantidad >= $item->negocio_compra_item_cantidad){
-                        $newcantidad = ($producto->store_producto_cantidad - $item->negocio_compra_item_cantidad);
-                        $producto->store_producto_cantidad  = $newcantidad;
-                        $producto->save();
-                    }
+                    $newcantidad = ($producto->amount - $item->negocio_compra_item_cantidad);
+                    $producto->amount  = $newcantidad;
+                    $producto->save();
+                    
                 }
             }
         }
@@ -167,25 +122,12 @@ class Mercadopagos
                 //echo "entro al producto";
                 $item->negocio_compra_confirmacion = 1;
                 $item->save();
-                $producto = Productos::find($item->negocio_compra_item_idproducto);
+                $producto = Product::find($item->negocio_compra_item_idproducto);
                 if(isset($producto)){
-                    //echo "encontro_producto";
-                    if($item->caracteristicas != null){
-                        $cantidad = Productoscantidades::where('idproducto',$producto->store_producto_id)->where("ids_opciones",$item->caracteristicas)->first();
-                        if(isset($cantidad)){
-                            $newcantidad = ($cantidad->cantidades + $item->negocio_compra_item_cantidad);
-                            Productoscantidades::where('idproducto',$producto->store_producto_id)->where("ids_opciones",$item->caracteristicas)->update(array("cantidades"=> $newcantidad));
-                        }
-                        //echo "va a sumar cantidad caracteristica";
-                    } else {
-                        if(($producto->store_producto_negocio == 1384 && $producto->store_producto_cantidad < 1 ) || $producto->store_producto_negocio != 1384 ){
-                            $newcantidad = ($producto->store_producto_cantidad + $item->negocio_compra_item_cantidad);
-                            $producto->store_producto_cantidad  = $newcantidad;
-                            //echo "va a sumar cantidad";
-                            $producto->save();
-                        }
-                    
-                    }
+                        $newcantidad = ($producto->amount + $item->negocio_compra_item_cantidad);
+                        $producto->amount  = $newcantidad;
+                        //echo "va a sumar cantidad";
+                        $producto->save();
                 }
             }
         }
