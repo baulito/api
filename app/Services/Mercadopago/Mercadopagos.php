@@ -285,13 +285,11 @@ class Mercadopagos
     public static function productosVendidos($compra){
         $dataitems = Itemscompra::where('negocio_compra_item_compraid',$compra->negocio_compra_id)->get();
         foreach ($dataitems as $key => $item) {
-            $producto = Productos::find($item->negocio_compra_item_idproducto);
+            $producto = Product::find($item->negocio_compra_item_idproducto);
             if(isset($producto)){
-                if($producto->store_producto_negocio == 1384){
-                    $producto->store_producto_vendido = 1;
-                    $producto->store_producto_estado = 0;
+                    //$producto->store_producto_vendido = 1;
+                    $producto->state = 0;
                     $producto->save();
-                }
             }
         }
     }
