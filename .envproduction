@@ -55,9 +55,7 @@ ALGOLIA_APP_ID=1S3FQF19KS
 ALGOLIA_SECRET=94c3f91d49db3f8c1d01489e969a2471
 
 
-MP_PUBLIC_KEY = APP_USR-029994ac-3df1-454b-a2e0-b56781b6e4ae
-MP_ACCESS_TOKEN = APP_USR-5190954569960248-060220-b70dcac005e3c6b8369eddb1a76c630f-263237118
-MP_CLIENT_ID = 5190954569960248
-MP_CLIENT_SECRET = mYry4pnXj0TcluiFDdMtPiovmR2o35z2
-MP_URL_CALLBACK = http://api.togroow.com/api/mercadopago/pagopse
-MP_URL_AUTH = http://api.togroow.com/api/mercadopago/authorization
+MP_PUBLIC_KEY = TEST-cf5af0f8-c454-4099-83ed-4a312c67b3fa
+MP_ACCESS_TOKEN = TEST-8809452046990639-042622-fc51e38bc4e38b34908aa8798be7d319-1324182430
+MP_URL_CALLBACK = http://http://api.baulito.store/api/mercadopago/pagopse
+MP_URL_AUTH = http://http://api.baulito.store/api/mercadopago/authorization
