@@ -55,10 +55,10 @@ ALGOLIA_APP_ID=1S3FQF19KS
 ALGOLIA_SECRET=94c3f91d49db3f8c1d01489e969a2471
 
 
-MP_PUBLIC_KEY =TEST-cf5af0f8-c454-4099-83ed-4a312c67b3fa
-MP_ACCESS_TOKEN =TEST-8809452046990639-042622-fc51e38bc4e38b34908aa8798be7d319-1324182430
-MP_URL_CALLBACK =https://http://api.baulito.co/api/mercadopago/pagopse
-MP_URL_AUTH =https://http://api.baulito.co/api/mercadopago/authorization
+MP_PUBLIC_KEY=TEST-cf5af0f8-c454-4099-83ed-4a312c67b3fa
+MP_ACCESS_TOKEN=TEST-8809452046990639-042622-fc51e38bc4e38b34908aa8798be7d319-1324182430
+MP_URL_CALLBACK=https://http://api.baulito.co/api/mercadopago/pagopse
+MP_URL_AUTH=https://http://api.baulito.co/api/mercadopago/authorization
 
 
-URL_RETURN_PAGE ="https://baulito.co";
+URL_RETURN_PAGE="https://baulito.co";
