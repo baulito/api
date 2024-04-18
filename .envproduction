@@ -60,5 +60,4 @@ MP_ACCESS_TOKEN=TEST-8809452046990639-042622-fc51e38bc4e38b34908aa8798be7d319-13
 MP_URL_CALLBACK=https://http://api.baulito.co/api/mercadopago/pagopse
 MP_URL_AUTH=https://http://api.baulito.co/api/mercadopago/authorization
 
-
-URL_RETURN_PAGE="https://baulito.co";
+URL_RETURN_PAGE="https://baulito.co"
