@@ -33,11 +33,11 @@ class Mercadopagos
             $tokenmp = env('MP_ACCESS_TOKEN');
             MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tokenmp ]);
             $rutas = array(
-                "success" => "https://api.baulito.store/api/mercadopago/res",
-                "failure" => "https://api.baulito.store/api/mercadopago/failure?idpago=TGN-".$idcompra,
-                "pending" => "https://api.baulito.store/api/mercadopago/res?idpago=TGN-".$idcompra
+                "success" =>  env('MP_URL_NOTIFICATION','https://api.baulito.store/api/mercadopago/res'),
+                "failure" => env('MP_URL_NOTIFICATION','https://api.baulito.store/api/mercadopago/failure')."?idpago=TGN-".$idcompra,
+                "pending" => env('MP_URL_NOTIFICATION','https://api.baulito.store/api/mercadopago/res')."?idpago=TGN-".$idcompra
             );
-            $urlnotification = "https://api.baulito.store/api/mercadopago/notification?cliente=".$compra->negocio_compra_negocio;
+            $urlnotification = env('MP_URL_NOTIFICATION','https://api.baulito.store/api/mercadopago/notification');
             $items = [];
             $total = 0;
             foreach ($dataitems as $key => $item) {

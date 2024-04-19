@@ -310,17 +310,7 @@ class MercadopagoController extends Controller
 	    fclose($archivo);
         if(isset($data['id']) && isset($data['topic']) && $data['topic'] == 'payment' ){
             $idpago = $data['id'];
-            if(isset($data['cliente'])){
-               $negocio = Negocio::find($data['cliente']);
-               $tienda = $negocio->mercadopago;
-                if(isset($tienda) && $tienda->negocio_mercadopago_token != '' && $tienda->negocio_mercadopago_fecharenovacion >= date("Y-m-d")  && env('TOOGROW_TESTIG') != 1){
-                    MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tienda->negocio_mercadopago_token]);
-                } else {
-                    MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
-                }
-            } else {
-                MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
-            }
+            MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
             $payment = MercadoPago\Payment::find_by_id($idpago);
             if(isset($payment->external_reference)){
                 $idcompra =  $idcompra = str_replace("TGN-","",$payment->external_reference);

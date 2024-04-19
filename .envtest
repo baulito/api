@@ -57,9 +57,11 @@ ALGOLIA_SECRET=94c3f91d49db3f8c1d01489e969a2471
 
 MP_PUBLIC_KEY = TEST-cf5af0f8-c454-4099-83ed-4a312c67b3fa
 MP_ACCESS_TOKEN = TEST-8809452046990639-042622-fc51e38bc4e38b34908aa8798be7d319-1324182430
-MP_URL_CALLBACK = http://http://api.baulito.store/api/mercadopago/pagopse
-MP_URL_AUTH = http://http://api.baulito.store/api/mercadopago/authorization
-
+MP_URL_CALLBACK = http://api.baulito.store/api/mercadopago/pagopse
+MP_URL_AUTH = http://api.baulito.store/api/mercadopago/authorization
+MP_URL_NOTIFICATION= https://api.baulito.store/api/mercadopago/notification
+MP_URL_SUSSES=  https://api.baulito.store/api/mercadopago/res
+MP_URL_FAILURE= https://api.baulito.store/api/mercadopago/failure
 
 
 URL_RETURN_PAGE = "https://baulito.store"
