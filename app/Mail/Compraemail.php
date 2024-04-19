@@ -33,7 +33,7 @@ class Compraemail extends Mailable
     public function build()
     {
         $mail = $this->view('email.compra');
-       $mail->from($this->dataenvio['email'], $this->dataenvio['de']);
+       $mail->from('notificaciones@baulito.store','Baulito');
        $mail->subject( $this->dataenvio['sujet']);
         return $mail;
     }
