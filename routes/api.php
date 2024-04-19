@@ -166,5 +166,8 @@ Route::group(['middleware' => 'cors', 'middleware' => 'auth:api'], function () {
     Route::delete('/banner/delete/{id}', 'Main\BannerController@delete')->name('delete_banner');
     Route::post('/banner/updateorder', 'Main\BannerController@updateOrder')->name('updateorder_banner');
      
+    //
+    Route::get('/mipaquete', 'Mipaquete\MipaqueteController@detail')->name('detail_mipaquete');
+    Route::post('/mipaquete/login', 'Mipaquete\MipaqueteController@login')->name('login_mipaquete');
      
 });
