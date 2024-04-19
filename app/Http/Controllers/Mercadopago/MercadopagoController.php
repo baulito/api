@@ -308,7 +308,7 @@ class MercadopagoController extends Controller
         $archivo = fopen('notificacionmercadopago.txt', 'a');
 		fwrite($archivo, json_encode($data).PHP_EOL);
 	    fclose($archivo);
-        if(isset($data['id']) && isset($data['topic']) && $data['topic'] == 'payment' ){
+        if(isset($data['id'])){
             $idpago = $data['id'];
             MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
             $payment = MercadoPago\Payment::find_by_id($idpago);
@@ -318,11 +318,6 @@ class MercadopagoController extends Controller
                 $compra->negocio_compra_idmp = $idpago;
                 $compra->save();
                 $this->estadocompra($idcompra);
-            } else {
-                $compras = Compra::where("negocio_compra_estado",3)->orWhere("negocio_compra_estado",0)->get();
-                foreach ($compras as $key => $compra) {
-                    $this->estadocompra($compra->negocio_compra_id);
-                } 
             }
         }
         return response()->json(['success' => 'success'], 200);
