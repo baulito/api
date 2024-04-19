@@ -126,7 +126,6 @@ class Mercadopagos
                 if(isset($producto)){
                         $newcantidad = ($producto->amount + $item->negocio_compra_item_cantidad);
                         $producto->amount  = $newcantidad;
-                        //echo "va a sumar cantidad";
                         $producto->save();
                 }
             }
