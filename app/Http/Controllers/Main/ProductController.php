@@ -27,9 +27,12 @@ class ProductController extends Controller
             $contents->where("category",$data['category']);
         }
 
-        if(isset($data['out'])){
+        if(isset($data['out']) && $data['out'] == 2 ){
+            $contents->where("state",'0')->where("amount","<",'1');
+        } else if(isset($data['out'])) {
             $contents->where("state",'1')->where("amount",">",'0');
         }
+        
         $paginate = 40;
         if(isset($data['paginate'])){
             $paginate = $data['paginate'];
@@ -130,15 +133,11 @@ class ProductController extends Controller
                     $data['sku'] = $record[22] ;
                     $data['name'] = $record[1];
                     $data['description'] = $record[12];
-                    $data['image_1'] = $record[2];
-                    $data['image_2'] = $record[3];
-                    $data['image_3'] = $record[4];
-                    $data['image_4'] = $record[5];
-                    $data['image_5'] = $record[6];
-                    $data['image_6'] = $record[7];
-                    $data['image_7'] = $record[8];
-                    $data['image_8'] = $record[9];
-                    $data['image_9'] = $record[10];
+                    for ($i=1; $i <9 ; $i++) { 
+                        if( $record[$i+1] != '' && $record[$i+1] !='NULL'){
+                            $data['image_'.$i] = $record[$i+1];
+                        }
+                    }
                     $data['product_status'] = 6;
                     $data['tags'] = $record[31];
                     $data['wheight'] = $record[40];
@@ -150,7 +149,7 @@ class ProductController extends Controller
                     $data['value'] = $record[13];
                     $data['category'] = $this->getcategoriasunion($record[19]);
                     for ($i=2; $i < 11; $i++) { 
-                        if( $record[$i] != ''){
+                        if( $record[$i] != '' && $record[$i] != 'NULL' ){
                             $this->guardarimageurl("https://togroow.com/images/".$record[$i]);
                         }
                     }
@@ -169,7 +168,9 @@ class ProductController extends Controller
         $imageData = file_get_contents($imageUrl);
         // Guardar la imagen en el sistema de archivos de Laravel
         $filename = basename($imageUrl);
-        Storage::disk('public')->put('images/' . $filename, $imageData);
+        if(!Storage::disk('public')->exists('images/' . $filename)){
+            Storage::disk('public')->put('images/' . $filename, $imageData);
+        }
     }
 
     public function getcategoriasunion($categoria){
