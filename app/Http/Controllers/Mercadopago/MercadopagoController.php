@@ -310,10 +310,13 @@ class MercadopagoController extends Controller
 	    fclose($archivo);
         if(isset($data['id'])){
             $idpago = $data['id'];
+            echo  $idpago."<br>";
+            echo env('MP_ACCESS_TOKEN');
             MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
             $payment = MercadoPago\Payment::find_by_id($idpago);
             echo "<pre>";
             print_r($payment);
+            echo "<pre>";
             if(isset($payment->external_reference)){
                 $idcompra =  $idcompra = str_replace("TGN-","",$payment->external_reference);
                 $compra = Compra::find($idcompra );
