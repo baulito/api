@@ -273,7 +273,7 @@ class MercadopagoController extends Controller
             if( strpos($id,'TGN-') !== false){
                 $idcompra = str_replace("TGN-","",$id);
                 $compra = Compra::find($idcompra);
-                $this->estadocompra($idcompra);
+                //$this->estadocompra($idcompra);
                 if($compra->negocio_compra_desde == 1){
                     //return view('close')
                     return redirect('api/mercadopago/pagopsefinal');
