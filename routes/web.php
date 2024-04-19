@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',function () {
-    echo "<h1>Api Togroow</h1>";
+    echo "<h1>Servicios del Baulito</h1>";
 }); 
  Route::get('/lugares/paises', 'LugaresController@paises')->name('listadopaises2');   //OK
 Route::get('/formimagen', 'PostController@formimage')->name('formimage');
