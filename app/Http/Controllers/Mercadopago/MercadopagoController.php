@@ -308,10 +308,10 @@ class MercadopagoController extends Controller
         $archivo = fopen('notificacionmercadopago.txt', 'a');
 		fwrite($archivo, json_encode($data).PHP_EOL);
 	    fclose($archivo);
-        if(isset($data['id'])){
-            $idpago = $data['id'];
-            echo  $idpago."<br>";
-            echo env('MP_ACCESS_TOKEN');
+        if(isset($data['data_id'])){
+            $idpago = $data['data_id'];
+            //echo  $idpago."<br>";
+            //echo env('MP_ACCESS_TOKEN');
             MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
             $payment = MercadoPago\Payment::find_by_id($idpago);
             echo "<pre>";
