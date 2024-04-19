@@ -43,7 +43,7 @@ class Notification
         $dataenvio['de'] = "Notificaciones Togroow";
         $dataenvio['sujet'] = "Pedido No. ".$compra->negocio_compra_id." en Baulito";
         $correo = $compra->negocio_compra_correo;
-        $correonegocio = "alos1212@gmail.com";
+        $correonegocio = "elbaulitodemrbean@gmail.com";
         if($correo == $correonegocio ){
             Mail::to($correo)->send(new Compraemail($data,$dataenvio));
         } else {
