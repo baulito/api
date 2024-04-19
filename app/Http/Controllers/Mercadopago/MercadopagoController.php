@@ -278,7 +278,7 @@ class MercadopagoController extends Controller
                     //return view('close')
                     return redirect('api/mercadopago/pagopsefinal');
                 } else {   
-                    $url = env('URL_RETURN_PAGE',"https://baulito.store")."/mypurchases/".$compra->negocio_compra_id."?payments=res";
+                    echo $url = env('URL_RETURN_PAGE',"https://baulito.store")."/mypurchases/".$compra->negocio_compra_id."?payments=res";
                     return Redirect::to($url);
                 } 
             }
