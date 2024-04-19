@@ -33,9 +33,9 @@ class Mercadopagos
             $tokenmp = env('MP_ACCESS_TOKEN');
             MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tokenmp ]);
             $rutas = array(
-                "success" =>  env('MP_URL_NOTIFICATION','https://api.baulito.co/api/mercadopago/res'),
-                "failure" => env('MP_URL_NOTIFICATION','https://api.baulito.co/api/mercadopago/failure')."?idpago=TGN-".$idcompra,
-                "pending" => env('MP_URL_NOTIFICATION','https://api.baulito.co/api/mercadopago/res')."?idpago=TGN-".$idcompra
+                "success" =>  env('MP_URL_SUSSES','https://api.baulito.co/api/mercadopago/res'),
+                "failure" => env('MP_URL_FAILURE','https://api.baulito.co/api/mercadopago/failure')."?idpago=TGN-".$idcompra,
+                "pending" => env('MP_URL_SUSSES','https://api.baulito.co/api/mercadopago/res')."?idpago=TGN-".$idcompra
             );
             $urlnotification = env('MP_URL_NOTIFICATION','https://api.baulito.co/api/mercadopago/notification');
             $items = [];
