@@ -62,4 +62,4 @@ MP_URL_AUTH = http://http://api.baulito.store/api/mercadopago/authorization
 
 
 
-URL_RETURN_PAGE = "https://baulito.store";
+URL_RETURN_PAGE = "https://baulito.store"

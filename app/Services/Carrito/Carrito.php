@@ -22,76 +22,83 @@ class Carrito
 {
 
     public static function validar($carrito,$iduser,$sinenvio = 0){
-        $items = $carrito['Items'];
-        $productos = [];
-        $error = 0;
-        if(count($items) == 0){
-            $error = 1;
-        }
-        $productoactual = Product::find($items[0]['id']);
-        foreach ($items as $key => $item) {
-            $producto = Product::find($item['id']);
-            $carrito['Items'][$key]['disponibilidad'] = 1;
-            if($producto->state == 0){ 
-                $carrito['Items'][$key]['disponibilidad'] = 0;
-                $error = 1;
-            } else if($producto->amount < $item['cantidad']){
-                $carrito['Items'][$key]['disponibilidad'] = 0;
+        
+        if(isset($carrito['Items']) && count($carrito['Items']) > 0 ){
+            $items = $carrito['Items'];
+            $productos = [];
+            $error = 0;
+            if(count($items) == 0){
                 $error = 1;
             }
-            $producto->cantidaditem = $item['cantidad'];
-            array_push($productos,$producto);
-        }
-
-        $infoMipaquete = Mipaquete::find(1);
-        $paquetes = Empaque::calcularempaque($productos);
-        
-        $valorenvio = [];
-        $errordireccion = 0;
-        if(isset($infoMipaquete)){
-            $mipaquete = $infoMipaquete;
-            $api = $mipaquete->apikey;
-            $direccion = Useraddress::where("principal",1)->where("user_id",$iduser)->get();
-            $valortotalenvio = 0;
-            $dataenvios = [];
-            if(isset($direccion[0])){
-                foreach ($paquetes as $key => $paquete) {
-                    $destino = $direccion[0]->ciudad;
-                    $alto = $paquete['alto'];
-                    $largo = $paquete['largo'];
-                    $ancho = $paquete['ancho'];
-                    $peso = (int)$paquete['peso'];
-                    $valordeclarado =  $paquete['valor'];
-                    $valordeventa =  $paquete['valor'];
-                    $origen = $paquete['origen'];
-                    $valorenvio = Servicemipaquete::calcularvalor($origen,$destino,$alto,$largo,$ancho,$peso,$valordeclarado,$valordeventa,$api);
-                    if(isset($valorenvio[0])){
-                        $valortotalenvio = $valortotalenvio + $valorenvio[0]['shippingCost'];
-                    }
-                    $dataenvios[$key] = [];
-                    $dataenvios[$key]['infoenvio'] = $paquete;
-                    $dataenvios[$key]['valorenvio'] = $valorenvio;
-                }
-            } else {
-                $errordireccion = 1;
-                if($sinenvio == 1){
+            $productoactual = Product::find($items[0]['id']);
+            foreach ($items as $key => $item) {
+                $producto = Product::find($item['id']);
+                $carrito['Items'][$key]['disponibilidad'] = 1;
+                if($producto->state == 0){ 
+                    $carrito['Items'][$key]['disponibilidad'] = 0;
+                    $error = 1;
+                } else if($producto->amount < $item['cantidad']){
+                    $carrito['Items'][$key]['disponibilidad'] = 0;
                     $error = 1;
                 }
+                $producto->cantidaditem = $item['cantidad'];
+                array_push($productos,$producto);
             }
-        }
-        $puntodeventa = [];
-        $tipoenvio = 1;
-        if(count($paquetes) > 1){
-            $tipoenvio = 2;
+
+            $infoMipaquete = Mipaquete::find(1);
+            $paquetes = Empaque::calcularempaque($productos);
+            
+            $valorenvio = [];
+            $errordireccion = 0;
+            if(isset($infoMipaquete)){
+                $mipaquete = $infoMipaquete;
+                $api = $mipaquete->apikey;
+                $direccion = Useraddress::where("principal",1)->where("user_id",$iduser)->get();
+                $valortotalenvio = 0;
+                $dataenvios = [];
+                if(isset($direccion[0])){
+                    foreach ($paquetes as $key => $paquete) {
+                        $destino = $direccion[0]->ciudad;
+                        $alto = $paquete['alto'];
+                        $largo = $paquete['largo'];
+                        $ancho = $paquete['ancho'];
+                        $peso = (int)$paquete['peso'];
+                        $valordeclarado =  $paquete['valor'];
+                        $valordeventa =  $paquete['valor'];
+                        $origen = $paquete['origen'];
+                        $valorenvio = Servicemipaquete::calcularvalor($origen,$destino,$alto,$largo,$ancho,$peso,$valordeclarado,$valordeventa,$api);
+                        if(isset($valorenvio[0])){
+                            $valortotalenvio = $valortotalenvio + $valorenvio[0]['shippingCost'];
+                        }
+                        $dataenvios[$key] = [];
+                        $dataenvios[$key]['infoenvio'] = $paquete;
+                        $dataenvios[$key]['valorenvio'] = $valorenvio;
+                    }
+                } else {
+                    $errordireccion = 1;
+                    if($sinenvio == 1){
+                        $error = 1;
+                    }
+                }
+            }
+            $puntodeventa = [];
+            $tipoenvio = 1;
+            if(count($paquetes) > 1){
+                $tipoenvio = 2;
+            } else {
+                $puntodeventa = Campus::campusformat($productoactual->campus);
+            }
+            $carrito['campusid'] = $productoactual->campus;
+            $carrito['campus'] = $puntodeventa;
+            $carrito['sindireccion'] = $errordireccion;
         } else {
-            $puntodeventa = Campus::campusformat($productoactual->campus);
+            $tipoenvio = 0;
+            $valortotalenvio = 0;
+            $error = 1;
         }
         $carrito['tipoenvio'] = $tipoenvio;
         $carrito['valorenvio'] = $valortotalenvio;
         //$carrito['dataenvio'] =  $dataenvios;
-        $carrito['campusid'] = $productoactual->campus;
-        $carrito['campus'] = $puntodeventa;
-        $carrito['sindireccion'] = $errordireccion;
         $carrito['error']  = $error; 
         return $carrito;
     }

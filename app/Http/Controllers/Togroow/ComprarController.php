@@ -87,7 +87,6 @@ class ComprarController extends Controller
             $newcarrito = Carrito::validar($carrito,$user->user_id);
             $array = [];
             $array['error'] = 1;
-            $array['negocio'] = $carrito['negocio'];
             $array['carrito'] = $newcarrito;
             return response()->json($array);
         }
