@@ -46,13 +46,13 @@ class Notification
         $dataenvio['sujet'] = "Orden de pedido No. ".$compra->negocio_compra_id." en Togroow";
         
 
-        //$correo = "alos1212@gmail.com";
-        //$correonegocio = "alos1212@gmail.com";
-        /*if($correo == $correonegocio ){
+        $correo = $compra->negocio_compra_correo;
+        $correonegocio = "alos1212@gmail.com";
+        if($correo == $correonegocio ){
             Mail::to($correo)->send(new Compraemail($data,$dataenvio));
         } else {
             Mail::to($correo)->cc([$correonegocio])->send(new Compraemail($data,$dataenvio));
-        }*/
+        }
         
 
     }
