@@ -312,6 +312,8 @@ class MercadopagoController extends Controller
             $idpago = $data['id'];
             MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
             $payment = MercadoPago\Payment::find_by_id($idpago);
+            echo "<pre>";
+            print_r($payment);
             if(isset($payment->external_reference)){
                 $idcompra =  $idcompra = str_replace("TGN-","",$payment->external_reference);
                 $compra = Compra::find($idcompra );
@@ -320,7 +322,7 @@ class MercadopagoController extends Controller
                 $this->estadocompra($idcompra);
             }
         }
-        return response()->json(['success' => 'success'], 200);
+        //return response()->json(['success' => 'success'], 200);
     }
 
     public function validarpago(Request $request){
