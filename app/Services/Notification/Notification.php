@@ -31,21 +31,17 @@ class Notification
         $data['detallecarro'] = $compra;
         $data['itemscarrito'] = $items;
         $infoenvio = Mipaquete::find(1);
-        $dataenvio['email'] = "notificaciones@togroow.com";
-        $dataenvio['de'] = "Notificaciones Togroow";
-        $dataenvio['sujet'] = "Comprobante de compra no. ".$compra->negocio_compra_id." en TOGROOW";
+        /*$dataenvio['sujet'] = "Comprobante de compra no. ".$compra->negocio_compra_id." en Baulito";
         if(isset($infoenvio)){
             $dataenvio['email'] = $infoenvio->correo;
             $dataenvio['email'] = "notificaciones@togroow.com";
             $dataenvio['de'] = "Baulito";
             $dataenvio['sujet'] = "Comprobante de compra no. ".$compra->negocio_compra_id;
         }
-        //Mail::to($compra->negocio_compra_correo)->send(new Compraemail($data,$dataenvio));
+        //Mail::to($compra->negocio_compra_correo)->send(new Compraemail($data,$dataenvio));*/
         $dataenvio['email'] = "notificaciones@togroow.com";
         $dataenvio['de'] = "Notificaciones Togroow";
-        $dataenvio['sujet'] = "Orden de pedido No. ".$compra->negocio_compra_id." en Togroow";
-        
-
+        $dataenvio['sujet'] = "Pedido No. ".$compra->negocio_compra_id." en Baulito";
         $correo = $compra->negocio_compra_correo;
         $correonegocio = "alos1212@gmail.com";
         if($correo == $correonegocio ){
