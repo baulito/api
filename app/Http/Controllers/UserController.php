@@ -718,7 +718,6 @@ class UserController extends Controller
                 $user->user_address = $data['address'];
                 $user->user_phone = $data['phone'];
                 $user->user_level = 2;
-                $user->user_codigoregistro = "Baulito.com";
                 $user->user_state = 1;
                 $user->save();
                 $token =  $user->createToken('Personal Access Token')->accessToken;

@@ -15,24 +15,7 @@ class User extends Authenticatable  //implements JWTSubject
 
     protected $remember_token = true;
     protected $table = "user";
-    protected $fillable = [
-        'user_names', 'user_lastnames',
-        'user_email', 'user_idnumber',
-        'user_city', 'user_country',
-        'user_phone', 'user_address',
-        'user_level', 'user_state',
-        'user_user', 'user_password',
-        'user_delete', 'user_current_user',
-        'user_code', 'user_informacion',
-        'user_foto', 'user_fondo',
-        'user_paso1', 'user_paso2', 'user_paso3',
-        'user_landing', 'user_postal',
-        'user_educacion', 'user_institucion',
-        'user_mayor', 'user_estudiante',
-        'user_negocio', 'user_popup', 'user_firebase_uid',
-        'user_fecha_creacion', 'user_fecha_modificacion',
-        'user_remember_token'
-    ];
+    protected $fillable = ['user_names', 'user_lastnames', 'user_email', 'user_typeid', 'user_idnumber', 'user_city', 'user_phone', 'user_address', 'user_level', 'user_state', 'user_user', 'user_password', 'user_delete', 'user_code', 'user_informacion', 'user_foto'];
     public $timestamps = true;
     /**
      * The attributes that should be hidden for arrays.
