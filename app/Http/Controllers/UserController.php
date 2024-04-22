@@ -711,6 +711,7 @@ class UserController extends Controller
             if (!$user) {
                 $user = new User();
                 $user->user_email =  $data['email'];
+                $user->user_user = $data['email'];
                 $user->user_password =  $data['password'];
                 $user->user_names = $data['names'];
                 $user->user_lastnames = $data['lastnames'];

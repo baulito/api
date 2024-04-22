@@ -30,9 +30,6 @@ class User extends Authenticatable  //implements JWTSubject
 
     protected $guarded = ['user_id'];
 
-    const CREATED_AT = 'user_fecha_creacion';
-    const UPDATED_AT = 'user_fecha_modificacion';
-
 
     public function username()
     {
