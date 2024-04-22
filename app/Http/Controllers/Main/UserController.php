@@ -49,6 +49,8 @@ class UserController extends Controller
         } else if(isset($data['user_foto'])){
             $data['user_foto'] = Images::uploadImage($data['user_foto']);
         }
+
+        $data['user_state'] = 1;
         
         $content = Usuarios::create($data);
         
