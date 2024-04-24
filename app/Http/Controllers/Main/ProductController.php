@@ -55,8 +55,8 @@ class ProductController extends Controller
                 $data[$nameimage] = Images::uploadImage($data[$nameimage]);
             }
         }
-        if(!isset($data['status'])){
-            $data['status'] = 0;
+        if(!isset($data['state'])){
+            $data['state'] = 0;
         }
         $content = Product::create($data);
         
@@ -80,8 +80,8 @@ class ProductController extends Controller
                 $data[$nameimage] = Images::uploadImage($data[$nameimage]);
             }
         }
-        if(!isset($data['status'])){
-            $data['status'] = 0;
+        if(!isset($data['state'])){
+            $data['state'] = 0;
         }          
         $content->update($data);
         return response()->json( $content);
