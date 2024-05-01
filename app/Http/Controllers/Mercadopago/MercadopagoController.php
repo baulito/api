@@ -266,8 +266,16 @@ class MercadopagoController extends Controller
         $datar = $request->all();
         if(isset($datar["idpago"])){
             $idpago = $datar["idpago"];
+
         } else if( isset($datar["external_reference"]) ){
             $id = $datar["external_reference"];
+        } else if( isset($datar["payment_id"])){
+            $idpaymen = $datar["payment_id"];
+            MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
+            $payment = MercadoPago\Payment::find_by_id($idpaymen);
+            echo "<pre>";
+            print_r($payment);
+            echo "</pre>";
         }
         echo "ippago=".$idpago." id=".$id;
         if(isset($id)){
