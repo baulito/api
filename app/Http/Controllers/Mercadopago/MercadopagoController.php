@@ -295,7 +295,8 @@ class MercadopagoController extends Controller
             if($compra->negocio_compra_desde == 1){
                 echo "entroaca";
                 return redirect('api/mercadopago/pagopsefinal');
-            } else {   
+            } else {  
+                echo "entro al api"; 
                 $url = env('URL_RETURN_PAGE',"https://baulito.co")."/mypurchases/".$compra->negocio_compra_id."?payments=res";
                 echo $url;
                 return Redirect::to($url);
