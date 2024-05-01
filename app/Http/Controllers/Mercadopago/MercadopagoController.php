@@ -269,6 +269,7 @@ class MercadopagoController extends Controller
         } else if( isset($datar["external_reference"]) ){
             $id = $datar["external_reference"];
         }
+        echo "ippago=".$idpago." id=".$id;
         if(isset($id)){
             if( strpos($id,'TGN-') !== false){
                 $idcompra = str_replace("TGN-","",$id);
@@ -276,8 +277,10 @@ class MercadopagoController extends Controller
                 //$this->estadocompra($idcompra);
                 if($compra->negocio_compra_desde == 1){
                     //return view('close')
+                    echo "entroaca";
                     return redirect('api/mercadopago/pagopsefinal');
-                } else {   
+                } else { 
+                    echo "entro aca";  
                     echo $url = env('URL_RETURN_PAGE',"https://baulito.co")."/mypurchases/".$compra->negocio_compra_id."?payments=res";
                     return Redirect::to($url);
                 } 
