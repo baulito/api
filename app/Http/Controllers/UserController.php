@@ -745,7 +745,7 @@ class UserController extends Controller
             if(isset($user[0])){
                 $user[0]->user_code = $this->generate_string(6);
                 $user[0]->save();
-                Mail::to($user[0]->user_email)->send(new Restorepassword($user[0]));
+                //Mail::to($user[0]->user_email)->send(new Restorepassword($user[0]));
                 $res = [];
                 $res['message'] = "codigo Enviado";
                 $res['status'] = 1;
