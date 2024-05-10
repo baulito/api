@@ -30,7 +30,8 @@ class Restorepassword extends Mailable
     public function build()
     {
         $mail = $this->view('email.restorepassword');
-        $mail->subject("Olvido su contraseña")->from('notificaciones@togroow.com','Togroow');;
+        $mail->subject("Olvido su contraseña");
+        $mail->from('notificaciones@baulito.store','Baulito');
         return $mail;
     }
 }
