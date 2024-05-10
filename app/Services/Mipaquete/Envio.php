@@ -73,9 +73,6 @@ class Envio
                         $codigosmp = $codigosmp.",".$resultadocompra['mpCode'];
                     }
                 }
-                echo "<pre>";
-                print_r($resultadocompra);
-                echo "</pre>";
             }
         }
         if($codigosmp!= ''){
@@ -128,6 +125,8 @@ class Envio
                 }
             }
         }
+        $compra->negocio_compra_mpcode = "";
+        $compra->save();
     }
 
 
