@@ -40,7 +40,10 @@ Route::group(['middleware' => 'cors'], function () {
 
     Route::get('/ventas/generarenvio/{id}', 'Togroow\VentasController@generarEnvio')->name('generarEnvio_ventas');
     Route::get('/ventas/cancelarenvio/{id}', 'Togroow\VentasController@cancelarEnvio')->name('cancelarEnvio_ventas');
+    Route::get('/ventas/validargeneracionenvio/{id}', 'Togroow\VentasController@validarGeneracionenvio')->name('validarGeneracionenvio_ventas');
+    
 
+    
     Route::any('/store/pay', 'Togroow\ComprarController@comprar')->name('comprar_productos');
     Route::any('/envio/ciudades', 'Togroow\EnvioController@ciudades')->name('ciudades_envio');
     Route::any('/envio/ciudadesrename', 'Togroow\EnvioController@namedirecciones')->name('namedirecciones_envio');

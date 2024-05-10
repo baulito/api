@@ -86,8 +86,11 @@ class Envio
         $productos = [];
         foreach ($items as $key => $item) {
             $producto = $item->producto();
-            $producto->cantidaditem = $item->negocio_compra_item_cantidad;
-            $productos[$key] = $producto;
+            if(isset($producto)){
+                $producto->cantidaditem = $item->negocio_compra_item_cantidad;
+                $productos[$key] = $producto;
+            }
+            
         }
         $paquetes = Empaque::calcularempaque($productos);
         return $paquetes;
@@ -141,7 +144,9 @@ class Envio
                 if($mpcode != ''){
                     $enviod = Mipaquete::consultarenvios($mipaquete->apikey,$mpcode,$fechacompra);
                     $envioformat = [];
-                    $envioformat['pdfGuide'] = $enviod['pdfGuide'][0];
+                    if(isset($enviod['pdfGuide'][0])){
+                        $envioformat['pdfGuide'] = $enviod['pdfGuide'][0];
+                    }
                     $envioformat['estadoactual'] = $enviod['Estado actual del envío'];
                     $envioformat['transportadora'] = $enviod['Transportadora'];
                     $envioformat['desde'] = $enviod['Nombre del remitente'];
@@ -160,6 +165,21 @@ class Envio
             }
         }
         return $envios;
+    }
+
+    public static function  validarGeneracionenvio($idcompra){
+        $compra = Compra::find($idcompra);
+        $paquetes = self::calcularPaquetes($idcompra);
+        $cupo = self::comprobarCupo();
+        $valorpaquetes = self::calularValores($paquetes,$compra->negocio_compra_ciudad);
+        $res = [];
+        if( $cupo['cash'] >= $valorpaquetes['valortotal']){
+            $res['susses'] = true;
+        } else {
+            $res['susses'] =  false;
+            $res['message'] = "Recarga la cuenta de mercadopago para poder generar el envio ya que solo dispones de $".number_format($cupo['cash']);
+        }
+        return $res;
     }
 
 }
