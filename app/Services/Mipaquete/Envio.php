@@ -145,6 +145,7 @@ class Envio
                     $envioformat['pdfGuide'] = $enviod['pdfGuide'][0];
                     $envioformat['estadoactual'] = $enviod['Estado actual del envío'];
                     $envioformat['transportadora'] = $enviod['Transportadora'];
+                    $envioformat['desde'] = $enviod['Nombre del remitente'];
                     $envioformat['seguimiento'] = [];
                     foreach ($enviod['tracking'] as $key2 =>  $tracking) {
                         if($key2 > 0){
