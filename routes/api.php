@@ -142,8 +142,7 @@ Route::group(['middleware' => 'cors', 'middleware' => 'auth:api'], function () {
      
 
     /*campus*/
-    Route::get('/campus', 'Main\CampusController@list')->name('list_campus');
-    Route::get('/campus/detail/{id}', 'Main\CampusController@detail')->name('detail_campus');
+
     Route::post('/campus/create', 'Main\CampusController@create')->name('create_campus');
     Route::put('/campus/update/{id}', 'Main\CampusController@update')->name('update_campus');
     Route::delete('/campus/delete/{id}', 'Main\CampusController@delete')->name('delete_campus');
