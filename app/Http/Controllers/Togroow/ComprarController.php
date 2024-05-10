@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\Togroow;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Campus;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Mockery\Exception;
 use App\Models\Servicios\Togroow\Productos;
@@ -10,6 +11,7 @@ use App\Services\Carrito\Carrito;
 use App\Models\Servicios\Togroow\Compra;
 use App\Models\Servicios\Togroow\Negocio;
 use App\Models\Mipaquete;
+use App\Models\Product;
 use App\Services\Mercadopago\Mercadopagos as Servicemercadopago;
 use App\Services\Mipaquete\Envio;
 use App\Services\Mipaquete\Mipaquete as Mipaqueteservice;
@@ -127,12 +129,14 @@ class ComprarController extends Controller
         $compra->items;
         $compra->infopago = $this->infopago($id);
         $negocio = $compra->negocio_compra_negocio;
-        if($compra->negocio_compra_mipaquete == 1){
+        if($compra->negocio_compra_tipoenvio != 1){
             $compra->informacionenvio = Envio::consultarEnvios($id) ;
-        } else if($compra->negocio_compra_mipaquete == 2){
-            $compra->informacionenvio = [];
-            $compra->informacionenvio['ubicacion'] = [];
+        } else {
             $idproducto = $compra->items[0]->negocio_compra_item_idproducto;
+            $producto = Product::find($idproducto);
+            if(isset($producto)){
+                $compra->campus = Campus::campusformat($producto->campus);
+            }
         }
         /*echo "items";
         print_r($compra->items);*/

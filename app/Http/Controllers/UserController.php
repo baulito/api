@@ -715,8 +715,12 @@ class UserController extends Controller
                 $user->user_password =  $data['password'];
                 $user->user_names = $data['names'];
                 $user->user_lastnames = $data['lastnames'];
-                $user->user_city = $data['city'];
-                $user->user_address = $data['address'];
+                if(isset( $data['city'])){
+                    $user->user_city = $data['city'];
+                }
+                if(isset( $data['address'])){
+                    $user->user_address = $data['address'];
+                }
                 $user->user_phone = $data['phone'];
                 $user->user_level = 2;
                 $user->user_state = 1;

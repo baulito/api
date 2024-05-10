@@ -166,7 +166,7 @@ class Carrito
                 $items = $carrito['Items'];
                 $subtotal = 0;
                 foreach ($items as $key => $item){
-                    $data = [];
+                    $datai = [];
                     $producto = Product::find($item['id']);
                     if($producto->state == 1){
                         if($producto->old_value > 0){
@@ -174,16 +174,16 @@ class Carrito
                         } else {
                             $valori = $producto->value;
                         }
-                        $data['negocio_compra_item_compraid'] = $datoscompra->negocio_compra_id;
-                        $data['negocio_compra_item_idproducto'] = $producto->id;
-                        $data['negocio_compra_item_nombre'] = $producto->name;
-                        $data['negocio_compra_item_imagen'] = $producto->image_1;
-                        $data['negocio_compra_item_cantidad'] = $item['cantidad'];
-                        $data['negocio_compra_item_valor'] = $valori;
-                        $data['negocio_compra_item_moneda'] = 'COP';
-                        $data['negocio_compra_item_valorenvio'] = 0;
-                        $data['negocio_compra_item_enviotipo'] = 1;
-                        $query = Itemscompra::insert($data); 
+                        $datai['negocio_compra_item_compraid'] = $datoscompra->negocio_compra_id;
+                        $datai['negocio_compra_item_idproducto'] = $producto->id;
+                        $datai['negocio_compra_item_nombre'] = $producto->name;
+                        $datai['negocio_compra_item_imagen'] = $producto->image_1;
+                        $datai['negocio_compra_item_cantidad'] = $item['cantidad'];
+                        $datai['negocio_compra_item_valor'] = $valori;
+                        $datai['negocio_compra_item_moneda'] = 'COP';
+                        $datai['negocio_compra_item_valorenvio'] = 0;
+                        $datai['negocio_compra_item_enviotipo'] = 1;
+                        $query = Itemscompra::insert($datai); 
                         $subtotal = $subtotal + ($valori* $item['cantidad']);
                     }
                 }

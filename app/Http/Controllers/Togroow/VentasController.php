@@ -3,6 +3,7 @@ namespace App\Http\Controllers\Togroow;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Campus;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Mockery\Exception;
@@ -73,6 +74,7 @@ class VentasController extends Controller
         $array['estadopagocode'] = $venta->negocio_compra_estado;
         $array['estadopago'] = $venta->negocio_compra_estado_texto;
         $array['mipaquete'] = $venta->negocio_compra_mipaquete;
+        $array['tipoenvio'] = $venta->negocio_compra_tipoenvio;
         $array['items'] = [];
         foreach ($venta->items as $key => $item) {
             $producto = Product::find($item->negocio_compra_item_idproducto);
@@ -90,8 +92,14 @@ class VentasController extends Controller
         $array['subtotal'] = (float)$venta->negocio_compra_subtotal;
         $array['valor_envio'] = (float)$venta->negocio_compra_valor_envio;
         $array['total'] = (float)$venta->negocio_compra_valor;
-        if($venta->negocio_compra_mipaquete == 1){
-            $array['informacionenvio'] = Envio::consultarEnvios($venta->negocio_compra_id);
+        if($venta->negocio_compra_tipoenvio != 1){
+            $array['informacionenvio'] = Envio::consultarEnvios($venta->negocio_compra_id) ;
+        } else {
+            $idproducto = $venta->items[0]->negocio_compra_item_idproducto;
+            $producto = Product::find($idproducto);
+            if(isset($producto)){
+                $array['campus'] = Campus::campusformat($producto->campus);
+            }
         }
         return $array;
     }
