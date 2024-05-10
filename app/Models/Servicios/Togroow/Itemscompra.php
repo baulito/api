@@ -22,6 +22,6 @@ class Itemscompra extends Model
 
     public function producto()
     {
-        return $this->hasOne(Product::class, 'id', 'negocio_compra_item_idproducto');
+        return Product::find($this->negocio_compra_item_idproducto);
     }
 }

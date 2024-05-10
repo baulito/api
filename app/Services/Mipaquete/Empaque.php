@@ -46,7 +46,7 @@ class Empaque
     public static function calcularCaja($dimensiones){
         $paquetes = [];
         $contador = 0;
-        foreach ($dimensiones as $key => $paquete) {
+        foreach ($dimensiones as $campus => $paquete) {
             $ancho = 0;
             $largo = 0;
             $alto = 0;
@@ -71,6 +71,7 @@ class Empaque
             $array['peso'] = $peso;
             $array['valor'] = $valor;
             $array['origen'] = $origen;
+            $array['campus'] = $campus;
             $paquetes[$contador] = $array;
             $contador++;
         }

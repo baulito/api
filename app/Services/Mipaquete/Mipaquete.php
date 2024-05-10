@@ -100,7 +100,7 @@ class Mipaquete
                 $orden[$key] = $data['shippingCost'];
             }
         }
-        //array_multisort($orden, SORT_ASC, $resultados);
+        array_multisort($orden, SORT_ASC, $resultados);
         return $resultados;
     }
 
@@ -121,5 +121,22 @@ class Mipaquete
             return false;
         }
        
+    }
+
+    public static function consultarusuario($api){
+        $data = [];
+        $resultados = self::request("getUser",$data,0,$api);
+        return $resultados;  
+    }
+
+    public static function cancelarenvio($mpCode,$api){
+        $data = [];
+        $data['mpCode'] = $mpCode;
+        $resultados = self::request("cancelSending",$data,3,$api);
+        return $resultados;
+    }
+
+    public static function generarEnvio($dataenvio,$api){
+        return self::request("createSending",$dataenvio,1,$api);
     }
 }

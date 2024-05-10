@@ -3,11 +3,13 @@ namespace App\Http\Controllers\Togroow;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Mockery\Exception;
 use App\Models\Servicios\Togroow\Compra;
 use App\Models\Servicios\Togroow\Negocio;
 use App\Models\Servicios\Togroow\Productos;
+use App\Services\Mipaquete\Envio;
 use App\Servicios\Mipaquete;
 
 /**
@@ -54,7 +56,6 @@ class VentasController extends Controller
     }
 
     public function ventaformat($venta){
-
         $array = [];
         $array['compra_id'] = $venta->negocio_compra_id;
         $array['fecha'] = $venta->negocio_compra_fecha;
@@ -69,17 +70,18 @@ class VentasController extends Controller
         $array['ciudad'] = $venta->negocio_compra_ciudad;
         $array['lugar'] = $venta->negocio_compra_lugar;
         $array['observacion'] = $venta->negocio_compra_observacion;
+        $array['estadopagocode'] = $venta->negocio_compra_estado;
         $array['estadopago'] = $venta->negocio_compra_estado_texto;
+        $array['mipaquete'] = $venta->negocio_compra_mipaquete;
         $array['items'] = [];
-
-
         foreach ($venta->items as $key => $item) {
-            $item->producto;
-            /*echo "<pre>";
-            print_r($item->producto);
-            echo "</pre>";*/
+            $producto = Product::find($item->negocio_compra_item_idproducto);
             $array['items'][$key] = [];
-            $array['items'][$key]['sku'] = $item->producto->sku;
+            if(isset($producto)){
+                $array['items'][$key]['sku'] = $producto->sku;
+                $array['items'][$key]['campus'] = $producto->campusdetail();
+            }
+            //$array['items'][$key]['sku'] = $producto->sku;
             $array['items'][$key]['nombre'] = html_entity_decode($item->negocio_compra_item_nombre);
             $array['items'][$key]['valor'] = $item->negocio_compra_item_valor;
             $array['items'][$key]['moneda'] = $item->negocio_compra_item_moneda;
@@ -89,39 +91,7 @@ class VentasController extends Controller
         $array['valor_envio'] = (float)$venta->negocio_compra_valor_envio;
         $array['total'] = (float)$venta->negocio_compra_valor;
         if($venta->negocio_compra_mipaquete == 1){
-            $mipaquete = new Mipaquete();
-            $estadoenvio = $mipaquete->consultarcompra($venta->negocio_compra_id);
-           /* echo "<pre>";
-            print_r($estadoenvio);
-            echo "</pre>";*/
-            if(isset($estadoenvio) && isset($estadoenvio['tracking'])){ 
-                $pos = count($estadoenvio['tracking']) - 1; 
-                $estado = $estadoenvio['tracking'][$pos]['updateState'];
-                $codigomipaquete =  $estadoenvio['Código mipaquete'];
-                $transportadora =   $estadoenvio['Transportadora']; 
-                $noguia =  $estadoenvio['Número de Guía'];
-                if(isset($estadoenvio['pdfGuide'])){
-                    $urls = $estadoenvio['pdfGuide'];      
-                } else {
-                    $urls = [];  
-                }
-                            
-            } else{ 
-               $estado = "Guía no generada";
-               $codigomipaquete = "";
-               $urls = [];
-               $transportadora = '';
-               $noguia = '';
-            } 
-            $array['mipaquete'] = [];
-            $array['mipaquete']['estado'] = $estado;
-            $array['mipaquete']['codigomipaquete'] = $codigomipaquete;
-            $array['mipaquete']['transportadora'] = $transportadora ;
-            $array['mipaquete']['noguia'] = $noguia;
-            $array['mipaquete']['urlguia'] = $urls;
-        } else {
-            $array['mipaquete'] = [];
-            $array['mipaquete']['estado'] ="No Aplica";
+            $array['informacionenvio'] = Envio::consultarEnvios($venta->negocio_compra_id);
         }
         return $array;
     }
@@ -140,5 +110,12 @@ class VentasController extends Controller
             }
         }
 
+    }
+
+    public function generarEnvio($id){
+        Envio::generarEnvio($id);
+    }
+    public function cancelarEnvio($id){
+        Envio::cancelarEnvio($id);
     }
 }

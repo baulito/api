@@ -11,6 +11,7 @@ use App\Models\Servicios\Togroow\Compra;
 use App\Models\Servicios\Togroow\Negocio;
 use App\Models\Mipaquete;
 use App\Services\Mercadopago\Mercadopagos as Servicemercadopago;
+use App\Services\Mipaquete\Envio;
 use App\Services\Mipaquete\Mipaquete as Mipaqueteservice;
 
 use App\Services\Notification\Notification;
@@ -127,10 +128,7 @@ class ComprarController extends Controller
         $compra->infopago = $this->infopago($id);
         $negocio = $compra->negocio_compra_negocio;
         if($compra->negocio_compra_mipaquete == 1){
-            $mipaquete =  Mipaquete::find(1);
-            if(isset($mipaquete[0])){
-                $compra->informacionenvio =  Mipaqueteservice::consultarenvios($mipaquete[0]->apikey,$compra->negocio_compra_mpcode,$compra->negocio_compra_fecha);
-            }
+            $compra->informacionenvio = Envio::consultarEnvios($id) ;
         } else if($compra->negocio_compra_mipaquete == 2){
             $compra->informacionenvio = [];
             $compra->informacionenvio['ubicacion'] = [];
