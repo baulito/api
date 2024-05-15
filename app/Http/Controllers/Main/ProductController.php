@@ -30,7 +30,7 @@ class ProductController extends Controller
         if(isset($data['out']) && $data['out'] == 2 ){
             $contents->where("state",'0')->where("amount","<",'1');
         } else if(isset($data['out'])) {
-            $contents->where("state",'1')->where("amount",">",'0');
+            $contents->where("state",'1');
         }
        
         
