@@ -92,6 +92,10 @@ class Envio
             }
             
         }
+        echo "<pre>";
+        print_r($productos);
+        echo "</pre>";
+        /*
         $paquetes = Empaque::calcularempaque($productos);
         return $paquetes;
     }
@@ -171,8 +175,8 @@ class Envio
         $compra = Compra::find($idcompra);
         echo "<pre>";
         print_r($compra);
-        /*$paquetes = self::calcularPaquetes($idcompra);
-        echo "<pre>";
+       $paquetes = self::calcularPaquetes($idcompra);
+         /*echo "<pre>";
         print_r($paquetes);
         /*$cupo = self::comprobarCupo();
         $valorpaquetes = self::calularValores($paquetes,$compra->negocio_compra_ciudad);
