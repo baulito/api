@@ -82,6 +82,7 @@ class Envio
     }
 
     function calcularPaquetes($idcompra){
+        echo $idcompra."<br>";
         $items = Itemscompra::where("negocio_compra_item_compraid",$idcompra)->get();
         echo "<pre>";
         print_r($items);
@@ -175,9 +176,9 @@ class Envio
 
     public static function  validarGeneracionenvio($idcompra){
         $compra = Compra::find($idcompra);
-        echo "<pre>";
-        print_r($compra);
-       $paquetes = self::calcularPaquetes($idcompra);
+        /*echo "<pre>";
+        print_r($compra)*/;
+        $paquetes = self::calcularPaquetes($idcompra);
          /*echo "<pre>";
         print_r($paquetes);
         /*$cupo = self::comprobarCupo();
