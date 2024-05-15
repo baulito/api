@@ -83,6 +83,10 @@ class Envio
 
     function calcularPaquetes($idcompra){
         $items = Itemscompra::where("negocio_compra_item_compraid",$idcompra)->get();
+        echo "<pre>";
+        print_r($items);
+        echo "</pre>";
+
         /*$productos = [];
         foreach ($items as $key => $item) {
             $producto = $item->producto();
@@ -92,9 +96,7 @@ class Envio
             }
             
         }*/
-        echo "<pre>";
-        print_r($items);
-        echo "</pre>";
+        
         /*
         $paquetes = Empaque::calcularempaque($productos);
         return $paquetes;*/
