@@ -22,16 +22,17 @@ class ProductController extends Controller
             $contents = Product::search($data['search']);
         } else {
             $contents = Product::orderBy("created_at","DESC");
+            if(isset($data['category'])){
+                $contents->where("category",$data['category']);
+            }
+    
+            if(isset($data['out']) && $data['out'] == 2 ){
+                $contents->where("state",'0')->where("amount","<",'1');
+            } else if(isset($data['out'])) {
+                $contents->where("state",'1')->where("amount",">",'0');
+            }
         }
-        if(isset($data['category'])){
-            $contents->where("category",$data['category']);
-        }
-
-        if(isset($data['out']) && $data['out'] == 2 ){
-            $contents->where("state",'0')->where("amount","<",'1');
-        } else if(isset($data['out'])) {
-            $contents->where("state",'1')->where("amount",">",'0');
-        }
+       
         
         $paginate = 40;
         if(isset($data['paginate'])){
