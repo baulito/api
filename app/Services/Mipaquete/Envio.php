@@ -97,7 +97,7 @@ class Envio
         echo "</pre>";
         /*
         $paquetes = Empaque::calcularempaque($productos);
-        return $paquetes;
+        return $paquetes;*/
     }
 
     public static function comprobarCupo(){
