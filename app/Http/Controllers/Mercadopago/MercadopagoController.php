@@ -343,12 +343,7 @@ class MercadopagoController extends Controller
         if(isset($data['id'])){
             $id = $data['id'];
             $compra = Compra::find($id);
-            $tienda = $compra->negocio->mercadopago;
-            if(isset($tienda) && env('TOOGROW_TESTIG') != 1){
-                MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tienda->negocio_mercadopago_token]);
-            } else {
-                MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
-            }
+            MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
             $pago = MercadoPago\Payment::search(
                 array(
                     "external_reference" => "TGN-".$id
