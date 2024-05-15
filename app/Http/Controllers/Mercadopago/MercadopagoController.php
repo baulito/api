@@ -370,17 +370,12 @@ class MercadopagoController extends Controller
         if(isset($data['id'])){
             $id = $data['id'];
             $compra = Compra::find($id);
-            $tienda = $compra->negocio->mercadopago;
-            if(isset($tienda) && env('TOOGROW_TESTIG') != 1){
-                MercadoPago\SDK::configure(['ACCESS_TOKEN' => $tienda->negocio_mercadopago_token]);
-            } else {
-                MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
-            }
+            MercadoPago\SDK::setAccessToken(env('MP_ACCESS_TOKEN'));
             if($compra && $compra->negocio_compra_idmp && $compra->negocio_compra_idmp != '' && $compra->negocio_compra_idmp != null && 1 == 2){
                 $payment = MercadoPago\Payment::find_by_id($compra->negocio_compra_idmp);
-               echo "<pre>";
-               print_r($payment);
-               echo "</pre>";
+                echo "<pre>";
+                print_r($payment);
+                echo "</pre>";
             } else if($compra) {
                 $pago = MercadoPago\Payment::search(
                     array(
