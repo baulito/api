@@ -29,10 +29,11 @@ class ProductController extends Controller
         } else if(isset($data['out'])) {
             $contents->where("state",'1')->where("amount",">",'0');
         }
+
         if(isset($data['search'])){
-            $contents = Product::search($data['search']);
+            $contents->search($data['search']);
         } else {
-            $contents = Product::orderBy("created_at","DESC");
+            $contents->orderBy("created_at","DESC");
         }
        
         
