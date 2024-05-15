@@ -31,6 +31,7 @@ class ProductController extends Controller
             $contents->where("state",'0')->where("amount","<",'1');
         } else if(isset($data['out'])) {
             $contents->where("state",'1');
+            $contents->where("amount","<>",'0');
         }
        
         
