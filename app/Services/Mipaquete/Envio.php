@@ -170,7 +170,9 @@ class Envio
     public static function  validarGeneracionenvio($idcompra){
         $compra = Compra::find($idcompra);
         $paquetes = self::calcularPaquetes($idcompra);
-        $cupo = self::comprobarCupo();
+        echo "<pre>";
+        print_r($paquetes);
+        /*$cupo = self::comprobarCupo();
         $valorpaquetes = self::calularValores($paquetes,$compra->negocio_compra_ciudad);
         $res = [];
         if( $cupo['cash'] >= $valorpaquetes['valortotal']){
@@ -179,7 +181,7 @@ class Envio
             $res['susses'] =  false;
             $res['message'] = "Recarga la cuenta de mercadopago para poder generar el envio ya que solo dispones de $".number_format($cupo['cash']);
         }
-        return $res;
+        return $res;*/
     }
 
 }

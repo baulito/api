@@ -127,7 +127,8 @@ class VentasController extends Controller
         Envio::cancelarEnvio($id);
     }
     public function validarGeneracionenvio($id){
-        return response()->json(Envio::validarGeneracionenvio($id));
+        $res = Envio::validarGeneracionenvio($id);
+       // return response()->json(Envio::validarGeneracionenvio($id));
     }
 
     
