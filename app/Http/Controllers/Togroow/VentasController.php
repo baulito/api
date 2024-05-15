@@ -128,7 +128,7 @@ class VentasController extends Controller
     }
     public function validarGeneracionenvio($id){
         $res = Envio::validarGeneracionenvio($id);
-       // return response()->json(Envio::validarGeneracionenvio($id));
+       return response()->json(Envio::validarGeneracionenvio($id));
     }
 
     
