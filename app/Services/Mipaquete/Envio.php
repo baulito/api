@@ -82,13 +82,8 @@ class Envio
     }
 
     public static function calcularPaquetes($idcompra){
-        echo $idcompra."<br>";
-        /*$items = Itemscompra::where("negocio_compra_item_compraid",$idcompra)->get();
-        echo "<pre>";
-        print_r($items);
-        echo "</pre>";
-
-        /*$productos = [];
+        $items = Itemscompra::where("negocio_compra_item_compraid",$idcompra)->get();
+        $productos = [];
         foreach ($items as $key => $item) {
             $producto = $item->producto();
             if(isset($producto)){
@@ -96,11 +91,9 @@ class Envio
                 $productos[$key] = $producto;
             }
             
-        }*/
-        
-        /*
+        }    
         $paquetes = Empaque::calcularempaque($productos);
-        return $paquetes;*/
+        return $paquetes;
     }
 
     public static function comprobarCupo(){
