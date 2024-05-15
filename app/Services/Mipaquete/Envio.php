@@ -169,7 +169,9 @@ class Envio
 
     public static function  validarGeneracionenvio($idcompra){
         $compra = Compra::find($idcompra);
-        $paquetes = self::calcularPaquetes($idcompra);
+        echo "<pre>";
+        print_r($compra);
+        /*$paquetes = self::calcularPaquetes($idcompra);
         echo "<pre>";
         print_r($paquetes);
         /*$cupo = self::comprobarCupo();
