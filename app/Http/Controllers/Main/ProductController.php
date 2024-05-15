@@ -32,7 +32,7 @@ class ProductController extends Controller
         } else if(isset($data['out'])) {
             $contents->where("state",'1');
             if(!isset($data['search'])){
-                $contents->where("amount",">",'1');
+                $contents->where("amount",">",'0');
             }
         }
        
