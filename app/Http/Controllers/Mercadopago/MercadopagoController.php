@@ -281,11 +281,10 @@ class MercadopagoController extends Controller
                 //$this->estadocompra($idcompra);
                 if($compra->negocio_compra_desde == 1){
                     //return view('close')
-                    echo "entroaca";
                     return redirect('api/mercadopago/pagopsefinal');
                 } else { 
-                    echo "entro aca";  
-                    echo $url = env('URL_RETURN_PAGE',"https://baulito.co")."/mypurchases/".$compra->negocio_compra_id."?payments=res";
+                    //echo "entro aca";  
+                     $url = env('URL_RETURN_PAGE',"https://baulito.co")."/mypurchases/".$compra->negocio_compra_id."?payments=res";
                     return Redirect::to($url);
                 } 
             }
