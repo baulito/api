@@ -18,6 +18,7 @@ use App\Services\Mipaquete\Mipaquete as Mipaqueteservice;
 
 use App\Services\Notification\Notification;
 use App\Services\Notification\Infobip;
+use App\Services\Images\Images;
 
 use \MercadoPago;
 use DateTime;
@@ -137,6 +138,12 @@ class ComprarController extends Controller
             if(isset($producto)){
                 $compra->campus = Campus::campusformat($producto->campus);
             }
+        }
+
+        foreach ($compra->items as $key => $item) {
+            $compra->items[$key]->thumbnail = url('/')."".Images::ImageResize($item->negocio_compra_item_imagen,100);
+            $compra->items[$key]->negocio_compra_item_imagen =  url('/')."/images/".$item->negocio_compra_item_imagen;
+            
         }
         /*echo "items";
         print_r($compra->items);*/
