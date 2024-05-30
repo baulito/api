@@ -141,8 +141,14 @@ class ComprarController extends Controller
         }
 
         foreach ($compra->items as $key => $item) {
-            $compra->items[$key]->thumbnail = url('/')."".Images::ImageResize($item->negocio_compra_item_imagen,100);
-            $compra->items[$key]->negocio_compra_item_imagen =  url('/')."/images/".$item->negocio_compra_item_imagen;
+            if(isset($item->negocio_compra_item_imagen) &&  file_exists(public_path("/images/".$item->negocio_compra_item_imagen)) ){
+                $compra->items[$key]->thumbnail = url('/')."".Images::ImageResize($item->negocio_compra_item_imagen,100);
+                $compra->items[$key]->negocio_compra_item_imagen =  url('/')."/images/".$item->negocio_compra_item_imagen;
+            } else {
+                $compra->items[$key]->thumbnail = null;
+                $compra->items[$key]->negocio_compra_item_imagen =  null;
+            }
+            
             
         }
         /*echo "items";
