@@ -12,6 +12,7 @@ use App\Models\Servicios\Togroow\Compra;
 use App\Models\Servicios\Togroow\Negocio;
 use App\Models\Mipaquete;
 use App\Models\Product;
+use App\Models\Servicios\Togroow\Mipaqueteciudades;
 use App\Services\Mercadopago\Mercadopagos as Servicemercadopago;
 use App\Services\Mipaquete\Envio;
 use App\Services\Mipaquete\Mipaquete as Mipaqueteservice;
@@ -129,6 +130,13 @@ class ComprarController extends Controller
         $compra = Compra::find($id);
         $compra->items;
         $compra->infopago = $this->infopago($id);
+        $ciudad = Mipaqueteciudades::where("id",$compra->negocio_compra_ciudad)->first();
+        if(isset($ciudad->id)){
+            $compra->ciudad = $ciudad->ciudad;
+        } else {
+            $compra->ciudad = '';
+        }
+       
         $negocio = $compra->negocio_compra_negocio;
         if($compra->negocio_compra_tipoenvio != 1){
             $compra->informacionenvio = Envio::consultarEnvios($id) ;
